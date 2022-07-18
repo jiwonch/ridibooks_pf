@@ -211,32 +211,32 @@ header {
     display: flex;
     justify-content: space-between;
 
-    & a{
+    & a {
         width: 24.5%;
         height: 100%;
 
-        :nth-of-type(1){
+        :nth-of-type(1) {
             margin-left: 18px;
         }
 
-        & .notify{
+        & .notify {
             width: 55%;
             height: 65%;
             margin-top: 5px;
         }
 
-        & .cart{
+        & .cart {
             width: 70%;
             height: 95%;
         }
 
-        & .book{
+        & .book {
             width: 55%;
             height: 65%;
             margin-top: 4px;
         }
 
-        & .user{
+        & .user {
             width: 55%;
             height: 65%;
             margin-top: 4px;
@@ -244,45 +244,265 @@ header {
     }
 }
 
-@mixin width{
+@mixin width {
     width: 1170px;
     margin: 0 auto;
 }
 
-#menu{
+#menu {
     width: 100%;
     height: 120px;
     border: 1px solid lemonchiffon;
 }
 
-#category{
+#category {
     @include width;
     height: 60px;
     border: 1px solid blue;
 }
 
-.menuHr{
+.menuHr {
     @include width;
     color: #e6e6e6
 }
 
-#categorymenu{
+#categorymenu {
     @include width;
     height: 60px;
     border: 1px solid red;
 }
 
-#slide{
+#slide {
     @include width;
     border: 1px solid skyblue;
     height: 400px;
 }
 
-#quickMenu{
+#quickMenu {
     @include width;
     border: 1px solid blueviolet;
     height: 94px;
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 30px;
+}
+
+#today {
+    width: 100%;
+    height: 274px;
+    border: 1px solid lightgreen;
+}
+
+#todayHeader {
+    @include width;
+    height: 48px;
+    border: 1px solid lightcoral;
+}
+
+#todayBook {
+    @include width;
+    height: 226px;
+    border: 1px solid lightseagreen;
+}
+
+#manyRead {
+    @include width;
+    height: 438px;
+    border: 1px solid red;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+#manyReadTitle {
+    width: 1110px;
+    height: 48px;
+    border: 1px solid lawngreen;
+    padding-top: 6px;
+    padding-bottom: 16px;
+}
+
+#manyReadBook {
+    width: 1110px;
+    height: 360px;
+    border: 1px solid darkcyan;
+}
+
+#newRead {
+    @include width;
+    border: 1px solid gold;
+    height: 403px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+}
+
+#newTitle {
+    width: 1110px;
+    height: 48px;
+    border: 1px solid darkorange;
+    padding-top: 6px;
+    padding-bottom: 16px;
+}
+
+#newBook {
+    width: 1110px;
+    height: 355px;
+    border: 1px solid darkturquoise;
+}
+
+#bestseller {
+    @include width;
+    border: 1px solid brown;
+    height: 438px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+#bestTitle {
+    width: 1110px;
+    padding-top: 6px;
+    padding-bottom: 16px;
+    height: 48px;
+    border: 1px solid limegreen;
+}
+
+#bestBook {
+    width: 1110px;
+    height: 360px;
+    border: 1px solid deeppink;
+}
+
+#recommend {
+    @include width;
+    height: 806px;
+    border: 1px solid lightskyblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+}
+
+#recommendTitle {
+    width: 1110px;
+    height: 48px;
+    border: 1px solid lightcoral;
+    padding-top: 6px;
+    padding-bottom: 16px;
+}
+
+#recommendBook {
+    width: 1110px;
+    height: 758px;
+    border: 1px solid seagreen;
+}
+
+#footerbox {
+    width: 100%;
+    border: 1px #555;
+    background-color: #ffffff;
+    padding-top: 100px;
+
+    & hr {
+        width: 100%;
+        border: 0.5px solid #f0f0f0
+    }
+
+    & footer {
+        @include width;
+        border: 1px solid khaki;
+        height: 374px;
+        padding: 0 26px;
+        padding-top: 41px;
+        padding-bottom: 20px;
+        display: flex;
+    }
+}
+
+@mixin footerWidth {
+    height: 313px;
+    padding: 0 4px;
+}
+
+#footerLeft {
+    @include footerWidth;
+    background-color: #1E9EFF;
+    width: 958px;
+}
+
+#footerMenu {
+    width: 950px;
+    height: 164px;
+    background-color: gold;
+    display: flex;
+    flex-direction: row;
+
+    & ul {
+        margin-right: 60px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .f2{
+        justify-content: space-between;
+    }
+}
+
+.recruit {
+    position: relative;
+
+    & div {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #1E9EFF;
+        display: inline-block;
+        position: absolute;
+        margin-left: 5px;
+
+        & h3 {
+            color: #fff;
+            font-size: 5px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+}
+
+#footerCopyright {
+    width: 950px;
+    height: 69px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background-color: plum
+}
+
+#footerRight {
+    @include footerWidth;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;
+        position: relative;
+
+        & svg {
+            width: 35%;
+            height: 35%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            stroke-width: 0;
+            stroke: #777;
+            fill: #777;
+        }
+    }
 }
