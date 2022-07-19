@@ -5,6 +5,7 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -12,6 +13,7 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -19,12 +21,14 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "OTWelcomeRA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -60,11 +64,13 @@ table {
   display: flex;
   justify-content: space-between;
 }
+
 #top .tmenu {
   width: 990px;
   height: 100%;
   margin-left: 10px;
 }
+
 #top .topMember {
   width: 140px;
   height: 100%;
@@ -73,10 +79,12 @@ table {
 .tmenu {
   display: flex;
 }
+
 .tmenuli {
   display: inline-flex;
   align-items: center;
 }
+
 .tmenu li a {
   color: #666;
   display: inline-flex;
@@ -87,10 +95,12 @@ table {
   letter-spacing: -0.01em;
   transition: opacity 0.2s ease 0s;
 }
+
 .tmenu li a:hover {
   opacity: 0.3;
   transition: opacity 0.2s ease 0s;
 }
+
 .tmenu .webtoon::after {
   content: "";
   display: inline-block;
@@ -100,6 +110,7 @@ table {
   border-radius: 3px;
   background-color: #e6e6e6;
 }
+
 .tmenu .web::after {
   content: "";
   display: inline-block;
@@ -109,6 +120,7 @@ table {
   border-radius: 3px;
   background-color: #e6e6e6;
 }
+
 .tmenu .book::after {
   content: "";
   display: inline-block;
@@ -122,10 +134,12 @@ table {
 .topMember {
   display: flex;
 }
+
 .topMemberli {
   display: inline-flex;
   align-items: center;
 }
+
 .topMember li a {
   color: #666;
   display: inline-flex;
@@ -136,10 +150,12 @@ table {
   letter-spacing: -0.01em;
   transition: opacity 0.2s ease 0s;
 }
+
 .topMember li a:hover {
   opacity: 0.3;
   transition: opacity 0.2s ease 0s;
 }
+
 .topMember .member::after {
   content: "";
   display: inline-block;
@@ -168,6 +184,7 @@ header {
   width: 650px;
   height: 38px;
 }
+
 #logo a {
   width: 180px;
   display: flex;
@@ -179,6 +196,7 @@ header {
   width: 260px;
   height: 40px;
 }
+
 #searchInput input {
   width: 100%;
   height: 100%;
@@ -192,6 +210,7 @@ header {
   font-family: "NanumBarunGothic";
   font-weight: bold;
 }
+
 #searchInput input:focus {
   outline: none;
   line-height: 40px;
@@ -203,27 +222,33 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 #menuIcon a {
   width: 24.5%;
   height: 100%;
 }
+
 #menuIcon a :nth-of-type(1) {
   margin-left: 18px;
 }
+
 #menuIcon a .notify {
   width: 55%;
   height: 65%;
   margin-top: 5px;
 }
+
 #menuIcon a .cart {
   width: 70%;
   height: 95%;
 }
+
 #menuIcon a .book {
   width: 55%;
   height: 65%;
   margin-top: 4px;
 }
+
 #menuIcon a .user {
   width: 55%;
   height: 65%;
@@ -240,6 +265,7 @@ header {
   margin: 0 auto;
   height: 60px;
 }
+
 #category h3 {
   float: left;
   margin-left: 6px;
@@ -249,11 +275,13 @@ header {
   line-height: 60px;
   font-family: "NanumBarunGothic";
 }
+
 #category img {
   float: right;
   width: 55px;
   height: 55px;
 }
+
 #category span {
   float: right;
   line-height: 60px;
@@ -275,14 +303,17 @@ header {
   margin: 0 auto;
   height: 60px;
 }
+
 #categorymenu ul {
   display: flex;
   line-height: 60px;
 }
+
 #categorymenu ul li {
   margin-left: 6px;
   margin-right: 13px;
 }
+
 #categorymenu ul li a {
   letter-spacing: 1px;
   font-size: 17px;
@@ -290,6 +321,7 @@ header {
   font-family: "NanumBarunGothic";
   transition: opacity 0.2s ease 0s;
 }
+
 #categorymenu ul li a:hover {
   opacity: 0.3;
   transition: opacity 0.2s ease 0s;
@@ -298,6 +330,7 @@ header {
 .reco_Box {
   display: flex;
 }
+
 .reco_Box div {
   margin-top: -5px;
   background-color: #1E9EFF;
@@ -307,6 +340,7 @@ header {
   width: 52px;
   display: flex;
 }
+
 .reco_Box div a {
   text-align: center;
   color: white;
@@ -318,6 +352,7 @@ header {
   padding-left: 10px;
   cursor: default;
 }
+
 .reco_Box div a:hover {
   opacity: 1 !important;
 }
@@ -345,6 +380,7 @@ header {
   border-radius: 5px;
   margin-right: 5px;
 }
+
 .slideIB a {
   width: 100%;
   height: 100%;
@@ -418,6 +454,7 @@ header {
   height: 100%;
   display: flex;
 }
+
 .qIcon a {
   display: inline-block;
   flex-grow: 1;
@@ -430,11 +467,13 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .icon img {
   width: 70px;
   height: 70px;
   margin: 5px;
 }
+
 .icon span {
   font-size: 13px;
   text-align: center;
@@ -490,6 +529,7 @@ header {
   height: 48px;
   border: 1px solid lightcoral;
 }
+
 #todayHeader h2 {
   font-family: "NanumBarunGothic";
   font-size: 22px;
@@ -504,6 +544,7 @@ header {
   display: flex;
   overflow: hidden;
 }
+
 #todayBook a {
   display: inline-block;
   width: 365px;
@@ -525,7 +566,7 @@ header {
 }
 
 .todayBg {
-  background-color: #1E9EFF;
+  background-color: darkred;
   position: absolute;
   width: 100%;
   height: 100px;
@@ -544,9 +585,30 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .tdimg img {
   width: 100%;
   height: 115%;
+}
+
+.tdtext {
+  margin-top: 4px;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tdtext h4 {
+  font-family: "NanumBarunGothic";
+  text-align: center;
+}
+
+.tdtext p {
+  padding-top: 7px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
 }
 
 #manyRead {
@@ -567,6 +629,7 @@ header {
   padding-top: 6px;
   padding-bottom: 16px;
 }
+
 #manyReadTitle h2 {
   font-family: "NanumBarunGothic";
   font-size: 22px;
@@ -577,6 +640,60 @@ header {
   width: 1110px;
   height: 360px;
   border: 1px solid darkcyan;
+  display: flex;
+}
+
+.manybook {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+}
+
+.manybook2 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid mediumorchid;
+  display: flex;
+  display: none;
+}
+
+.mybLook {
+  width: 370px;
+  height: 100%;
+}
+
+.myBookBox {
+  width: 100%;
+  height: 116px;
+  border: 1px solid red;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.myBookImg {
+  width: 80px;
+  height: 100%;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: yellow;
+}
+
+.myIndex {
+  width: 80px;
+  height: 100%;
+  line-height: 116px;
+  text-align: center;
+  font-family: "NanumBarunGothic";
+  border: 1px solid magenta;
+  font-weight: bold;
+  color: #555;
+}
+
+.myBookText {
+  width: 184px;
+  height: 100%;
+  border: 1px solid blue;
 }
 
 #newRead {
@@ -596,6 +713,7 @@ header {
   padding-top: 6px;
   padding-bottom: 16px;
 }
+
 #newTitle h2 {
   font-family: "NanumBarunGothic";
   font-size: 22px;
@@ -606,6 +724,30 @@ header {
   width: 1110px;
   height: 355px;
   border: 1px solid darkturquoise;
+  display: flex;
+  overflow: hidden;
+}
+
+.newBookBox {
+  width: 180px;
+  height: 100%;
+  border: 1px solid red;
+  margin-right: 5.5px;
+}
+
+.newBookImg {
+  width: 180px;
+  height: 261px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: #1E9EFF;
+}
+
+.newBookText {
+  width: 180px;
+  height: 84px;
+  border: 1px solid green;
+  margin-top: 8px;
 }
 
 #bestseller {
@@ -626,6 +768,7 @@ header {
   height: 48px;
   border: 1px solid limegreen;
 }
+
 #bestTitle h2 {
   font-family: "NanumBarunGothic";
   font-size: 22px;
@@ -636,6 +779,60 @@ header {
   width: 1110px;
   height: 360px;
   border: 1px solid deeppink;
+  display: flex;
+}
+
+.bestsellerbook {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+}
+
+.bestsellerbook2 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid mediumorchid;
+  display: flex;
+  display: none;
+}
+
+.bsbLook {
+  width: 370px;
+  height: 100%;
+}
+
+.bsBookBox {
+  width: 100%;
+  height: 116px;
+  border: 1px solid red;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.bsBookImg {
+  width: 80px;
+  height: 100%;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: yellow;
+}
+
+.bsIndex {
+  width: 80px;
+  height: 100%;
+  line-height: 116px;
+  text-align: center;
+  font-family: "NanumBarunGothic";
+  border: 1px solid magenta;
+  font-weight: bold;
+  color: #555;
+}
+
+.bsBookText {
+  width: 184px;
+  height: 100%;
+  border: 1px solid blue;
 }
 
 #recommend {
@@ -655,6 +852,7 @@ header {
   padding-top: 6px;
   padding-bottom: 16px;
 }
+
 #recommendTitle h2 {
   font-family: "NanumBarunGothic";
   font-size: 22px;
@@ -673,10 +871,12 @@ header {
   background-color: #ffffff;
   padding-top: 100px;
 }
+
 #footerbox hr {
   width: 100%;
   border: 0.5px solid #f0f0f0;
 }
+
 #footerbox footer {
   width: 1170px;
   margin: 0 auto;
@@ -702,12 +902,14 @@ header {
   display: flex;
   flex-direction: row;
 }
+
 #footerMenu ul {
   margin-right: 60px;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 #footerMenu .f2 {
   justify-content: space-between;
 }
@@ -715,6 +917,7 @@ header {
 .recruit {
   position: relative;
 }
+
 .recruit div {
   width: 15px;
   height: 15px;
@@ -724,6 +927,7 @@ header {
   position: absolute;
   margin-left: 5px;
 }
+
 .recruit div h3 {
   color: #fff;
   font-size: 5px;
@@ -746,6 +950,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 #footerRight a {
   width: 44px;
   height: 44px;
@@ -753,6 +958,7 @@ header {
   border: 1px solid #e6e6e6;
   position: relative;
 }
+
 #footerRight a svg {
   width: 35%;
   height: 35%;

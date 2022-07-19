@@ -558,7 +558,7 @@ header {
 }
 
 .todayBg{
-    background-color: #1E9EFF;
+    background-color: darkred;
     position: absolute;
     width: 100%;
     height: 100px;
@@ -580,6 +580,27 @@ header {
     & img{
         width: 100%;
         height: 115%;
+    }
+}
+
+.tdtext{
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    & h4{
+        font-family: 'NanumBarunGothic';
+        text-align: center;
+    }
+
+    & p{
+        padding-top: 7px;
+        text-align: center;
+        color: #777;
+        font-size: 14px;
+
     }
 }
 
@@ -611,6 +632,60 @@ header {
     width: 1110px;
     height: 360px;
     border: 1px solid darkcyan;
+    display: flex;
+}
+
+.manybook{
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+}
+
+.manybook2{
+    width: 100%;
+    height: 100%;
+    border: 1px solid mediumorchid;
+    display: flex;
+    display: none;
+}
+
+.mybLook{
+    width: 370px;
+    height: 100%;
+}
+
+.myBookBox{
+    width: 100%;
+    height: 116px;
+    border: 1px solid red;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.myBookImg{
+    width: 80px;
+    height: 100%;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.myIndex{
+    width: 80px;
+    height: 100%;
+    line-height: 116px;
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+    border: 1px solid magenta;
+    font-weight: bold;
+    color: #555;
+}
+
+.myBookText{
+    width: 184px;
+    height: 100%;
+    border: 1px solid blue;
 }
 
 #newRead {
@@ -640,6 +715,30 @@ header {
     width: 1110px;
     height: 355px;
     border: 1px solid darkturquoise;
+    display: flex;
+    overflow: hidden;
+}
+
+.newBookBox{
+    width: 180px;
+    height: 100%;
+    border: 1px solid red;
+    margin-right: 5.5px;
+}
+
+.newBookImg{
+    width: 180px;
+    height: 261px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: #1E9EFF;
+}
+
+.newBookText{
+    width: 180px;
+    height: 84px;
+    border: 1px solid green;
+    margin-top: 8px;
 }
 
 #bestseller {
@@ -670,6 +769,60 @@ header {
     width: 1110px;
     height: 360px;
     border: 1px solid deeppink;
+    display: flex;
+}
+
+.bestsellerbook{
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+}
+
+.bestsellerbook2{
+    width: 100%;
+    height: 100%;
+    border: 1px solid mediumorchid;
+    display: flex;
+    display: none;
+}
+
+.bsbLook{
+    width: 370px;
+    height: 100%;
+}
+
+.bsBookBox{
+    width: 100%;
+    height: 116px;
+    border: 1px solid red;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.bsBookImg{
+    width: 80px;
+    height: 100%;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.bsIndex{
+    width: 80px;
+    height: 100%;
+    line-height: 116px;
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+    border: 1px solid magenta;
+    font-weight: bold;
+    color: #555;
+}
+
+.bsBookText{
+    width: 184px;
+    height: 100%;
+    border: 1px solid blue;
 }
 
 #recommend {
