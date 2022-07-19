@@ -365,11 +365,14 @@ header {
     border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .slideIB{
     width: 100%;
     height: 100%;
+    border-radius: 5px;
+    margin-right: 5px;
 
     & a{
         width: 100%;
@@ -380,14 +383,20 @@ header {
 
 .s1{
     background-color: #1E9EFF;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .s2{
     background-color: gold;
+    flex-grow: 0;
+    flex-basis: 46px;
 }
 
 .s3{
     background-color: yellowgreen;
+    flex-grow: 0;
+    flex-basis: 46px;
 }
 
 .s4{
@@ -470,6 +479,40 @@ header {
     margin-top: 40px;
     height: 274px;
     border: 1px solid lightgreen;
+    position: relative;
+}
+
+.prev{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    z-index: 4;
+    left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 1px rgba(230, 230, 230, 0.5);
+    display: none;
+}
+
+.next{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    z-index: 4;
+    right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 1px rgba(230, 230, 230, 0.5);
 }
 
 #todayHeader {
@@ -490,6 +533,54 @@ header {
     margin: 0 auto;
     height: 226px;
     border: 1px solid lightseagreen;
+    display: flex;
+    overflow: hidden;
+
+    & a{
+        display: inline-block;
+        width: 365px;
+        height: 100%;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+.tdb{
+    width: 365px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.tdb_bgimg{
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+
+.todayBg{
+    background-color: #1E9EFF;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.tdimg{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    background-color: red;
+    z-index: 2;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & img{
+        width: 100%;
+        height: 115%;
+    }
 }
 
 #manyRead {
