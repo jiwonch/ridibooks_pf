@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>리디</title>
+    <title>도서 추천 - 리디</title>
     <link rel="icon" href="img/favicon.png">
     <meta property="og:image" content="{{url_fot('img', filename='thumbnail.jpg')}}">
     <link rel="stylesheet" href="css/index.css">
@@ -46,15 +46,95 @@
         </header>
     </div>
     <div id="menu">
-        <div id="category"></div>
+        <div id="category">
+            <h3>도서</h3>
+            <span>전체 카테고리</span>
+            <img src="img/menu_hambugur.svg" alt="hambugur">
+        </div>
         <hr class="menuHr">
-        <div id="categorymenu"></div>
+        <div id="categorymenu">
+            <ul>
+                <li class="reco_Box">
+                    <div>
+                        <a href="#">추천</a>
+                    </div>
+                </li>
+                <li><a href="#">리디ONLY</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">대여</a></li>
+            </ul>
+        </div>
     </div>
-    <div id="slide"></div>
-    <div id="quickMenu"></div>
+    <div id="slide">
+        <div id="slideImgBox">
+            <!-- <div class="slideIB s1"><a href="#">1</a></div>
+            <div class="slideIB s2"><a href="#">2</a></div>
+            <div class="slideIB s3"><a href="#">3</a></div>
+            <div class="slideIB s4"><a href="#">4</a></div>
+            <div class="slideIB s5"><a href="#">5</a></div>
+            <div class="slideIB s6"><a href="#">6</a></div>
+            <div class="slideIB s7"><a href="#">7</a></div>
+            <div class="slideIB s8"><a href="#">8</a></div>
+            <div class="slideIB s9"><a href="#">9</a></div>
+            <div class="slideIB s10"><a href="#">10</a></div> -->
+        </div>
+
+        <!-- 메인 홍보 slide -->
+        <script src="js/slide.js"></script>
+    </div>
+    <div id="quickMenu">
+        <div id="quickIcon">
+            <div class="qIcon">
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/index/icon/quick_new.png" alt="신간">
+                        <span>신간</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/index/icon/quick_event.png" alt="이벤트 모음">
+                        <span>이벤트 모음</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/index/icon/quick_bestseller.png" alt="베스트셀러">
+                        <span>베스트셀러</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/index/icon/quick_calendar.png" alt="신간 캘린더">
+                        <span>신간 캘린더</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/index/icon/quick_cupon.png" alt="위클리 쿠폰">
+                        <span>위클리 쿠폰</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/index/icon/quick_ridipaper.png" alt="리디페이퍼">
+                        <span>리디페이퍼</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/index/icon/quick_map.png" alt="혜택지도">
+                        <span>혜택지도</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div id="today">
-        <div id="todayHeader"></div>
+        <div id="todayHeader">
+            <h2>오늘, 리디의 발견</h2>
+        </div>
         <div id="todayBook"></div>
     </div>
 
