@@ -599,6 +599,12 @@ header {
     border: 1px solid lawngreen;
     padding-top: 6px;
     padding-bottom: 16px;
+
+    & h2{
+        font-family: 'NanumBarunGothic';
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
 
 #manyReadBook {
@@ -622,6 +628,12 @@ header {
     border: 1px solid darkorange;
     padding-top: 6px;
     padding-bottom: 16px;
+
+    & h2{
+        font-family: 'NanumBarunGothic';
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
 
 #newBook {
@@ -646,6 +658,12 @@ header {
     padding-bottom: 16px;
     height: 48px;
     border: 1px solid limegreen;
+
+    & h2{
+        font-family: 'NanumBarunGothic';
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
 
 #bestBook {
@@ -669,6 +687,12 @@ header {
     border: 1px solid lightcoral;
     padding-top: 6px;
     padding-bottom: 16px;
+
+    & h2{
+        font-family: 'NanumBarunGothic';
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
 
 #recommendBook {
