@@ -635,6 +635,7 @@ header {
     height: 360px;
     border: 1px solid darkcyan;
     display: flex;
+    overflow: hidden;
 }
 
 .manybook{
@@ -649,7 +650,6 @@ header {
     height: 100%;
     border: 1px solid mediumorchid;
     display: flex;
-    // display: none;
 }
 
 .mybLook{
@@ -729,7 +729,7 @@ header {
     height: 355px;
     border: 1px solid darkturquoise;
     display: flex;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .newBookBox{
@@ -794,6 +794,7 @@ header {
     height: 360px;
     border: 1px solid deeppink;
     display: flex;
+    overflow: hidden;
 }
 
 .bestsellerbook{
@@ -861,17 +862,15 @@ header {
 
 #recommend {
     @include width;
-    height: 806px;
-    border: 1px solid lightskyblue;
+    height: 810px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #recommendTitle {
     width: 1110px;
     height: 48px;
-    border: 1px solid lightcoral;
     padding-top: 6px;
     padding-bottom: 16px;
 
@@ -884,8 +883,87 @@ header {
 
 #recommendBook {
     width: 1110px;
-    height: 758px;
-    border: 1px solid seagreen;
+    height: 762px;
+}
+
+#recommendCategory{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.recoCate{
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 80px;
+    border: 2px solid #f0f0f0;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    & span{
+        width: 100%;
+        line-height: 30px;
+        display: inline-block;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+.recoCate:hover{
+    border: 2px solid #1E9EFF;
+}
+
+// 책추천 카테고리 네비 선택시 색상 변경 add Class
+.reco_blue{
+    border: 2px solid #1E9EFF;
+    background-color: #1E9EFF;
+    color: white;
+    cursor: default;
+    transition: all 0.4s ease-in-out;
+}
+
+// 카테고리별 책 묶음
+.recoBox{
+    width: 100%;
+    height: 715px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 5px;
+}
+
+.recoBooks{
+    width: 180px;
+    height: 353px;
+    // margin-right: 4.34px;
+}
+
+.rocoBooksImg{
+    width: 100%;
+    height: 261px;
+    border-radius: 5px;
+
+    & a{
+        width: 100%;
+        height: 100%;
+        
+        & img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+.recoBooksText{
+    width: 100%;
+    height: 84px;
+    margin-top: 8px;
 }
 
 #footerbox {
