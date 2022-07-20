@@ -14,7 +14,7 @@ $.ajax({
             var content = msg.documents[i].contents;
 
             if(content.length> 30){
-                $(".tdtext h3").eq(i).append("...");
+                $(".tdtext h4").eq(i).append("...");
             }
 
         }

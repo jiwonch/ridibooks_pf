@@ -576,10 +576,12 @@ header {
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 5px;
 
     & img{
         width: 100%;
         height: 115%;
+        border-radius: 5px;
     }
 }
 
@@ -647,7 +649,7 @@ header {
     height: 100%;
     border: 1px solid mediumorchid;
     display: flex;
-    display: none;
+    // display: none;
 }
 
 .mybLook{
@@ -669,6 +671,17 @@ header {
     border: 1px solid green;
     border-radius: 5px;
     background-color: yellow;
+
+    & a{
+        width: 100%;
+        height: 100%;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
 }
 
 .myIndex{
@@ -716,7 +729,7 @@ header {
     height: 355px;
     border: 1px solid darkturquoise;
     display: flex;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .newBookBox{
@@ -732,6 +745,17 @@ header {
     border: 1px solid blue;
     border-radius: 5px;
     background-color: #1E9EFF;
+
+    & a{
+        width: 100%;
+        height: 100%;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
 }
 
 .newBookText{
@@ -784,7 +808,7 @@ header {
     height: 100%;
     border: 1px solid mediumorchid;
     display: flex;
-    display: none;
+    // display: none;
 }
 
 .bsbLook{
@@ -806,6 +830,16 @@ header {
     border: 1px solid green;
     border-radius: 5px;
     background-color: yellow;
+
+    & a{
+        width: 100%;
+        height: 100%;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .bsIndex{
