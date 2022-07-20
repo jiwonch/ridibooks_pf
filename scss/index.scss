@@ -31,6 +31,9 @@
     font-style: normal;
 }
 
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +57,34 @@ table {
 }
 
 $pointColor: #1E9EFF;
+
+.top{
+    position: fixed;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f0f0f0;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+
+    & a {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        position: relative;
+        
+    
+        & img{
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-55%, -55%);
+        }
+    }
+}
 
 #topMenu {
     width: 100%;
@@ -522,7 +553,7 @@ header {
     border: 1px solid lightcoral;
 
     & h2{
-        font-family: 'NanumBarunGothic';
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 22px;
         font-weight: bold;
     }
@@ -593,7 +624,7 @@ header {
     padding-right: 40px;
 
     & h4{
-        font-family: 'NanumBarunGothic';
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         text-align: center;
     }
 
@@ -609,22 +640,21 @@ header {
 #manyRead {
     @include width;
     height: 438px;
-    border: 1px solid red;
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 40px;
     padding-bottom: 30px;
+    position: relative;
 }
 
 #manyReadTitle {
     width: 1110px;
     height: 48px;
-    border: 1px solid lawngreen;
     padding-top: 6px;
     padding-bottom: 16px;
 
     & h2{
-        font-family: 'NanumBarunGothic';
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 22px;
         font-weight: bold;
     }
@@ -633,7 +663,6 @@ header {
 #manyReadBook {
     width: 1110px;
     height: 360px;
-    border: 1px solid darkcyan;
     display: flex;
     overflow: hidden;
 }
@@ -641,14 +670,12 @@ header {
 .manybook{
     width: 100%;
     height: 100%;
-    border: 1px solid blue;
     display: flex;
 }
 
 .manybook2{
     width: 100%;
     height: 100%;
-    border: 1px solid mediumorchid;
     display: flex;
 }
 
@@ -660,7 +687,6 @@ header {
 .myBookBox{
     width: 100%;
     height: 116px;
-    border: 1px solid red;
     margin-bottom: 5px;
     display: flex;
 }
@@ -668,9 +694,7 @@ header {
 .myBookImg{
     width: 80px;
     height: 100%;
-    border: 1px solid green;
     border-radius: 5px;
-    background-color: yellow;
 
     & a{
         width: 100%;
@@ -689,16 +713,19 @@ header {
     height: 100%;
     line-height: 116px;
     text-align: center;
-    font-family: 'NanumBarunGothic';
-    border: 1px solid magenta;
-    font-weight: bold;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-weight: 500;
     color: #555;
 }
 
 .myBookText{
     width: 184px;
     height: 100%;
-    border: 1px solid blue;
+    padding-top: 20px;
+    
+    & h4{
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    }
 }
 
 #newRead {
@@ -718,7 +745,7 @@ header {
     padding-bottom: 16px;
 
     & h2{
-        font-family: 'NanumBarunGothic';
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 22px;
         font-weight: bold;
     }
@@ -763,16 +790,20 @@ header {
     height: 84px;
     border: 1px solid green;
     margin-top: 8px;
+
+    & h4{
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    }
 }
 
 #bestseller {
     @include width;
-    border: 1px solid brown;
     height: 438px;
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 40px;
     padding-bottom: 30px;
+    position: relative;
 }
 
 #bestTitle {
@@ -780,10 +811,9 @@ header {
     padding-top: 6px;
     padding-bottom: 16px;
     height: 48px;
-    border: 1px solid limegreen;
 
     & h2{
-        font-family: 'NanumBarunGothic';
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 22px;
         font-weight: bold;
     }
@@ -792,7 +822,6 @@ header {
 #bestBook {
     width: 1110px;
     height: 360px;
-    border: 1px solid deeppink;
     display: flex;
     overflow: hidden;
 }
@@ -800,14 +829,12 @@ header {
 .bestsellerbook{
     width: 100%;
     height: 100%;
-    border: 1px solid blue;
     display: flex;
 }
 
 .bestsellerbook2{
     width: 100%;
     height: 100%;
-    border: 1px solid mediumorchid;
     display: flex;
     // display: none;
 }
@@ -820,7 +847,6 @@ header {
 .bsBookBox{
     width: 100%;
     height: 116px;
-    border: 1px solid red;
     margin-bottom: 5px;
     display: flex;
 }
@@ -828,9 +854,7 @@ header {
 .bsBookImg{
     width: 80px;
     height: 100%;
-    border: 1px solid green;
     border-radius: 5px;
-    background-color: yellow;
 
     & a{
         width: 100%;
@@ -839,6 +863,7 @@ header {
         & img{
             width: 100%;
             height: 100%;
+            border-radius: 5px;
         }
     }
 }
@@ -848,16 +873,19 @@ header {
     height: 100%;
     line-height: 116px;
     text-align: center;
-    font-family: 'NanumBarunGothic';
-    border: 1px solid magenta;
-    font-weight: bold;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-weight: 500;
     color: #555;
 }
 
 .bsBookText{
     width: 184px;
     height: 100%;
-    border: 1px solid blue;
+    padding-top: 20px;
+
+    & h4{
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    }
 }
 
 #recommend {
@@ -875,7 +903,7 @@ header {
     padding-bottom: 16px;
 
     & h2{
-        font-family: 'NanumBarunGothic';
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 22px;
         font-weight: bold;
     }
@@ -906,10 +934,11 @@ header {
 
     & span{
         width: 100%;
-        line-height: 30px;
+        line-height: 27px;
         display: inline-block;
         text-align: center;
         font-size: 15px;
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     }
 }
 
@@ -964,6 +993,10 @@ header {
     width: 100%;
     height: 84px;
     margin-top: 8px;
+
+    & h4{
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    }
 }
 
 #footerbox {
