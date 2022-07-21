@@ -8,11 +8,11 @@ $.ajax({
 
         for (var i = 0; i < 23; i++) {
             $(".newBookImg a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".newBookText a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,25) + "</h4>");
-            $(".newBookText").eq(i).append("<p>" + msg.documents[i].authors[0] + "</p>");
+            $(".newBookText a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,14) + "</h4>");
+            $(".newBookText p").eq(i).append(msg.documents[i].authors[0]);
             var title = msg.documents[i].title;
 
-            if(title.length> 25){
+            if(title.length> 14){
                 $(".newBookText a h4").eq(i).append("...");
             }
 
