@@ -1,9 +1,6 @@
 $(document).ready(function(){
-    $(".s4").hide();
-    $(".s5").hide();
-    $(".s6").hide();
-    $(".s7").hide();
-    $(".s8").hide();
-    $(".s9").hide();
-    $(".s10").hide();
+    
+    function prev(){
+        
+    }
 });

@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -7,7 +6,6 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -15,7 +13,6 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -23,14 +20,12 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "OTWelcomeRA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -56,28 +51,26 @@ table {
 .top {
   position: fixed;
   background-color: white;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #f0f0f0;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #f0f0f0;
   right: 30px;
   bottom: 30px;
   border-radius: 50%;
 }
-
 .top a {
   width: 60px;
   height: 60px;
   display: inline-block;
   position: relative;
 }
-
 .top a img {
   position: absolute;
   width: 70%;
   height: 70%;
   top: 50%;
   left: 50%;
-  transform: translate(-55%, -55%);
+  transform: translate(-58%, -58%);
 }
 
 #topMenu {
@@ -93,13 +86,11 @@ table {
   display: flex;
   justify-content: space-between;
 }
-
 #top .tmenu {
   width: 990px;
   height: 100%;
   margin-left: 10px;
 }
-
 #top .topMember {
   width: 140px;
   height: 100%;
@@ -108,12 +99,10 @@ table {
 .tmenu {
   display: flex;
 }
-
 .tmenuli {
   display: inline-flex;
   align-items: center;
 }
-
 .tmenu li a {
   color: #666;
   display: inline-flex;
@@ -124,12 +113,10 @@ table {
   letter-spacing: -0.01em;
   transition: opacity 0.2s ease 0s;
 }
-
 .tmenu li a:hover {
   opacity: 0.3;
   transition: opacity 0.2s ease 0s;
 }
-
 .tmenu .webtoon::after {
   content: "";
   display: inline-block;
@@ -139,7 +126,6 @@ table {
   border-radius: 3px;
   background-color: #e6e6e6;
 }
-
 .tmenu .web::after {
   content: "";
   display: inline-block;
@@ -149,7 +135,6 @@ table {
   border-radius: 3px;
   background-color: #e6e6e6;
 }
-
 .tmenu .book::after {
   content: "";
   display: inline-block;
@@ -163,12 +148,10 @@ table {
 .topMember {
   display: flex;
 }
-
 .topMemberli {
   display: inline-flex;
   align-items: center;
 }
-
 .topMember li a {
   color: #666;
   display: inline-flex;
@@ -179,12 +162,10 @@ table {
   letter-spacing: -0.01em;
   transition: opacity 0.2s ease 0s;
 }
-
 .topMember li a:hover {
   opacity: 0.3;
   transition: opacity 0.2s ease 0s;
 }
-
 .topMember .member::after {
   content: "";
   display: inline-block;
@@ -213,7 +194,6 @@ header {
   width: 650px;
   height: 38px;
 }
-
 #logo a {
   width: 180px;
   display: flex;
@@ -225,7 +205,6 @@ header {
   width: 260px;
   height: 40px;
 }
-
 #searchInput input {
   width: 100%;
   height: 100%;
@@ -239,7 +218,6 @@ header {
   font-family: "NanumBarunGothic";
   font-weight: bold;
 }
-
 #searchInput input:focus {
   outline: none;
   line-height: 40px;
@@ -251,33 +229,27 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
 #menuIcon a {
   width: 24.5%;
   height: 100%;
 }
-
 #menuIcon a :nth-of-type(1) {
   margin-left: 18px;
 }
-
 #menuIcon a .notify {
   width: 55%;
   height: 65%;
   margin-top: 5px;
 }
-
 #menuIcon a .cart {
   width: 70%;
   height: 95%;
 }
-
 #menuIcon a .book {
   width: 55%;
   height: 65%;
   margin-top: 4px;
 }
-
 #menuIcon a .user {
   width: 55%;
   height: 65%;
@@ -294,7 +266,6 @@ header {
   margin: 0 auto;
   height: 60px;
 }
-
 #category h3 {
   float: left;
   margin-left: 6px;
@@ -304,13 +275,11 @@ header {
   line-height: 60px;
   font-family: "NanumBarunGothic";
 }
-
 #category img {
   float: right;
   width: 55px;
   height: 55px;
 }
-
 #category span {
   float: right;
   line-height: 60px;
@@ -332,17 +301,14 @@ header {
   margin: 0 auto;
   height: 60px;
 }
-
 #categorymenu ul {
   display: flex;
   line-height: 60px;
 }
-
 #categorymenu ul li {
   margin-left: 6px;
   margin-right: 13px;
 }
-
 #categorymenu ul li a {
   letter-spacing: 1px;
   font-size: 17px;
@@ -350,7 +316,6 @@ header {
   font-family: "NanumBarunGothic";
   transition: opacity 0.2s ease 0s;
 }
-
 #categorymenu ul li a:hover {
   opacity: 0.3;
   transition: opacity 0.2s ease 0s;
@@ -359,7 +324,6 @@ header {
 .reco_Box {
   display: flex;
 }
-
 .reco_Box div {
   margin-top: -5px;
   background-color: #1E9EFF;
@@ -369,7 +333,6 @@ header {
   width: 52px;
   display: flex;
 }
-
 .reco_Box div a {
   text-align: center;
   color: white;
@@ -381,7 +344,6 @@ header {
   padding-left: 10px;
   cursor: default;
 }
-
 .reco_Box div a:hover {
   opacity: 1 !important;
 }
@@ -391,6 +353,11 @@ header {
   margin: 0 auto;
   border: 1px solid skyblue;
   height: 400px;
+  position: relative;
+}
+
+.slideprev {
+  display: block !important;
 }
 
 #slideImgBox {
@@ -409,7 +376,6 @@ header {
   border-radius: 5px;
   margin-right: 5px;
 }
-
 .slideIB a {
   width: 100%;
   height: 100%;
@@ -418,48 +384,68 @@ header {
 
 .s1 {
   background-color: #1E9EFF;
+  background-image: url(../img/index/slide1.jpg);
+  background-position: center;
   flex-grow: 1;
   flex-basis: 0;
 }
 
 .s2 {
   background-color: gold;
+  background-image: url(../img/index/slide2.jpg);
+  background-position: center;
   flex-grow: 0;
-  flex-basis: 46px;
+  flex-basis: 40px;
 }
 
 .s3 {
   background-color: yellowgreen;
+  background-image: url(../img/index/slide3.jpg);
+  background-position: center;
   flex-grow: 0;
-  flex-basis: 46px;
+  flex-basis: 40px;
 }
 
 .s4 {
   background-color: purple;
+  background-image: url(../img/index/slide4.jpg);
+  background-position: center;
 }
 
 .s5 {
   background-color: indianred;
+  background-image: url(../img/index/slide5.jpg);
+  background-position: center;
 }
 
 .s6 {
   background-color: darkcyan;
+  background-image: url(../img/index/slide6.jpg);
+  background-position: center;
 }
 
 .s7 {
   background-color: darkorange;
+  background-image: url(../img/index/slide7.jpg);
+  background-position: center;
 }
 
 .s8 {
   background-color: darkturquoise;
+  background-image: url(../img/index/slide8.jpg);
+  background-position: center;
 }
 
 .s9 {
   background-color: deeppink;
+  background-image: url(../img/index/slide9.jpg);
+  background-position: center;
 }
 
 .s10 {
   background-color: lightgreen;
+  background-image: url(../img/index/slide10.jpg);
+  background-position: center;
 }
 
 #quickMenu {
@@ -483,7 +469,6 @@ header {
   height: 100%;
   display: flex;
 }
-
 .qIcon a {
   display: inline-block;
   flex-grow: 1;
@@ -496,13 +481,11 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 .icon img {
   width: 70px;
   height: 70px;
   margin: 5px;
 }
-
 .icon span {
   font-size: 13px;
   text-align: center;
@@ -515,7 +498,6 @@ header {
   margin: 0 auto;
   margin-top: 40px;
   height: 274px;
-  border: 1px solid lightgreen;
   position: relative;
 }
 
@@ -556,9 +538,7 @@ header {
   width: 1110px;
   margin: 0 auto;
   height: 48px;
-  border: 1px solid lightcoral;
 }
-
 #todayHeader h2 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   font-size: 22px;
@@ -569,23 +549,26 @@ header {
   width: 1110px;
   margin: 0 auto;
   height: 226px;
-  border: 1px solid lightseagreen;
   display: flex;
   overflow: hidden;
 }
 
-#todayBook a {
+#todayB {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#todayB a {
   display: inline-block;
   width: 365px;
   height: 100%;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
 }
 
 .tdb {
   width: 365px;
   height: 100%;
-  border: 1px solid red;
 }
 
 .tdb_bgimg {
@@ -603,19 +586,41 @@ header {
   border-radius: 5px;
 }
 
+.purple {
+  background-color: rgb(143, 8, 184);
+}
+
+.darkblue {
+  background-color: darkblue;
+}
+
+.lightblue {
+  background-color: #72bcf5;
+}
+
+.pink {
+  background-color: rgb(245, 105, 126);
+}
+
+.green {
+  background-color: rgb(4, 100, 90);
+}
+
+.navy {
+  background-color: rgb(4, 5, 44);
+}
+
 .tdimg {
   position: absolute;
   height: 100%;
   width: 30%;
   top: 0;
-  background-color: red;
   z-index: 2;
   overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
 }
-
 .tdimg img {
   width: 100%;
   height: 115%;
@@ -629,12 +634,10 @@ header {
   padding-left: 40px;
   padding-right: 40px;
 }
-
 .tdtext h4 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   text-align: center;
 }
-
 .tdtext p {
   padding-top: 7px;
   text-align: center;
@@ -659,7 +662,6 @@ header {
   padding-top: 6px;
   padding-bottom: 16px;
 }
-
 #manyReadTitle h2 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   font-size: 22px;
@@ -702,12 +704,10 @@ header {
   height: 100%;
   border-radius: 5px;
 }
-
 .myBookImg a {
   width: 100%;
   height: 100%;
 }
-
 .myBookImg a img {
   width: 100%;
   height: 100%;
@@ -729,7 +729,6 @@ header {
   height: 100%;
   padding-top: 20px;
 }
-
 .myBookText h4 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
@@ -737,21 +736,19 @@ header {
 #newRead {
   width: 1170px;
   margin: 0 auto;
-  border: 1px solid gold;
   height: 403px;
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 40px;
+  position: relative;
 }
 
 #newTitle {
   width: 1110px;
   height: 48px;
-  border: 1px solid darkorange;
   padding-top: 6px;
   padding-bottom: 16px;
 }
-
 #newTitle h2 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   font-size: 22px;
@@ -761,31 +758,31 @@ header {
 #newBook {
   width: 1110px;
   height: 355px;
-  border: 1px solid darkturquoise;
-  display: flex;
   overflow: hidden;
+}
+
+#nBook {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .newBookBox {
   width: 180px;
   height: 100%;
-  border: 1px solid red;
-  margin-right: 5.5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
 }
 
 .newBookImg {
   width: 180px;
   height: 261px;
-  border: 1px solid blue;
   border-radius: 5px;
-  background-color: #1E9EFF;
 }
-
 .newBookImg a {
   width: 100%;
   height: 100%;
 }
-
 .newBookImg a img {
   width: 100%;
   height: 100%;
@@ -795,10 +792,8 @@ header {
 .newBookText {
   width: 180px;
   height: 84px;
-  border: 1px solid green;
   margin-top: 8px;
 }
-
 .newBookText h4 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
@@ -820,7 +815,6 @@ header {
   padding-bottom: 16px;
   height: 48px;
 }
-
 #bestTitle h2 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   font-size: 22px;
@@ -863,12 +857,10 @@ header {
   height: 100%;
   border-radius: 5px;
 }
-
 .bsBookImg a {
   width: 100%;
   height: 100%;
 }
-
 .bsBookImg a img {
   width: 100%;
   height: 100%;
@@ -890,7 +882,6 @@ header {
   height: 100%;
   padding-top: 20px;
 }
-
 .bsBookText h4 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
@@ -910,7 +901,6 @@ header {
   padding-top: 6px;
   padding-bottom: 16px;
 }
-
 #recommendTitle h2 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   font-size: 22px;
@@ -940,7 +930,6 @@ header {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-
 .recoCate span {
   width: 100%;
   line-height: 27px;
@@ -982,12 +971,10 @@ header {
   height: 261px;
   border-radius: 5px;
 }
-
 .rocoBooksImg a {
   width: 100%;
   height: 100%;
 }
-
 .rocoBooksImg a img {
   width: 100%;
   height: 100%;
@@ -999,7 +986,6 @@ header {
   height: 84px;
   margin-top: 8px;
 }
-
 .recoBooksText h4 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
@@ -1010,12 +996,10 @@ header {
   background-color: #ffffff;
   padding-top: 100px;
 }
-
 #footerbox hr {
   width: 100%;
   border: 0.5px solid #f0f0f0;
 }
-
 #footerbox footer {
   width: 1170px;
   margin: 0 auto;
@@ -1041,14 +1025,12 @@ header {
   display: flex;
   flex-direction: row;
 }
-
 #footerMenu ul {
   margin-right: 60px;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 #footerMenu .f2 {
   justify-content: space-between;
 }
@@ -1056,7 +1038,6 @@ header {
 .recruit {
   position: relative;
 }
-
 .recruit div {
   width: 15px;
   height: 15px;
@@ -1066,7 +1047,6 @@ header {
   position: absolute;
   margin-left: 5px;
 }
-
 .recruit div h3 {
   color: #fff;
   font-size: 5px;
@@ -1089,7 +1069,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
 #footerRight a {
   width: 44px;
   height: 44px;
@@ -1097,7 +1076,6 @@ header {
   border: 1px solid #e6e6e6;
   position: relative;
 }
-
 #footerRight a svg {
   width: 35%;
   height: 35%;

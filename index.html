@@ -8,8 +8,6 @@
     <title>도서 추천 - 리디</title>
     <link rel="icon" href="img/favicon.png">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <meta property="og:image" content="{{url_fot('img', filename='thumbnail.jpg')}}">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -70,17 +68,21 @@
         </div>
     </div>
     <div id="slide">
+
+        <div class="prev slideprev">&lt;</div>
+        <div class="next slidenext">&gt;</div>
+
         <div id="slideImgBox">
-            <div class="slideIB s1"><a href="#">1</a></div>
-            <div class="slideIB s2"><a href="#">2</a></div>
-            <div class="slideIB s3"><a href="#">3</a></div>
-            <div class="slideIB s4"><a href="#">4</a></div>
-            <div class="slideIB s5"><a href="#">5</a></div>
-            <div class="slideIB s6"><a href="#">6</a></div>
-            <div class="slideIB s7"><a href="#">7</a></div>
-            <div class="slideIB s8"><a href="#">8</a></div>
-            <div class="slideIB s9"><a href="#">9</a></div>
-            <div class="slideIB s10"><a href="#">10</a></div>
+            <div class="slideIB s1"><a href="#"></a></div>
+            <div class="slideIB s2"><a href="#"></a></div>
+            <div class="slideIB s3"><a href="#"></a></div>
+            <div class="slideIB s4"><a href="#"></a></div>
+            <div class="slideIB s5"><a href="#"></a></div>
+            <div class="slideIB s6"><a href="#"></a></div>
+            <div class="slideIB s7"><a href="#"></a></div>
+            <div class="slideIB s8"><a href="#"></a></div>
+            <div class="slideIB s9"><a href="#"></a></div>
+            <div class="slideIB s10"><a href="#"></a></div>
         </div>
 
         <!-- 메인 홍보 slide -->
@@ -137,8 +139,8 @@
 
     <div id="today">
 
-        <div class="prev">&lt;</div>
-        <div class="next">&gt;</div>
+        <div class="prev tdprev">&lt;</div>
+        <div class="next tdnext">&gt;</div>
 
 
         <div id="todayHeader">
@@ -146,84 +148,85 @@
         </div>
         <div id="todayBook">
 
-            <a href="#" class="tb">
-                <div class="tdb">
-                    <div class="tdb_bgimg">
-                        <div class="todayBg"></div>
-                        <div class="tdimg"></div>
+            <div id="todayB">
+                <a href="#" class="tb">
+                    <div class="tdb">
+                        <div class="tdb_bgimg">
+                            <div class="todayBg purple"></div>
+                            <div class="tdimg"></div>
+                        </div>
+                        <div class="tdtext"></div>
                     </div>
-                    <div class="tdtext"></div>
-                </div>
-            </a>
-
-            <a href="#" class="tb">
-                <div class="tdb">
-                    <div class="tdb_bgimg">
-                        <div class="todayBg"></div>
-                        <div class="tdimg"></div>
+                </a>
+    
+                <a href="#" class="tb">
+                    <div class="tdb">
+                        <div class="tdb_bgimg">
+                            <div class="todayBg lightblue"></div>
+                            <div class="tdimg"></div>
+                        </div>
+                        <div class="tdtext"></div>
                     </div>
-                    <div class="tdtext"></div>
-                </div>
-            </a>
-
-            <a href="#" class="tb">
-                <div class="tdb">
-                    <div class="tdb_bgimg">
-                        <div class="todayBg"></div>
-                        <div class="tdimg"></div>
+                </a>
+    
+                <a href="#" class="tb">
+                    <div class="tdb">
+                        <div class="tdb_bgimg">
+                            <div class="todayBg darkred"></div>
+                            <div class="tdimg"></div>
+                        </div>
+                        <div class="tdtext"></div>
                     </div>
-                    <div class="tdtext"></div>
-                </div>
-            </a>
-
-            <a href="#" class="tb">
-                <div class="tdb">
-                    <div class="tdb_bgimg">
-                        <div class="todayBg"></div>
-                        <div class="tdimg"></div>
+                </a>
+    
+                <a href="#" class="tb">
+                    <div class="tdb">
+                        <div class="tdb_bgimg">
+                            <div class="todayBg darkblue"></div>
+                            <div class="tdimg"></div>
+                        </div>
+                        <div class="tdtext"></div>
                     </div>
-                    <div class="tdtext"></div>
-                </div>
-            </a>
-
-            <a href="#" class="tb">
-                <div class="tdb">
-                    <div class="tdb_bgimg">
-                        <div class="todayBg"></div>
-                        <div class="tdimg"></div>
+                </a>
+    
+                <a href="#" class="tb">
+                    <div class="tdb">
+                        <div class="tdb_bgimg">
+                            <div class="todayBg pink"></div>
+                            <div class="tdimg"></div>
+                        </div>
+                        <div class="tdtext"></div>
                     </div>
-                    <div class="tdtext"></div>
-                </div>
-            </a>
-
-            <a href="#" class="tb">
-                <div class="tdb">
-                    <div class="tdb_bgimg">
-                        <div class="todayBg"></div>
-                        <div class="tdimg"></div>
+                </a>
+    
+                <a href="#" class="tb">
+                    <div class="tdb">
+                        <div class="tdb_bgimg">
+                            <div class="todayBg navy"></div>
+                            <div class="tdimg"></div>
+                        </div>
+                        <div class="tdtext"></div>
                     </div>
-                    <div class="tdtext"></div>
-                </div>
-            </a>
-
-            <a href="#" class="tb">
-                <div class="tdb">
-                    <div class="tdb_bgimg">
-                        <div class="todayBg"></div>
-                        <div class="tdimg"></div>
+                </a>
+    
+                <a href="#" class="tb">
+                    <div class="tdb">
+                        <div class="tdb_bgimg">
+                            <div class="todayBg green"></div>
+                            <div class="tdimg"></div>
+                        </div>
+                        <div class="tdtext"></div>
                     </div>
-                    <div class="tdtext"></div>
-                </div>
-            </a>
+                </a>
+            </div>
 
         </div>
     </div>
 
     <!-- 오늘 책정보 ajax 가져오기 / 슬라이드 -->
     <script src="js/today_ajax.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- 오늘 책정보 slide -->
+    <script src="js/today_slide.js"></script>
 
     <div id="manyRead">
 
@@ -387,168 +390,190 @@
     <script src="js/manybook_slide.js"></script>
 
     <div id="newRead">
+
+        <div class="prev newprev">&lt;</div>
+        <div class="next newnext">&gt;</div>
+
         <div id="newTitle">
             <h2>새로 나온 책 &gt;</h2>
         </div>
         <div id="newBook">
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+            <div id="nBook">
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="newBookBox">
-                <div class="newBookImg">
-                    <a href="#"></a>
-                </div>
-                <div class="newBookText">
-                    <a href="#"></a>
+                <div class="newBookBox">
+                    <div class="newBookImg">
+                        <a href="#"></a>
+                    </div>
+                    <div class="newBookText">
+                        <a href="#"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -556,6 +581,8 @@
 
     <!-- 신상 책 ajax -->
     <script src="js/newread_ajax.js"></script>
+    <!-- 신상 책 slide -->
+    <script src="js/newread_slide.js"></script>
 
     <div id="bestseller">
 

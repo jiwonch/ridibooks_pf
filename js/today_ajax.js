@@ -20,12 +20,3 @@ $.ajax({
         }
     });
 
-//  slide
-
-$('#todayBook').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '#todayBook',
-    dots: true,
-    focusOnSelect: true
-  });
