@@ -1154,7 +1154,6 @@ header {
 
     & footer {
         @include width;
-        border: 1px solid khaki;
         height: 374px;
         padding: 0 26px 0 0;
         padding-top: 41px;
@@ -1170,16 +1169,19 @@ header {
 
 #footerLeft {
     @include footerWidth;
-    width: 958px;
+    width: 930px;
 }
 
 #footerMenu {
-    width: 950px;
+    width: 930px;
     height: 164px;
-    background-color: gold;
-    padding-left: 50px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
+
+    & a{
+        text-decoration: none;
+    }
 
     & ul {
         margin-right: 95px;
@@ -1194,13 +1196,24 @@ header {
         }
 
         & li a:hover{
-            color: #ccc;
+            color: #bbb;
+
+            & i span{
+                color: #bbb;
+            }
         }
     }
 
     & .f1 li{
         font-weight: bold;
         padding-bottom: 17px;
+
+        & a i span{
+            font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            font-size: 14px;
+            color: #666;
+            font-weight: bold;
+        }
     }
 
     & .f2 {
@@ -1268,22 +1281,23 @@ header {
         background-color: #1E9EFF;
         display: inline-block;
         position: absolute;
+        margin-top: 3.5px;
         margin-left: 5px;
-
-        & h3 {
-            color: #fff;
-            font-size: 5px;
-            line-height: 20px;
-            text-align: center;
-        }
+        text-align: center;
+        font-size: 5px;
+        font-weight: bold;
+        line-height: 15px;
+        padding-top: 2px;
+        color: #fff;
     }
 }
 
 #footerCopyright {
-    width: 950px;
+    width: 930px;
     height: 69px;
     margin-top: 60px;
     margin-bottom: 20px;
+    padding-left: 20px;
 
     & h5 {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
@@ -1319,9 +1333,10 @@ header {
 
 #footerRight {
     @include footerWidth;
-    width: 160px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
+    padding-left: 50px;
 
     & a {
         width: 44px;

@@ -1080,7 +1080,6 @@ header {
 #footerbox footer {
   width: 1170px;
   margin: 0 auto;
-  border: 1px solid khaki;
   height: 374px;
   padding: 0 26px 0 0;
   padding-top: 41px;
@@ -1091,16 +1090,18 @@ header {
 #footerLeft {
   height: 313px;
   padding: 0 4px;
-  width: 958px;
+  width: 930px;
 }
 
 #footerMenu {
-  width: 950px;
+  width: 930px;
   height: 164px;
-  background-color: gold;
-  padding-left: 50px;
+  padding-left: 20px;
   display: flex;
   flex-direction: row;
+}
+#footerMenu a {
+  text-decoration: none;
 }
 #footerMenu ul {
   margin-right: 95px;
@@ -1114,11 +1115,20 @@ header {
   color: #666;
 }
 #footerMenu ul li a:hover {
-  color: #ccc;
+  color: #bbb;
+}
+#footerMenu ul li a:hover i span {
+  color: #bbb;
 }
 #footerMenu .f1 li {
   font-weight: bold;
   padding-bottom: 17px;
+}
+#footerMenu .f1 li a i span {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
 }
 #footerMenu .f2 {
   justify-content: space-between;
@@ -1167,20 +1177,22 @@ header {
   background-color: #1E9EFF;
   display: inline-block;
   position: absolute;
+  margin-top: 3.5px;
   margin-left: 5px;
-}
-.recruit div h3 {
-  color: #fff;
-  font-size: 5px;
-  line-height: 20px;
   text-align: center;
+  font-size: 5px;
+  font-weight: bold;
+  line-height: 15px;
+  padding-top: 2px;
+  color: #fff;
 }
 
 #footerCopyright {
-  width: 950px;
+  width: 930px;
   height: 69px;
   margin-top: 60px;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 #footerCopyright h5 {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
@@ -1212,9 +1224,10 @@ header {
 #footerRight {
   height: 313px;
   padding: 0 4px;
-  width: 160px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
+  padding-left: 50px;
 }
 #footerRight a {
   width: 44px;
