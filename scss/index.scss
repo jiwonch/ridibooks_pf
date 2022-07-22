@@ -48,8 +48,8 @@ ol {
 }
 
 a {
-    text-decoration: none;
-    color: #333;
+    text-decoration: none !important;
+    color: #333 !important;
 }
 
 table {
@@ -388,7 +388,6 @@ header {
 
 #slide {
     @include width;
-    border: 1px solid skyblue;
     height: 400px;
     position: relative;
 }
@@ -401,7 +400,6 @@ header {
     width: 1110px;
     margin: 0 auto;
     height: 100%;
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -421,7 +419,6 @@ header {
 }
 
 .s1 {
-    background-color: #1E9EFF;
     background-image: url(../img/index/slide1.jpg);
     background-position: center;
     flex-grow: 1;
@@ -429,7 +426,6 @@ header {
 }
 
 .s2 {
-    background-color: gold;
     background-image: url(../img/index/slide2.jpg);
     background-position: center;
     flex-grow: 0;
@@ -437,7 +433,6 @@ header {
 }
 
 .s3 {
-    background-color: yellowgreen;
     background-image: url(../img/index/slide3.jpg);
     background-position: center;
     flex-grow: 0;
@@ -445,43 +440,36 @@ header {
 }
 
 .s4 {
-    background-color: purple;
     background-image: url(../img/index/slide4.jpg);
     background-position: center;
 }
 
 .s5 {
-    background-color: indianred;
     background-image: url(../img/index/slide5.jpg);
     background-position: center;
 }
 
 .s6 {
-    background-color: darkcyan;
     background-image: url(../img/index/slide6.jpg);
     background-position: center;
 }
 
 .s7 {
-    background-color: darkorange;
     background-image: url(../img/index/slide7.jpg);
     background-position: center;
 }
 
 .s8 {
-    background-color: darkturquoise;
     background-image: url(../img/index/slide8.jpg);
     background-position: center;
 }
 
 .s9 {
-    background-color: deeppink;
     background-image: url(../img/index/slide9.jpg);
     background-position: center;
 }
 
 .s10 {
-    background-color: lightgreen;
     background-image: url(../img/index/slide10.jpg);
     background-position: center;
 }
@@ -573,6 +561,14 @@ header {
     box-shadow: 1px 1px 4px 1px rgba(230, 230, 230, 0.5);
 }
 
+.tdprev {
+    top: 50%;
+}
+
+.tdnext {
+    top: 50%;
+}
+
 #todayHeader {
     width: 1110px;
     margin: 0 auto;
@@ -591,8 +587,7 @@ header {
     height: 226px;
     display: flex;
     overflow: hidden;
-
-
+    margin-top: 20px;
 }
 
 #todayB {
@@ -673,7 +668,7 @@ header {
 
 .tdtext {
     margin-top: 4px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 4px;
     padding-left: 40px;
     padding-right: 40px;
@@ -681,13 +676,14 @@ header {
     & h4 {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         text-align: center;
+        font-size: 16px;
     }
 
     & p {
-        padding-top: 7px;
+        margin-top: 0px;
         text-align: center;
         color: #777;
-        font-size: 14px;
+        font-size: 15px;
 
     }
 }
@@ -720,6 +716,7 @@ header {
     height: 360px;
     display: flex;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .manybook {
@@ -782,6 +779,8 @@ header {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 16px;
         color: #333;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     & p {
@@ -790,9 +789,10 @@ header {
         color: #555;
         padding-top: 5px;
         cursor: pointer;
+        margin-bottom: 0;
     }
 
-    & p:hover{
+    & p:hover {
         color: #ccc;
     }
 }
@@ -847,6 +847,7 @@ header {
 }
 
 #newBook {
+    margin-top: 20px;
     width: 1110px;
     height: 355px;
     overflow: hidden;
@@ -890,22 +891,24 @@ header {
     & h4 {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 16px;
+        margin-bottom: 0;
     }
 
-    & p{
+    & p {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 14px;
         color: #787878;
-        margin-top: 5px;
+        margin-top: 0px;
         cursor: pointer;
+        margin-bottom: 0;
     }
 
-    & p:hover{
+    & p:hover {
         color: #ccc;
     }
 }
 
-.gray{
+.gray {
     margin-right: 1px !important;
     color: #bbb !important;
     font-size: 12.5px !important;
@@ -939,6 +942,7 @@ header {
     height: 360px;
     display: flex;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .bestsellerbook {
@@ -1002,17 +1006,19 @@ header {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 16px;
         color: #333;
+        margin-bottom: 0;
     }
 
-    & p{
+    & p {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 13px;
         padding-top: 5px;
         color: #555;
         cursor: pointer;
+        margin-bottom: 0;
     }
 
-    & p:hover{
+    & p:hover {
         color: #ccc;
     }
 }
@@ -1040,7 +1046,7 @@ header {
 
 #recommendBook {
     width: 1110px;
-    height: 762px;
+    height: 900px;
 }
 
 #recommendCategory {
@@ -1048,6 +1054,7 @@ header {
     height: 40px;
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .recoCate {
@@ -1092,7 +1099,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 .recoBooks {
@@ -1128,15 +1135,16 @@ header {
         font-size: 16px;
     }
 
-    & p{
+    & p {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 13px;
         color: #555;
-        padding-top: 5px;
+        margin-top: 4px !important;
+        margin-bottom: 0px;
         cursor: pointer;
     }
 
-    & p:hover{
+    & p:hover {
         color: #ccc;
     }
 }
@@ -1180,7 +1188,7 @@ header {
     display: flex;
     flex-direction: row;
 
-    & a{
+    & a {
         text-decoration: none;
     }
 
@@ -1190,26 +1198,26 @@ header {
         display: flex;
         flex-direction: column;
 
-        & li a{
+        & li a {
             font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
             font-size: 14px;
             color: #666;
         }
 
-        & li a:hover{
-            color: #bbb;
+        & li a:hover {
+            color: #bbb !important;
 
-            & i span{
+            & i span {
                 color: #bbb;
             }
         }
     }
 
-    & .f1 li{
+    & .f1 li {
         font-weight: bold;
         padding-bottom: 17px;
 
-        & a i span{
+        & a i span {
             font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
             font-size: 14px;
             color: #666;
@@ -1220,53 +1228,55 @@ header {
     & .f2 {
         justify-content: space-between;
 
-        & li:nth-child(1){
+        & li:nth-child(1) {
             font-weight: bold;
         }
 
-        & li:nth-child(1) a{
+        & li:nth-child(1) a {
             cursor: default;
         }
 
-        & li:nth-child(1) a:hover{
-            color: #666;
+        & li:nth-child(1) a:hover {
+            color: #bbb !important;
         }
     }
 
     & .f3 {
 
-        & li{
+        & li {
             margin-bottom: 6px;
         }
-        & li:nth-child(1){
+
+        & li:nth-child(1) {
             font-weight: bold;
         }
 
-        & li:nth-child(1) a{
+        & li:nth-child(1) a {
             cursor: default;
         }
 
-        & li:nth-child(1) a:hover{
-            color: #666;
+        & li:nth-child(1) a:hover {
+            color: #bbb !important;
         }
-        
+
     }
 
     & .f4 {
 
-        & li{
+        & li {
             margin-bottom: 6px;
         }
-        & li:nth-child(1){
+
+        & li:nth-child(1) {
             font-weight: bold;
         }
 
-        & li:nth-child(1) a{
+        & li:nth-child(1) a {
             cursor: default;
         }
 
-        & li:nth-child(1) a:hover{
-            color: #666;
+        & li:nth-child(1) a:hover {
+            color: #bbb !important;
         }
     }
 
@@ -1308,23 +1318,23 @@ header {
         margin-bottom: 10px;
     }
 
-    & ul{
+    & ul {
         display: flex;
         margin-bottom: 12px;
     }
 
-    & ul li{
+    & ul li {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 12px;
         color: #555;
         margin-right: 8px;
     }
 
-    & ul li:nth-child(3){
+    & ul li:nth-child(3) {
         font-weight: bold;
     }
 
-    & h6{
+    & h6 {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
         font-size: 13px;
         color: #555;
@@ -1359,4 +1369,3 @@ header {
         }
     }
 }
-

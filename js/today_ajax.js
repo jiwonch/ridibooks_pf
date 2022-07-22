@@ -8,12 +8,12 @@ $.ajax({
 
         for (var i = 0; i < 10; i++) {
             $(".tdimg").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".tdtext").eq(i).append("<h4>" + msg.documents[i].contents.substring(0,37) + "</h4>");
+            $(".tdtext").eq(i).append("<h4>" + msg.documents[i].contents.substring(0, 37) + "</h4>");
             // $(".tdtext").eq(i).append("<h4>" + msg.documents[i].title.substring(0,15) + "</h4>");
             $(".tdtext").eq(i).append("<p>" + msg.documents[i].authors[0] + "</p>");
             var content = msg.documents[i].contents;
 
-            if(content.length> 30){
+            if (content.length > 30) {
                 $(".tdtext h4").eq(i).append("...");
             }
 

@@ -3,15 +3,15 @@ $(document).ready(function () {
 
     function prev() {
         if (index == 0) {
-            $('#nBook').stop().animate({ marginLeft: -1110});
+            $('#nBook').stop().animate({ marginLeft: -1110 });
             $('.newprev').fadeIn(300);
             index++;
-        } else if (index == 1){
-            $('#nBook').stop().animate({ marginLeft: -1110*2});
+        } else if (index == 1) {
+            $('#nBook').stop().animate({ marginLeft: -1110 * 2 });
             $('.newprev').fadeIn(300);
             index++;
         } else if (index == 2) {
-            $('#nBook').stop().animate({ marginLeft: -1110*2-740 });
+            $('#nBook').stop().animate({ marginLeft: -1110 * 2 - 740 });
             $('.newnext').fadeOut(300);
         }
     }
@@ -21,7 +21,7 @@ $(document).ready(function () {
             $('#nBook').stop().animate({ marginLeft: -1850 });
             $('.newnext').fadeIn(300);
             index--;
-        } else if(index == 1){
+        } else if (index == 1) {
             $('#nBook').stop().animate({ marginLeft: -740 });
             index--;
         } else if (index == 0) {

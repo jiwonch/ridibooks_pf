@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.rc1').addClass('reco_blue');
     $('#reco2').hide();
     $('#reco3').hide();
@@ -6,7 +6,7 @@ $(document).ready(function(){
     $('#reco5').hide();
     $('#reco6').hide();
 
-    $('.rc1').click(function(){
+    $('.rc1').click(function () {
         $('.rc1').addClass('reco_blue');
         $('.rc2').removeClass('reco_blue');
         $('.rc3').removeClass('reco_blue');
@@ -21,7 +21,7 @@ $(document).ready(function(){
         $('#reco6').hide();
     });
 
-    $('.rc2').click(function(){
+    $('.rc2').click(function () {
         $('.rc2').addClass('reco_blue');
         $('.rc1').removeClass('reco_blue');
         $('.rc3').removeClass('reco_blue');
@@ -36,7 +36,7 @@ $(document).ready(function(){
         $('#reco6').hide();
     });
 
-    $('.rc3').click(function(){
+    $('.rc3').click(function () {
         $('.rc3').addClass('reco_blue');
         $('.rc1').removeClass('reco_blue');
         $('.rc2').removeClass('reco_blue');
@@ -51,7 +51,7 @@ $(document).ready(function(){
         $('#reco6').hide();
     });
 
-    $('.rc4').click(function(){
+    $('.rc4').click(function () {
         $('.rc4').addClass('reco_blue');
         $('.rc1').removeClass('reco_blue');
         $('.rc2').removeClass('reco_blue');
@@ -66,7 +66,7 @@ $(document).ready(function(){
         $('#reco6').hide();
     });
 
-    $('.rc5').click(function(){
+    $('.rc5').click(function () {
         $('.rc5').addClass('reco_blue');
         $('.rc1').removeClass('reco_blue');
         $('.rc2').removeClass('reco_blue');
@@ -81,7 +81,7 @@ $(document).ready(function(){
         $('#reco6').hide();
     });
 
-    $('.rc6').click(function(){
+    $('.rc6').click(function () {
         $('.rc6').addClass('reco_blue');
         $('.rc1').removeClass('reco_blue');
         $('.rc2').removeClass('reco_blue');

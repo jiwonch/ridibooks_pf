@@ -9,11 +9,11 @@ $.ajax({
 
         for (var i = 0; i < 13; i++) {
             $(".rbi1 a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".rbt1 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,14) + "</h4>");
+            $(".rbt1 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0, 14) + "</h4>");
             $(".rbt1 p").eq(i).append(msg.documents[i].authors[0]);
             var title = msg.documents[i].title;
 
-            if(title.length> 14){
+            if (title.length > 14) {
                 $(".rbt1 a h4").eq(i).append("...");
             }
 
@@ -31,11 +31,11 @@ $.ajax({
 
         for (var i = 0; i < 13; i++) {
             $(".rbi2 a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".rbt2 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,14) + "</h4>");
+            $(".rbt2 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0, 14) + "</h4>");
             $(".rbt2 p").eq(i).append(msg.documents[i].authors[0]);
             var title = msg.documents[i].title;
 
-            if(title.length> 14){
+            if (title.length > 14) {
                 $(".rbt2 a h4").eq(i).append("...");
             }
 
@@ -53,11 +53,11 @@ $.ajax({
 
         for (var i = 0; i < 13; i++) {
             $(".rbi3 a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".rbt3 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,14) + "</h4>");
+            $(".rbt3 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0, 14) + "</h4>");
             $(".rbt3 p").eq(i).append(msg.documents[i].authors[0]);
             var title = msg.documents[i].title;
 
-            if(title.length> 14){
+            if (title.length > 14) {
                 $(".rbt3 a h4").eq(i).append("...");
             }
 
@@ -75,11 +75,11 @@ $.ajax({
 
         for (var i = 0; i < 13; i++) {
             $(".rbi4 a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".rbt4 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,13) + "</h4>");
+            $(".rbt4 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0, 13) + "</h4>");
             $(".rbt4 p").eq(i).append(msg.documents[i].authors[0]);
             var title = msg.documents[i].title;
 
-            if(title.length> 13){
+            if (title.length > 13) {
                 $(".rbt4 a h4").eq(i).append("...");
             }
 
@@ -97,11 +97,11 @@ $.ajax({
 
         for (var i = 0; i < 13; i++) {
             $(".rbi5 a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".rbt5 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,14) + "</h4>");
+            $(".rbt5 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0, 14) + "</h4>");
             $(".rbt5 p").eq(i).append(msg.documents[i].authors[0]);
             var title = msg.documents[i].title;
 
-            if(title.length> 14){
+            if (title.length > 14) {
                 $(".rbt5 a h4").eq(i).append("...");
             }
 
@@ -119,11 +119,11 @@ $.ajax({
 
         for (var i = 0; i < 13; i++) {
             $(".rbi6 a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
-            $(".rbt6 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0,12) + "</h4>");
+            $(".rbt6 a").eq(i).append("<h4>" + msg.documents[i].title.substring(0, 12) + "</h4>");
             $(".rbt6 p").eq(i).append(msg.documents[i].authors[0]);
             var title = msg.documents[i].title;
 
-            if(title.length> 12){
+            if (title.length > 12) {
                 $(".rbt6 a h4").eq(i).append("...");
             }
 
