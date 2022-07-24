@@ -218,6 +218,7 @@ header {
 #searchInput {
     width: 260px;
     height: 40px;
+    position: relative;
 
     & input {
         width: 100%;
@@ -236,6 +237,13 @@ header {
     & input:focus {
         outline: none;
         line-height: 40px;
+    }
+
+    & img{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 0;
     }
 }
 
@@ -370,7 +378,7 @@ header {
 
         & a {
             text-align: center;
-            color: white;
+            color: white !important;
             font-family: 'OTWelcomeRA';
             font-weight: bold;
             line-height: 27px;
@@ -1149,6 +1157,74 @@ header {
     }
 }
 
+.newBookImg{
+    position: relative;
+
+    & .discount{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #db3232;
+        color: white;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 5px 0 5px;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 2px;
+        font-size: 13px;
+    }
+
+    & .rent{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(120, 120, 120);
+        color: white;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 5px 0 5px;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 2px;
+        font-size: 13px;
+    }
+}
+
+.rocoBooksImg{
+    position: relative;
+
+    & .discount{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #db3232;
+        color: white;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 5px 0 5px;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 2px;
+        font-size: 13px;
+    }
+
+    & .rent{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(120, 120, 120);
+        color: white;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 5px 0 5px;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 2px;
+        font-size: 13px;
+    }
+}
+
 #footerbox {
     width: 100%;
     height: auto;
@@ -1369,3 +1445,4 @@ header {
         }
     }
 }
+

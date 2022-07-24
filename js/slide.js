@@ -35,7 +35,7 @@ function next() {
     });
 }
 
-setInterval(next, 5000);
+setInterval(next, 9000);
 
 $(".slideprev").on("click", function () {
     prev();
