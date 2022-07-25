@@ -19,31 +19,31 @@
 
 <body>
     <!-- header -->
-    <div class="top"><a href="#"><img src="img/arrowup.png" alt="top"></a></div>
+    <!-- <div class="top"><a href="index.html"><img src="img/arrowup.png" alt="top"></a></div> -->
     <div id="topMenu">
         <div id="top">
             <div class="tmenu">
                 <ul>
-                    <li class="webtoon"><a href="#">웹툰/만화</a></li>
-                    <li class="web"><a href="#">웹소설</a></li>
-                    <li class="book"><a href="#">도서</a></li>
-                    <li><a href="#">셀렉트 &gt;</a></li>
+                    <li class="webtoon"><a href="index.html">웹툰/만화</a></li>
+                    <li class="web"><a href="index.html">웹소설</a></li>
+                    <li class="book"><a href="index.html">도서</a></li>
+                    <li><a href="index.html">셀렉트 &gt;</a></li>
                 </ul>
-                
+
             </div>
             <div class="topMember">
                 <ul>
-                    <li class="member"><a href="#">회원가입</a></li>
-                    <li><a href="#">로그인</a></li>
+                    <li class="member"><a href="index.html">회원가입</a></li>
+                    <li><a href="index.html">로그인</a></li>
                 </ul>
-                
+
             </div>
         </div>
     </div>
     <div id="headerBox">
         <header>
             <div id="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/logo_ridi.svg" alt="logo">
                     <img src="img/logo_books.svg" alt="logo">
                 </a>
@@ -53,10 +53,10 @@
                 <img src="img/sarch.png" alt="search">
             </div>
             <div id="menuIcon">
-                <a href="#"><img src="img/index/icon/notify.png" alt="icon" class="notify"></a>
-                <a href="#"><img src="img/index/icon/cart.png" alt="icon" class="cart"></a>
-                <a href="#"><img src="img/index/icon/book.png" alt="icon" class="book"></a>
-                <a href="#"><img src="img/index/icon/user.png" alt="icon" class="user"></a>
+                <a href="index.html"><img src="img/index/icon/notify.png" alt="icon" class="notify"></a>
+                <a href="index.html"><img src="img/index/icon/cart.png" alt="icon" class="cart"></a>
+                <a href="index.html"><img src="img/index/icon/book.png" alt="icon" class="book"></a>
+                <a href="index.html"><img src="img/index/icon/user.png" alt="icon" class="user"></a>
             </div>
         </header>
     </div>
@@ -73,8 +73,6 @@
                     </div>
                 </div>
 
-                <!-- ajax로 책 썸네일 가져오기 -->
-                <script src="js/book.js"></script>
                 <div class="thum_title"></div>
                 <hr>
                 <div class="thum_detail"></div>
@@ -101,6 +99,91 @@
             <!-- 리뷰 -->
             <div id="sub_review">
                 <h3>리뷰</h3>
+                <div class="writeBox">
+                    <div class="starbox">
+                        <h4>구매자 별점</h4>
+                        <span>4.6</span>
+                    </div>
+                    <div class="write">
+                        <p>이 책을 평가해주세요!</p>
+
+                        <div class="writeStar">
+                            <span class="star star_1">★</span>
+                            <span class="star star_2">★</span>
+                            <span class="star star_3">★</span>
+                            <span class="star star_4">★</span>
+                            <span class="star star_5">★</span>
+                        </div>
+
+                        <textarea name="review" id="text_review" cols="62" rows="4" placeholder="리뷰 작성 시 광고 및 욕설, 비속어나 타인을 비방하는 문구를 사용하시면 비공개될 수 있습니다."></textarea>
+                        
+                        <div id="subjectBox">
+                            <div class="review_notice">
+                                <i class="material-icons">warning</i>
+                                리뷰 작성 유의사항
+                            </div>
+                            <div class="subject">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="check" id="check">
+                                    <span>스포일러가 있습니다.</span>
+                                </div>
+                                <div class="reviewSubject_Btn">
+                                    리뷰 남기기
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="noticeBox">
+                            <p>건전한 리뷰 정착 및 양질의 리뷰를 위해 아래 해당하는 리뷰는 비공개 조칠될 수 있음을 안내드립니다.</p>
+
+                            <ul>
+                                <li>1.타인에게 불쾌감을 주는 욕설</li>
+                                <li>2.비속어나 타인을 비방하는 내용</li>
+                                <li>3.특정 종교, 민족, 계층을 비방하는 내용</li>
+                                <li>4.해당 도서의 줄거리나 리디 서비스 이용과 관련이 없는 내용</li>
+                                <li>5.의미를 알 수 없는 내용</li>
+                                <li>6.광고 및 반복적인 글을 게시하여 서비스 품질을 떨어트리는 내용</li>
+                                <li>7.저작권상 문제의 소지가 있는 내용</li>
+                                <li>8.다른 리뷰에 대한 반박이나 논쟁을 유발하는 내용</li>
+                                <li>*결말을 예상할 수 있는 리뷰는 자제하여 주시기 바랍니다.</li>
+                            </ul>
+
+                            <p>이 외에도 건전한 리뷰 문화 형성을 위한 운영 목적과 취지에 맞지 않는 내용은 담당자에 의해 리뷰가 비공개 처리가 될 수 있습니다.</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+                <div id="purchase_review">
+                    <div class="purchaseNav">
+                        <ul class="pN1">
+                            <li class="pn1_1">구매자 8</li>
+                            <li class="pn1_2">전체 8</li>
+                        </ul>
+
+                        <ul class="pN2">
+                            <li class="pn2_1">최신순</li>
+                            <li>|</li>
+                            <li class="pn2_2">공감순</li>
+                            <li class="pn2_hide">|</li>
+                            <li class="pn2_hide pn2_3">별점 높은순</li>
+                            <li class="pn2_hide">|</li>
+                            <li class="pn2_hide pn2_4">별점 낮은순</li>
+                        </ul>
+                    </div>
+
+                    <div class="purchaseReview">
+                        <div class="prBox"></div>
+                        <div class="prBox"></div>
+                        <div class="prBox"></div>
+                        <div class="prBox"></div>
+                        <div class="prBox"></div>
+                        <div class="prBox"></div>
+                        <div class="prBox"></div>
+                        <div class="prBox"></div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -108,7 +191,7 @@
         <!-- side -->
         <div id="subWrap">
             <div class="sub_book">
-                <a href="#"><img src="img/book/sub_book.webp" alt="book"></a>
+                <a href="index.html"><img src="img/book/sub_book.webp" alt="book"></a>
             </div>
             <div class="sub_bestseller">
                 <h5>한국소설 베스트 셀러</h5>
@@ -167,6 +250,10 @@
     <!-- txt 가져오기 -->
     <script src="js/book_text.js"></script>
 
+    <!-- ajax로 책 썸네일 가져오기 -->
+    <!-- 평점 별 찍기 -->
+    <script src="js/book.js"></script>
+
     <!-- footer -->
     <div id="footerbox">
         <hr>
@@ -175,34 +262,34 @@
                 <div id="footerMenu">
                     <ul class="f1">
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <i class="material-icons" style="font-size:24px">headset_mic</i>
                                 고객센터
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <i class="glyphicon glyphicon-volume-down" style="font-size:24px"><span>공지사항</span></i>
                             </a>
                         </li>
                     </ul>
                     <ul class="f2">
-                        <li><a href="#">서비스</a></li>
-                        <li><a href="#">리디페이퍼</a></li>
-                        <li><a href="#">제휴카드</a></li>
-                        <li><a href="#">뷰어 다운로드</a></li>
-                        <li><a href="#">CP사이트</a></li>
-                        <li><a href="#">리디셀릭트 B2B</a></li>
+                        <li><a href="index.html">서비스</a></li>
+                        <li><a href="index.html">리디페이퍼</a></li>
+                        <li><a href="index.html">제휴카드</a></li>
+                        <li><a href="index.html">뷰어 다운로드</a></li>
+                        <li><a href="index.html">CP사이트</a></li>
+                        <li><a href="index.html">리디셀릭트 B2B</a></li>
                     </ul>
                     <ul class="f3">
-                        <li><a href="#">기타 문의</a></li>
-                        <li><a href="#">콘텐츠 제공 문의</a></li>
-                        <li><a href="#">사업 제휴 문의</a></li>
+                        <li><a href="index.html">기타 문의</a></li>
+                        <li><a href="index.html">콘텐츠 제공 문의</a></li>
+                        <li><a href="index.html">사업 제휴 문의</a></li>
                     </ul>
                     <ul class="f4">
-                        <li><a href="#">회사</a></li>
-                        <li><a href="#">회사 소개</a></li>
-                        <li><a href="#" class="recruit">인재채용 <div>
+                        <li><a href="index.html">회사</a></li>
+                        <li><a href="index.html">회사 소개</a></li>
+                        <li><a href="index.html" class="recruit">인재채용 <div>
                                     N
                                 </div> </a></li>
                     </ul>
@@ -222,14 +309,14 @@
                 </div>
             </div>
             <div id="footerRight">
-                <a href="#">
+                <a href="index.html">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                         <title>facebook</title>
                         <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
                         </path>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="index.html">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                         <title>instagram</title>
                         <path
@@ -243,7 +330,7 @@
                         </path>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="index.html">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                         <title>youtube</title>
                         <path d="M6 4l20 12-20 12z"></path>

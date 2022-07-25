@@ -107,7 +107,7 @@ table {
   cursor: pointer;
 }
 #wrap #mainWrap #main_head .thum_img .boxlook .img_look:hover {
-  background-color: rgba(31, 140, 230, 0.2);
+  background-color: rgba(31, 140, 230, 0.1);
 }
 #wrap #mainWrap #main_head .thum_title {
   width: 500px;
@@ -214,7 +214,7 @@ table {
   width: 100%;
   height: auto;
   border: 1px solid yellowgreen;
-  padding: 0 29px 70px 29px;
+  padding: 0 29px 40px 29px;
 }
 #wrap #mainWrap #author_intro h3 {
   font-size: 20px;
@@ -235,7 +235,7 @@ table {
   width: 100%;
   height: auto;
   border: 1px solid darkorange;
-  padding: 0 29px 70px 29px;
+  padding: 0 29px 40px 29px;
 }
 #wrap #mainWrap #sub_index h3 {
   font-size: 20px;
@@ -267,6 +267,227 @@ table {
   padding-bottom: 8px;
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 25px;
+}
+#wrap #mainWrap #sub_review .writeBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 14px;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox {
+  width: 120px;
+  height: auto;
+  padding: 30px 10px;
+  border: 1px solid lightgreen;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox h4 {
+  text-align: center;
+  color: #666;
+  font-weight: bold;
+  font-size: 13px;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: #333;
+}
+#wrap #mainWrap #sub_review .writeBox .write {
+  width: 615px;
+  height: auto;
+}
+#wrap #mainWrap #sub_review .writeBox .write p {
+  text-align: center;
+  font-size: 19px;
+  color: #888;
+  padding-top: 10px;
+  font-weight: bold;
+}
+#wrap #mainWrap #sub_review .writeBox .write .writeStar {
+  width: 100%;
+  text-align: center;
+}
+#wrap #mainWrap #sub_review .writeBox .write .writeStar .star {
+  font-size: 60px;
+  color: #ddd;
+  cursor: pointer;
+}
+#wrap #mainWrap #sub_review .writeBox .write #text_review {
+  margin-left: 7px;
+  border-radius: 5px;
+  border: 2px solid rgb(199, 198, 198);
+  resize: vertical;
+  padding: 10px;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "SUIT-Medium";
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .review_notice {
+  width: 147px;
+  height: 30px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 15px;
+  line-height: 35px;
+  color: #777;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .review_notice i {
+  color: #777;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .review_notice:hover {
+  background-color: rgba(187, 187, 187, 0.2);
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject {
+  width: 250px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .checkbox {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .checkbox #check {
+  width: 20px;
+  height: 20px;
+  margin-top: -4px;
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .checkbox span {
+  font-size: 15px;
+  margin-left: 4px;
+}
+#wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .reviewSubject_Btn {
+  width: 95px;
+  height: 30px;
+  border: 1px solid rgba(31, 140, 230, 0.8);
+  border-radius: 5px;
+  background-color: rgba(31, 140, 230, 0.6);
+  text-align: center;
+  line-height: 32px;
+  color: white;
+  font-size: 14px;
+}
+#wrap #mainWrap #sub_review .writeBox .write #noticeBox {
+  width: 100%;
+  height: 316px;
+  background-color: #f2f4f5;
+  border-radius: 5px;
+  padding: 16px 25px;
+}
+#wrap #mainWrap #sub_review .writeBox .write #noticeBox p {
+  font-size: 13px;
+  font-family: "NanumBarunGothic";
+  text-align: left;
+  color: #222;
+  font-weight: bold;
+  padding-top: 7px;
+}
+#wrap #mainWrap #sub_review .writeBox .write #noticeBox ul {
+  padding: 10px 0px;
+}
+#wrap #mainWrap #sub_review .writeBox .write #noticeBox ul li {
+  color: #666;
+  font-size: 13px;
+  font-family: "NanumBarunGothic";
+}
+#wrap #mainWrap #sub_review #purchase_review {
+  width: 100%;
+  height: auto;
+  border: 1px solid darkmagenta;
+  margin-top: 40px;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav {
+  width: 100%;
+  height: 37px;
+  border-bottom: 2px solid #d1d5d9;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 {
+  display: flex;
+  width: 50%;
+  height: 37px;
+  align-items: flex-end;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 .hover_line {
+  border-bottom: 2px solid #666;
+  color: #444 !important;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 li {
+  font-size: 16px;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  color: #888 !important;
+  line-height: 45px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 li:hover {
+  border-bottom: 2px solid #666;
+  color: #444 !important;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  height: 37px;
+  align-items: flex-end;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 li {
+  font-size: 14px;
+  padding-right: 10px;
+  width: auto;
+  height: 100%;
+  display: inline-block;
+  color: #888 !important;
+  line-height: 45px;
+  cursor: pointer;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 li:nth-child(2n) {
+  color: #ddd !important;
+  width: 1px;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 li:hover {
+  color: #666 !important;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 .hover_black {
+  color: #444 !important;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseReview {
+  width: 100%;
+  height: auto;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox {
+  width: 100%;
+  height: 93px;
+  padding-top: 14px;
+  border-top: 1px solid #d1d5d9;
+}
+#wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox:nth-child(1) {
+  border-top: none !important;
+}
+#wrap .color_red {
+  color: #e64938 !important;
 }
 #wrap #subWrap {
   width: 207px;

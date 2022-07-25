@@ -117,7 +117,7 @@ table {
                     }
 
                     & .img_look:hover{
-                        background-color: rgba(31, 140, 230, 0.2);
+                        background-color: rgba(31, 140, 230, 0.1);
                     }
                 }
             }
@@ -242,7 +242,7 @@ table {
             width: 100%;
             height: auto;
             border: 1px solid yellowgreen;
-            padding: 0 29px 70px 29px;
+            padding: 0 29px 40px 29px;
 
             & h3{
                 font-size: 20px;
@@ -266,7 +266,7 @@ table {
             width: 100%;
             height: auto;
             border: 1px solid darkorange;
-            padding: 0 29px 70px 29px;
+            padding: 0 29px 40px 29px;
 
             & h3{
                 font-size: 20px;
@@ -302,7 +302,270 @@ table {
                 border-bottom: 2px solid #7d8e9e;
                 margin-bottom: 25px;
             }
+
+            & .writeBox{
+                width: 100%;
+                height: auto;
+                display: flex;
+                padding-top: 14px;
+
+                & .starbox{
+                    width: 120px;
+                    height: auto;
+                    padding: 30px 10px;
+                    border: 1px solid lightgreen;
+
+                    & h4{
+                        text-align: center;
+                        color: #666;
+                        font-weight: bold;
+                        font-size: 13px;
+                    }
+
+                    & span{
+                        display: block;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 35px;
+                        color: #333;
+                    }
+                }
+
+                & .write{
+                    width: 615px;
+                    height: auto;
+
+                    & p{
+                        text-align: center;
+                        font-size: 19px;
+                        color: #888;
+                        padding-top: 10px;
+                        font-weight: bold;
+                    }
+
+                    & .writeStar{
+                        width: 100%;
+                        text-align: center;
+
+                        & .star{
+                            font-size: 60px;
+                            color: #ddd;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    & #text_review{
+                        margin-left: 7px;
+                        border-radius: 5px;
+                        border: 2px solid rgb(199, 198, 198);
+                        resize: vertical;
+                        padding: 10px;
+                        color: #333;
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: 'SUIT-Medium';
+                    }
+
+                    & #subjectBox{
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        justify-content: space-between;
+
+                        & .review_notice{
+                            width: 147px;
+                            height: 30px;
+                            border: 1px solid #bbb;
+                            border-radius: 5px;
+                            text-align: center;
+                            padding-left: 15px;
+                            line-height: 35px;
+                            color: #777;
+                            font-size: 14px;
+                            position: relative;
+                            cursor: pointer;
+
+                            & i{
+                                color: #777;
+                                font-size: 15px;
+                                position: absolute;
+                                top: 50%;
+                                left: 14%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+
+                        & .review_notice:hover{
+                            background-color: rgba(187, 187, 187, 0.2);
+                        }
+
+                        
+                        & .subject{
+                            width: 250px;
+                            height: 30px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            & .checkbox{
+                                height: 100%;
+                                display: flex;
+                                align-items: flex-start;
+
+                                & #check{
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-top: -4px;
+                                }
+
+                                & span{
+                                    font-size: 15px;
+                                    margin-left: 4px;
+                                }
+                                
+                            }
+
+                            & .reviewSubject_Btn{
+                                width: 95px;
+                                height: 30px;
+                                border: 1px solid rgba(31, 140, 230, 0.8);
+                                border-radius: 5px;
+                                background-color: rgba(31, 140, 230,0.6);
+                                text-align: center;
+                                line-height: 32px;
+                                color: white;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    & #noticeBox{
+                        width: 100%;
+                        height: 316px;
+                        background-color: #f2f4f5;
+                        border-radius: 5px;
+                        padding: 16px 25px;
+
+                        & p{
+                            font-size: 13px;
+                            font-family: "NanumBarunGothic";
+                            text-align: left;
+                            color: #222;
+                            font-weight: bold;
+                            padding-top: 7px;
+                        }
+
+                        & ul{
+                            padding: 10px 0px;
+
+                            & li{
+                                color: #666;
+                                font-size: 13px;
+                                font-family: "NanumBarunGothic";
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            & #purchase_review{
+                width: 100%;
+                height: auto;
+                border: 1px solid darkmagenta;
+                margin-top: 40px;
+
+                & .purchaseNav{
+                    width: 100%;
+                    height: 37px;
+                    border-bottom: 2px solid #d1d5d9;
+                    display: flex;
+                    justify-content: space-between;
+
+                    & .pN1{
+                        display: flex;
+                        width: 50%;
+                        height: 37px;
+                        align-items: flex-end;
+
+                        .hover_line{
+                            border-bottom: 2px solid #666;
+                            color: #444 !important;
+                        }
+
+                        & li{
+                            font-size: 16px;
+                            height: 100%;
+                            border-bottom: 2px solid transparent;
+                            color: #888 !important;
+                            line-height: 45px;
+                            margin-right: 20px;
+                            cursor: pointer;
+                        }
+
+                        & li:hover{
+                            border-bottom: 2px solid #666;
+                            color: #444 !important;
+                        }
+                    }
+
+                    & .pN2{
+                        display: flex;
+                        width: 50%;
+                        justify-content: end;
+                        height: 37px;
+                        align-items: flex-end;
+
+                        & li{
+                            font-size: 14px;
+                            padding-right: 10px;
+                            width: auto;
+                            height: 100%;
+                            display: inline-block;
+                            color: #888 !important;
+                            line-height: 45px;
+                            cursor: pointer;
+                        }
+                        
+                        & li:nth-child(2n){
+                            color: #ddd !important;
+                            width: 1px;
+                        }
+
+                        & li:hover{
+                            color: #666 !important;
+                        }
+
+                        .hover_black{
+                            color: #444 !important;
+                        }
+                    }
+                }
+
+                & .purchaseReview{
+                    width: 100%;
+                    height: auto;
+
+                    & .prBox{
+                        width: 100%;
+                        height: 93px;
+                        padding-top: 14px;
+                        border-top: 1px solid #d1d5d9;
+                    }
+
+                    & .prBox:nth-child(1){
+                        border-top: none !important;
+                    }
+                    
+                }
+            }
         }
+    }
+
+    .color_red{
+        color: #e64938 !important;
     }
 
     & #subWrap{
