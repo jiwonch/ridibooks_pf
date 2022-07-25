@@ -1,0 +1,29 @@
+<h3>저자 프로필</h3>
+<h4>황보름</h4>
+<div class="author_btn">
+    <i class="material-icons" style="font-size:36px">add</i>
+    작가 신간알림·소식
+</div>
+<ul>
+    <li>
+        <span class="tit">국적</span>
+        <span class="cot">대한민국</span>
+    </li>
+    <li>
+        <span class="tit">학력</span>
+        <span class="cot">컴퓨터공학 학사</span>
+    </li>
+    <li>
+        <span class="tit">경력</span>
+        <span class="cot">LG전자 소프트웨어 개발자</span>
+    </li>
+</ul>
+
+<div class="update">
+    <span>2022.01.17. 업데이트</span>
+    <div class="update_btn">
+        <i class="material-icons">create</i>
+        작가 프로필 수정 요청
+    <div>
+</div>
+<hr class="hr_gray">

@@ -1,0 +1,523 @@
+@charset "UTF-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+@font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 400;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 700;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 300;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OTWelcomeRA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "OTWelcomeRA";
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: #333 !important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* header */
+
+.top {
+    position: fixed;
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+}
+
+.top a {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+}
+
+.top a img {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#topMenu {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#top {
+    width: 1150px;
+    height: 39px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top .tmenu {
+    width: 990px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+#top .tmenu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#top .topMember {
+    width: 140px;
+    height: 100%;
+}
+
+#top .topMember ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.tmenu {
+    display: flex;
+}
+
+.tmenuli {
+    display: inline-flex;
+    align-items: center;
+}
+
+.tmenu li a {
+    color: #666;
+    display: inline-flex;
+    padding: 15px 12px 10px;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    transition: opacity 0.2s ease 0s;
+}
+
+.tmenu li a:hover {
+    opacity: 0.3;
+    transition: opacity 0.2s ease 0s;
+}
+
+.tmenu .webtoon::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-top: 3px;
+    border-radius: 3px;
+    background-color: #e6e6e6;
+}
+
+.tmenu .web::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-top: 3px;
+    border-radius: 3px;
+    background-color: #e6e6e6;
+}
+
+.tmenu .book::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-top: 3px;
+    border-radius: 3px;
+    background-color: #e6e6e6;
+}
+
+.topMember {
+    display: flex;
+}
+
+.topMemberli {
+    display: inline-flex;
+    align-items: center;
+}
+
+.topMember li a {
+    color: #666;
+    display: inline-flex;
+    padding: 15px 8px 10px;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    transition: opacity 0.2s ease 0s;
+}
+
+.topMember li a:hover {
+    opacity: 0.3;
+    transition: opacity 0.2s ease 0s;
+}
+
+.topMember .member::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-top: 3px;
+    border-radius: 3px;
+    background-color: #e6e6e6;
+}
+
+#headerBox {
+    width: 100%;
+    height: 72px;
+}
+
+header {
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 16px 18px 16px 22px;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 650px;
+    height: 38px;
+}
+
+#logo a {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+#searchInput {
+    width: 260px;
+    height: 40px;
+    position: relative;
+}
+
+#searchInput input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 230, 230, 0.5);
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 15px;
+    color: #1E9EFF;
+    font-family: "NanumBarunGothic";
+    font-weight: bold;
+}
+
+#searchInput input:focus {
+    outline: none;
+    line-height: 40px;
+}
+
+#searchInput img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+}
+
+#menuIcon {
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuIcon a {
+    width: 24.5%;
+    height: 100%;
+}
+
+#menuIcon a :nth-of-type(1) {
+    margin-left: 18px;
+}
+
+#menuIcon a .notify {
+    width: 55%;
+    height: 65%;
+    margin-top: 5px;
+}
+
+#menuIcon a .cart {
+    width: 70%;
+    height: 95%;
+}
+
+#menuIcon a .book {
+    width: 55%;
+    height: 65%;
+    margin-top: 4px;
+}
+
+#menuIcon a .user {
+    width: 55%;
+    height: 65%;
+    margin-top: 4px;
+}
+
+/* footer */
+#footerbox {
+    width: 100%;
+    height: auto;
+    border: 1px #555;
+    background-color: #ffffff;
+    padding-top: 100px;
+}
+
+#footerbox hr {
+    width: 100%;
+    color: #f0f0f0;
+}
+
+#footerbox footer {
+    width: 1170px;
+    margin: 0 auto;
+    height: 374px;
+    padding: 0 26px 0 0;
+    padding-top: 41px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+#footerLeft {
+    height: 313px;
+    padding: 0 4px;
+    width: 930px;
+}
+
+#footerMenu {
+    width: 930px;
+    height: 164px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#footerMenu a {
+    text-decoration: none;
+}
+
+#footerMenu ul {
+    margin-right: 95px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footerMenu ul li a {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+#footerMenu ul li a:hover {
+    color: #bbb !important;
+}
+
+#footerMenu ul li a:hover i span {
+    color: #bbb;
+}
+
+#footerMenu .f1 li {
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+
+#footerMenu .f1 li a i span {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+#footerMenu .f2 {
+    justify-content: space-between;
+}
+
+#footerMenu .f2 li:nth-child(1) {
+    font-weight: bold;
+}
+
+#footerMenu .f2 li:nth-child(1) a {
+    cursor: default;
+}
+
+#footerMenu .f2 li:nth-child(1) a:hover {
+    color: #bbb !important;
+}
+
+#footerMenu .f3 li {
+    margin-bottom: 6px;
+}
+
+#footerMenu .f3 li:nth-child(1) {
+    font-weight: bold;
+}
+
+#footerMenu .f3 li:nth-child(1) a {
+    cursor: default;
+}
+
+#footerMenu .f3 li:nth-child(1) a:hover {
+    color: #bbb !important;
+}
+
+#footerMenu .f4 li {
+    margin-bottom: 6px;
+}
+
+#footerMenu .f4 li:nth-child(1) {
+    font-weight: bold;
+}
+
+#footerMenu .f4 li:nth-child(1) a {
+    cursor: default;
+}
+
+#footerMenu .f4 li:nth-child(1) a:hover {
+    color: #bbb !important;
+}
+
+.recruit {
+    position: relative;
+}
+
+.recruit div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #1E9EFF;
+    display: inline-block;
+    position: absolute;
+    margin-top: 3.5px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 5px;
+    font-weight: bold;
+    line-height: 15px;
+    padding-top: 2px;
+    color: #fff;
+}
+
+#footerCopyright {
+    width: 930px;
+    height: 69px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#footerCopyright h5 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    color: #555;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#footerCopyright ul {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+#footerCopyright ul li {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 12px;
+    color: #555;
+    margin-right: 8px;
+}
+
+#footerCopyright ul li:nth-child(3) {
+    font-weight: bold;
+}
+
+#footerCopyright h6 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 13px;
+    color: #555;
+    font-weight: 300;
+}
+
+#footerRight {
+    height: 313px;
+    padding: 0 4px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+#footerRight a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    position: relative;
+}
+
+#footerRight a svg {
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    stroke-width: 0;
+    stroke: #777;
+    fill: #777;
+}

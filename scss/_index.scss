@@ -105,11 +105,23 @@ $pointColor: #1E9EFF;
         width: 990px;
         height: 100%;
         margin-left: 10px;
+
+        & ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
     }
 
     & .topMember {
         width: 140px;
         height: 100%;
+
+        & ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
     }
 }
 
@@ -239,7 +251,7 @@ header {
         line-height: 40px;
     }
 
-    & img{
+    & img {
         position: absolute;
         width: 40px;
         height: 40px;
@@ -1157,10 +1169,10 @@ header {
     }
 }
 
-.newBookImg{
+.newBookImg {
     position: relative;
 
-    & .discount{
+    & .discount {
         position: absolute;
         width: 30px;
         height: 30px;
@@ -1175,7 +1187,7 @@ header {
         font-size: 13px;
     }
 
-    & .rent{
+    & .rent {
         position: absolute;
         width: 30px;
         height: 30px;
@@ -1191,10 +1203,10 @@ header {
     }
 }
 
-.rocoBooksImg{
+.rocoBooksImg {
     position: relative;
 
-    & .discount{
+    & .discount {
         position: absolute;
         width: 30px;
         height: 30px;
@@ -1209,7 +1221,7 @@ header {
         font-size: 13px;
     }
 
-    & .rent{
+    & .rent {
         position: absolute;
         width: 30px;
         height: 30px;

@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 400;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 700;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 300;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OTWelcomeRA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OTWelcomeRA';
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: #333 !important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#logo a img:nth-child(2){
+    display: none;
+}
+
+#wrap{
+    width: 1000px;
+    height: auto;
+    border: 1px solid salmon;
+    margin: 0 auto;
+    display: flex;
+
+    & #mainWrap{
+        width: 793px;
+        height: auto;
+        border: 1px solid green;
+
+        & #main_head{
+            width: 100%;
+            height: 587.36px;
+            border: 1px solid magenta;
+            padding: 40px 29px;
+
+            & .thum_img{
+                width: 220px;
+                height: 344px;
+                float: left;
+
+                & .img_box{
+                    background-color: burlywood;
+                    width: 200px;
+                    height: 292px;
+
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        cursor: zoom-in;
+                    }
+                }
+
+                & .boxlook{
+                    width: 200px;
+
+                    & .img_look{
+                        border: 1px solid #1f8ce6;
+                        border-radius: 5px;
+                        width: 130px;
+                        height: 39px;
+                        margin: 12px auto 0;
+                        padding: 12px;
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #1f8ce6;
+                        cursor: pointer;
+                    }
+
+                    & .img_look:hover{
+                        background-color: rgba(31, 140, 230, 0.2);
+                    }
+                }
+            }
+
+            & .thum_title{
+                width: 500px;
+                height: 357.36px;
+                float: right;
+                border: 1px solid green;
+            }
+
+            & hr{
+                clear: both;
+                display: block;
+                width: 0;
+                height: 0;
+                font-size: 0;
+                line-height: 0;
+                visibility: hidden;
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            & .thum_detail{
+                width: 733px;
+                height: 110px;
+                margin-top: 40px;
+                padding: 20px 26px 13px;
+                border: 4px solid #f2f4f5;
+            }
+        }
+
+        & #book_intro{
+            width: 100%;
+            height: auto;
+            border: 1px solid khaki;
+            padding: 0 29px 70px 29px;
+
+            & h3{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 20px;
+            }
+
+            & p{
+                color: #333;
+                font-size: 13px;
+                font-family: "NanumBarunGothic";
+                line-height: 1.7em;
+            }
+        }
+
+        & #publishing{
+            width: 100%;
+            height: auto;
+            border: 1px solid #1f8ce6;
+            padding: 0 29px 70px 29px;
+
+            & h3{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 20px;
+            }
+
+            & p{
+                color: #333;
+                font-size: 13px;
+                font-family: "NanumBarunGothic";
+                line-height: 1.7em;
+            }
+        }
+
+        & #profile{
+            width: 100%;
+            height: auto;
+            padding: 0 29px 20px 29px;
+
+            & h3{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 20px;
+            }
+
+            & h4{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #333;
+                padding-top: 10px;
+            }
+
+            & span{
+                color: #333;
+                font-size: 13px;
+                font-family: "NanumBarunGothic";
+                line-height: 1.7em;
+            }
+        }
+
+        & #presenbook{
+            width: 735px;
+            margin: 0 auto;
+            height: 286px;
+            border: 1px solid salmon;
+            padding: 0 29px 70px 29px;
+        }
+
+        & #author_intro{
+            width: 100%;
+            height: auto;
+            border: 1px solid yellowgreen;
+            padding: 0 29px 70px 29px;
+
+            & h3{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 20px;
+            }
+
+            & p{
+                color: #333;
+                font-size: 13px;
+                font-family: "NanumBarunGothic";
+                line-height: 1.7em;
+            }
+        }
+
+        & #sub_index{
+            width: 100%;
+            height: auto;
+            border: 1px solid darkorange;
+            padding: 0 29px 70px 29px;
+
+            & h3{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 20px;
+            }
+
+            & p{
+                color: #333;
+                font-size: 13px;
+                font-family: "NanumBarunGothic";
+                line-height: 1.7em;
+            }
+        }
+
+        & #sub_review{
+            width: 100%;
+            height: auto;
+            border: 1px solid magenta;
+            padding: 0 29px 70px 29px;
+
+            & h3{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-top: 10px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    & #subWrap{
+        width: 207px;
+        height: 581.5px;
+
+        & .sub_book{
+            width: 100%;
+            height: 207px;
+            border-bottom: 1px solid #e6e8eb;
+            margin-bottom: 40px;
+
+            & a img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .sub_bestseller{
+            width: 100%;
+            height: 343.5px;
+            padding: 0 18px;
+
+            & h5{
+                font-weight: bold;
+            }
+
+            & table{
+                width: 100%;
+            }
+
+            & table tr{
+                border-top: 1px solid #e6e8eb;
+                border-bottom: 1px solid #e6e8eb;
+
+                & th{
+                    width: 25px;
+                    color: #e64938;
+                    font-size: 12px;
+                    padding: 4px 0 4px 0;
+                }
+
+                & td{
+                    font-size: 12px;
+                    padding-left: 10px;
+                }
+            }
+
+            & .sub_show_btn{
+                width: 100%;
+                height: 20px;
+                background-color: #eee;
+                text-align: center;
+                font-size: 12px;
+                position: relative;
+                line-height: 20px;
+                padding-top: 3px;
+                border-bottom: 1px solid #e6e8eb;
+                cursor: pointer;
+                color: #666;
+
+                & i{
+                    font-size: 13px;
+                    position: absolute;
+                    color: #666;
+                }
+            }
+
+            & .sub_show_btn:hover{
+                background-color: #e6e8eb;
+            }
+        }
+    }
+}

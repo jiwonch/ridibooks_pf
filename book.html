@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어서 오세요, 휴남동 서점입니다 - 리디</title>
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <meta property="og:image" content="{{url_fot('img', filename='thumbnail.jpg')}}">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/book.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="top"><a href="#"><img src="img/arrowup.png" alt="top"></a></div>
+    <div id="topMenu">
+        <div id="top">
+            <div class="tmenu">
+                <ul>
+                    <li class="webtoon"><a href="#">웹툰/만화</a></li>
+                    <li class="web"><a href="#">웹소설</a></li>
+                    <li class="book"><a href="#">도서</a></li>
+                    <li><a href="#">셀렉트 &gt;</a></li>
+                </ul>
+                
+            </div>
+            <div class="topMember">
+                <ul>
+                    <li class="member"><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div id="headerBox">
+        <header>
+            <div id="logo">
+                <a href="#">
+                    <img src="img/logo_ridi.svg" alt="logo">
+                    <img src="img/logo_books.svg" alt="logo">
+                </a>
+            </div>
+            <div id="searchInput">
+                <input type="text" name="search" id="search">
+                <img src="img/sarch.png" alt="search">
+            </div>
+            <div id="menuIcon">
+                <a href="#"><img src="img/index/icon/notify.png" alt="icon" class="notify"></a>
+                <a href="#"><img src="img/index/icon/cart.png" alt="icon" class="cart"></a>
+                <a href="#"><img src="img/index/icon/book.png" alt="icon" class="book"></a>
+                <a href="#"><img src="img/index/icon/user.png" alt="icon" class="user"></a>
+            </div>
+        </header>
+    </div>
+
+    <!-- 전체 페이지 두묶음 나눔 -->
+    <div id="wrap">
+        <!-- main contets -->
+        <div id="mainWrap">
+            <div id="main_head">
+                <div class="thum_img">
+                    <div class="img_box"></div>
+                    <div class="boxlook">
+                        <div class="img_look">미리보기</div>
+                    </div>
+                </div>
+
+                <!-- ajax로 책 썸네일 가져오기 -->
+                <script src="js/book.js"></script>
+                <div class="thum_title"></div>
+                <hr>
+                <div class="thum_detail"></div>
+            </div>
+
+            <!-- 작품소개 -->
+            <div id="book_intro"></div>
+
+            <!-- 출판사 서평 -->
+            <div id="publishing"></div>
+
+            <!-- 저자 프로필 -->
+            <div id="profile"></div>
+
+            <!-- 대표저서 -->
+            <div id="presenbook"></div>
+
+            <!-- 저자 소개 -->
+            <div id="author_intro"></div>
+
+            <!-- 목차 -->
+            <div id="sub_index"></div>
+
+            <!-- 리뷰 -->
+            <div id="sub_review">
+                <h3>리뷰</h3>
+            </div>
+
+        </div>
+
+        <!-- side -->
+        <div id="subWrap">
+            <div class="sub_book">
+                <a href="#"><img src="img/book/sub_book.webp" alt="book"></a>
+            </div>
+            <div class="sub_bestseller">
+                <h5>한국소설 베스트 셀러</h5>
+                <table>
+                    <tr>
+                        <th>1위</th>
+                        <td>불편한 편의점</td>
+                    </tr>
+                    <tr>
+                        <th>2위</th>
+                        <td>수연 선배가 우화등선 했대</td>
+                    </tr>
+                    <tr>
+                        <th>3위</th>
+                        <td>작별인사</td>
+                    </tr>
+                    <tr>
+                        <th>4위</th>
+                        <td>친밀한 이방인</td>
+                    </tr>
+                    <tr>
+                        <th>5위</th>
+                        <td>어서오세요, 휴남동...</td>
+                    </tr>
+                    <tr>
+                        <th>6위</th>
+                        <td>칵테일, 러브, 좀비</td>
+                    </tr>
+                    <tr>
+                        <th>7위</th>
+                        <td>홍학의 자리</td>
+                    </tr>
+                    <tr>
+                        <th>8위</th>
+                        <td>악마의 계약서는 만기 되지...</td>
+                    </tr>
+                    <tr>
+                        <th>9위</th>
+                        <td>밝은 밤</td>
+                    </tr>
+                    <tr>
+                        <th>10위</th>
+                        <td>아몬드</td>
+                    </tr>
+                </table>
+                <div class="sub_show_btn">
+                    더보기
+                    <i class="material-icons">play_arrow</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- js 가져오기 -->
+    <!-- txt 가져오기 -->
+    <script src="js/book_text.js"></script>
+
+    <!-- footer -->
+    <div id="footerbox">
+        <hr>
+        <footer>
+            <div id="footerLeft">
+                <div id="footerMenu">
+                    <ul class="f1">
+                        <li>
+                            <a href="#">
+                                <i class="material-icons" style="font-size:24px">headset_mic</i>
+                                고객센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-volume-down" style="font-size:24px"><span>공지사항</span></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="f2">
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">리디페이퍼</a></li>
+                        <li><a href="#">제휴카드</a></li>
+                        <li><a href="#">뷰어 다운로드</a></li>
+                        <li><a href="#">CP사이트</a></li>
+                        <li><a href="#">리디셀릭트 B2B</a></li>
+                    </ul>
+                    <ul class="f3">
+                        <li><a href="#">기타 문의</a></li>
+                        <li><a href="#">콘텐츠 제공 문의</a></li>
+                        <li><a href="#">사업 제휴 문의</a></li>
+                    </ul>
+                    <ul class="f4">
+                        <li><a href="#">회사</a></li>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#" class="recruit">인재채용 <div>
+                                    N
+                                </div> </a></li>
+                    </ul>
+                </div>
+                <div id="footerCopyright">
+                    <h5>리디(주) 사업자 정보&or;</h5>
+                    <ul>
+                        <li>이용약관</li>
+                        <li>|</li>
+                        <li>개인정보처리방침</li>
+                        <li>|</li>
+                        <li>청소년보호정책</li>
+                        <li>|</li>
+                        <li>사업자정보확인</li>
+                    </ul>
+                    <h6>&copy; RIDI Corp.</h6>
+                </div>
+            </div>
+            <div id="footerRight">
+                <a href="#">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>facebook</title>
+                        <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>instagram</title>
+                        <path
+                            d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
+                        </path>
+                        <path
+                            d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+                        </path>
+                        <path
+                            d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>youtube</title>
+                        <path d="M6 4l20 12-20 12z"></path>
+                    </svg>
+
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
