@@ -1,8 +1,8 @@
 <h3>저자 프로필</h3>
 <h4>황보름</h4>
 <div class="author_btn">
-    <i class="material-icons" style="font-size:36px">add</i>
-    작가 신간알림·소식
+    <i class="material-icons" style="font-size:20px">add</i>
+    <span>작가 신간알림·소식</span>
 </div>
 <ul>
     <li>
@@ -24,6 +24,7 @@
     <div class="update_btn">
         <i class="material-icons">create</i>
         작가 프로필 수정 요청
-    <div>
+    </div>
 </div>
+
 <hr class="hr_gray">

@@ -49,5 +49,17 @@ $(function(){
 $(function(){
     $.get("../sub_index.txt", function(data){
         $("#sub_index").html(data);
+
+        $(".subindexMore").click(function(){
+            $(".subindexMore").hide();
+            $(".subindexFolder").show();
+            $(".subindexNone").slideDown();
+        });
+    
+        $(".subindexFolder").click(function(){
+            $(".subindexMore").show();
+            $(".subindexFolder").hide();
+            $(".subindexNone").hide();
+        });
     })
 });

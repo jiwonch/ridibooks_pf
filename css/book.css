@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -108,7 +109,6 @@ body {
 #wrap {
   width: 1000px;
   height: auto;
-  border: 1px solid salmon;
   margin: 0 auto;
   display: flex;
 }
@@ -120,7 +120,6 @@ body {
 #wrap #mainWrap #main_head {
   width: 100%;
   height: 587.36px;
-  border: 1px solid magenta;
   padding: 40px 29px;
 }
 #wrap #mainWrap #main_head .thum_img {
@@ -129,7 +128,6 @@ body {
   float: left;
 }
 #wrap #mainWrap #main_head .thum_img .img_box {
-  background-color: burlywood;
   width: 200px;
   height: 292px;
 }
@@ -161,9 +159,197 @@ body {
   width: 500px;
   height: 357.36px;
   float: right;
-  border: 1px solid green;
 }
-#wrap #mainWrap #main_head hr {
+#wrap #mainWrap #main_head .thum_title p {
+  width: 100%;
+  height: 14px;
+  font-size: 13px;
+  color: #333;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+#wrap #mainWrap #main_head .thum_title p a:hover {
+  color: #1f8ce6 !important;
+}
+#wrap #mainWrap #main_head .thum_title .book_Title {
+  width: 100%;
+  height: 35px;
+  color: #333;
+  margin-top: 8px !important;
+}
+#wrap #mainWrap #main_head .thum_title .book_Title h2 {
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "SUIT-Medium";
+  margin-top: 8px !important;
+}
+#wrap #mainWrap #main_head .thum_title .book_hStar {
+  width: 100%;
+  height: 16.36px;
+  margin-top: 17px;
+  font-family: "SUIT-Medium";
+}
+#wrap #mainWrap #main_head .thum_title .book_hStar .star_ic {
+  height: 15px;
+  font-size: 15px;
+  color: #fa722e;
+  letter-spacing: -0.1em;
+}
+#wrap #mainWrap #main_head .thum_title .book_hStar .star_figure {
+  font-size: 15px;
+  padding-left: 3px;
+  color: #fa722e;
+}
+#wrap #mainWrap #main_head .thum_title .book_hStar .star_ps {
+  font-size: 12px;
+  display: inline-block;
+  margin-left: -3px;
+}
+#wrap #mainWrap #main_head .thum_title .book_Info {
+  width: 100%;
+  height: 39px;
+  margin: 20px 0;
+}
+#wrap #mainWrap #main_head .thum_title .book_Info .book_author {
+  width: 100%;
+  height: 22px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #888 !important;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+#wrap #mainWrap #main_head .thum_title .book_Info .book_author a {
+  font-weight: bold;
+  color: #666 !important;
+  letter-spacing: 0.1em;
+}
+#wrap #mainWrap #main_head .thum_title .book_Info .book_author a:hover {
+  color: #1f8ce6 !important;
+}
+#wrap #mainWrap #main_head .thum_title .book_Info .book_publishing {
+  width: 100%;
+  height: 17px;
+  font-size: 13px;
+  color: #888 !important;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+#wrap #mainWrap #main_head .thum_title .book_Info .book_publishing a {
+  font-weight: bold;
+  color: #666 !important;
+  letter-spacing: 0.1em;
+}
+#wrap #mainWrap #main_head .thum_title .book_Info .book_publishing a:hover {
+  color: #1f8ce6 !important;
+}
+#wrap #mainWrap #main_head .thum_title #hr_book {
+  border-top: 2px solid #d1d5d9;
+  margin-bottom: 14px;
+}
+#wrap #mainWrap #main_head .thum_title table {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #d1d5d9;
+  border-bottom: 1px solid #d1d5d9;
+}
+#wrap #mainWrap #main_head .thum_title table th {
+  width: 171.88px;
+  text-align: center;
+  border-right: 1px solid #d1d5d9;
+  background-color: #f7fafc;
+}
+#wrap #mainWrap #main_head .thum_title table tr td:nth-of-type(1) {
+  width: 156px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #777;
+}
+#wrap #mainWrap #main_head .thum_title table tr td:nth-of-type(2) {
+  width: 156px;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
+  color: #777;
+  font-weight: 700;
+  font-size: 12px;
+}
+#wrap #mainWrap #main_head .thum_title table .book_blue {
+  color: #1f8ce6 !important;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon {
+  width: 100%;
+  height: 48px;
+  margin-top: 15px;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon {
+  width: 271px;
+  height: 100%;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .book_ic {
+  width: 48px;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #d1d5d9;
+  cursor: pointer;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .heart {
+  font-size: 20px;
+  color: #888;
+  position: relative;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .heart span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .bookcart {
+  font-size: 20px;
+  color: #888;
+  position: relative;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .bookcart span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .present {
+  font-size: 25px;
+  color: #888;
+  position: relative;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .present span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .book_ic:hover {
+  background-color: rgba(209, 213, 217, 0.3);
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .have {
+  width: 112px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #1f8ce6;
+  border: 1px solid #0077d9;
+  box-shadow: 0 1px 1px 0 rgba(31, 140, 230, 0.3);
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+#wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .have:hover {
+  background-color: #0077d9;
+}
+#wrap #mainWrap #main_head .both {
   clear: both;
   display: block;
   width: 0;
@@ -182,10 +368,24 @@ body {
   padding: 20px 26px 13px;
   border: 4px solid #f2f4f5;
 }
+#wrap #mainWrap #main_head .thum_detail .thum_tb {
+  width: 90%;
+  height: 100%;
+}
+#wrap #mainWrap #main_head .thum_detail .thum_tb tr {
+  font-size: 12px;
+  color: #777;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+#wrap #mainWrap #main_head .thum_detail .thum_tb tr th {
+  color: #555 !important;
+}
+#wrap #mainWrap #main_head .thum_detail .thum_tb tr td span {
+  font-size: 12px;
+}
 #wrap #mainWrap #book_intro {
   width: 100%;
   height: auto;
-  border: 1px solid khaki;
   padding: 0 29px 70px 29px;
 }
 #wrap #mainWrap #book_intro h3 {
@@ -220,7 +420,6 @@ body {
 #wrap #mainWrap #publishing {
   width: 100%;
   height: auto;
-  border: 1px solid #1f8ce6;
   padding: 0 29px 70px 29px;
 }
 #wrap #mainWrap #publishing h3 {
@@ -273,11 +472,84 @@ body {
   color: #333;
   padding-top: 10px;
 }
+#wrap #mainWrap #profile .author_btn {
+  width: 168px;
+  height: 30.25px;
+  padding: 8px 27px 7px 8px;
+  text-align: center;
+  color: #1f8ce6;
+  border: 1px solid #1f8ce6;
+  box-shadow: 0 1px 1px 0 rgba(31, 140, 230, 0.3);
+  border-radius: 5px;
+  text-align: right;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#wrap #mainWrap #profile .author_btn i {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap #mainWrap #profile .author_btn span {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1f8ce6;
+}
+#wrap #mainWrap #profile .author_btn:hover {
+  background-color: #ebf6ff;
+}
+#wrap #mainWrap #profile .tit {
+  font-size: 13px;
+  color: #888;
+  margin-right: 7px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+#wrap #mainWrap #profile .cot {
+  font-size: 13px;
+  color: #333;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
 #wrap #mainWrap #profile span {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
+}
+#wrap #mainWrap #profile .update {
+  width: 100%;
+  justify-self: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap #mainWrap #profile .update span {
+  font-size: 12px;
+  color: #999;
+  font-weight: bold;
+  margin-right: 8px;
+}
+#wrap #mainWrap #profile .update .update_btn {
+  width: 132px;
+  height: 21px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #d1d5d9;
+  box-shadow: 0 1px 1px 0 rgba(209, 213, 217, 0.3);
+  color: #999;
+  cursor: pointer;
+}
+#wrap #mainWrap #profile .update .update_btn i {
+  font-size: 11px;
+}
+#wrap #mainWrap #profile .update .update_btn:hover {
+  background-color: rgba(209, 213, 217, 0.3);
+}
+#wrap #mainWrap #profile .hr_gray {
+  width: 100% !important;
 }
 #wrap #mainWrap #presenbook {
   width: 735px;
@@ -289,7 +561,6 @@ body {
 #wrap #mainWrap #author_intro {
   width: 100%;
   height: auto;
-  border: 1px solid yellowgreen;
   padding: 0 29px 40px 29px;
 }
 #wrap #mainWrap #author_intro h3 {
@@ -310,7 +581,6 @@ body {
 #wrap #mainWrap #sub_index {
   width: 100%;
   height: auto;
-  border: 1px solid darkorange;
   padding: 0 29px 40px 29px;
 }
 #wrap #mainWrap #sub_index h3 {
@@ -322,16 +592,35 @@ body {
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 20px;
 }
+#wrap #mainWrap #sub_index div {
+  color: #333;
+  font-size: 13px;
+  font-family: "NanumBarunGothic";
+  line-height: 1.7em;
+}
 #wrap #mainWrap #sub_index p {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
 }
+#wrap #mainWrap #sub_index .subindexNone {
+  display: none;
+}
+#wrap #mainWrap #sub_index .subindexMore {
+  float: right;
+  color: #1f8ce6;
+  cursor: pointer;
+}
+#wrap #mainWrap #sub_index .subindexFolder {
+  display: none;
+  float: right;
+  color: #1f8ce6;
+  cursor: pointer;
+}
 #wrap #mainWrap #sub_review {
   width: 100%;
   height: auto;
-  border: 1px solid magenta;
   padding: 0 29px 70px 29px;
 }
 #wrap #mainWrap #sub_review h3 {
@@ -774,6 +1063,9 @@ body {
 #wrap #subWrap .sub_bestseller table tr td {
   font-size: 12px;
   padding-left: 10px;
+}
+#wrap #subWrap .sub_bestseller table tr td a:hover {
+  color: #1f8ce6 !important;
 }
 #wrap #subWrap .sub_bestseller .sub_show_btn {
   width: 100%;
