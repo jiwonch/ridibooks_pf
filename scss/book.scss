@@ -38,6 +38,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,10 +76,11 @@ body{
 }
 
 .imgZoomIn{
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 1500;
+    display: none;
 
     & .zoomIn{
         width: 100%;
@@ -90,10 +98,11 @@ body{
             text-align: center;
             font-size: 20px;
             position: absolute;
-            left: 64%;
-            top: 0.7%;
+            left: 65%;
+            top: 7%;
             transform: translate(-50%, -50%);
             z-index: 80;
+            cursor: zoom-out;
         }
 
         & img{
@@ -101,7 +110,7 @@ body{
             height: 770px;
             position: absolute;
             left: 50%;
-            top: 7.5%;
+            top: 50%;
             transform: translate(-50%,-50%);
         }
     }
@@ -216,6 +225,23 @@ body{
                 font-family: "NanumBarunGothic";
                 line-height: 1.7em;
             }
+
+            & .bookdetailNone{
+                display: none;
+            }
+
+            & .bookdetailMore{
+                float: right;
+                color: #1f8ce6;
+                cursor: pointer;
+            }
+
+            & .bookdetailFolder{
+                display: none;
+                float: right;
+                color: #1f8ce6;
+                cursor: pointer;
+            }
         }
 
         & #publishing{
@@ -239,6 +265,23 @@ body{
                 font-size: 13px;
                 font-family: "NanumBarunGothic";
                 line-height: 1.7em;
+            }
+
+            & .publishingreviewNone{
+                display: none;
+            }
+
+            & .publishingreviewMore{
+                float: right;
+                color: #1f8ce6;
+                cursor: pointer;
+            }
+
+            & .publishingreviewFolder{
+                display: none;
+                float: right;
+                color: #1f8ce6;
+                cursor: pointer;
             }
         }
 
@@ -517,7 +560,6 @@ body{
             & #purchase_review{
                 width: 100%;
                 height: auto;
-                border: 1px solid darkmagenta;
                 margin-top: 40px;
 
                 & .purchaseNav{
@@ -596,10 +638,200 @@ body{
                         height: 93px;
                         padding-top: 14px;
                         border-top: 1px solid #d1d5d9;
+                        display: flex;
+
+                        & .reviewStar{
+                            width: 115px;
+                            height: 100%;
+                            padding: 1px 0 15px;
+
+                            & .rstar{
+                                width: 100%;
+                                height: 15px;
+                                font-size: 13px;
+                                margin-bottom: 5px;
+                            }
+
+                            & .rid{
+                                width: 100%;
+                                height: 21px;
+                                display: flex;
+                                margin-bottom: 5px;
+
+                                & span{
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    font-family: "NanumBarunGothic";
+                                }
+
+                                & .puchper{
+                                    width: 35px;
+                                    height: 18px;
+                                    color: white;
+                                    padding: 4px 0 0 0;
+                                    background-color: #7d8e9e;
+                                    border-radius: 3px;
+                                    margin-left: 3px;
+                                    font-size: 10px;
+                                    text-align: center;
+
+                                }
+                            }
+
+                            & .rdate{
+                                width: 100%;
+                                height: 21px;
+
+                                & .date{
+                                    font-size: 11px;
+                                    color: #999;
+                                    font-weight: bold;
+                                    font-family: "NanumBarunGothic";
+                                }
+
+                                & .date::after{
+                                    content: "";
+                                    display: inline-block;
+                                    width: 3px;
+                                    height: 3px;
+                                    margin-top: 1px;
+                                    margin-left: 5px;
+                                    margin-right: 3px;
+                                    border-radius: 3px;
+                                    background-color: #e6e6e6;
+                                }
+
+                                & .declare{
+                                    font-family: "NanumBarunGothic";
+                                    font-weight: bold;
+                                    font-size: 12px;
+                                    counter-reset: #555;
+                                }
+                            }
+                        }
+
+                        & .reviewText{
+                            width: 620px;
+                            height: 100%;
+
+                            & p{
+                                display: block;
+                                font-size: 14px;
+                                margin-bottom: 20px;
+                            }
+
+                            & .reviewIcon{
+                                width: 100%;
+                                height: 28px;
+                                display: flex;
+                                justify-content: flex-end;
+
+                                & .comment{
+                                    padding: 6px 14px;
+                                    border: 1px solid #d1d5d9;
+                                    margin-right: 3px;
+                                    border-radius: 5px;
+                                    font-size: 12px;
+                                    background: #fff;
+                                    color: #808991;
+                                    transition: all .4s ease-in-out;
+                                    box-shadow: 0 1px 1px 0 rgba(209, 213, 217, 0.3);
+                                    cursor: pointer;
+                                }
+
+                                & .recommendation{
+                                    padding: 6px 14px;
+                                    border: 1px solid #d1d5d9;
+                                    margin-right: 3px;
+                                    margin-left: 3px;
+                                    border-radius: 5px;
+                                    font-size: 12px;
+                                    background: #fff;
+                                    color: #808991;
+                                    transition: all .4s ease-in-out;
+                                    box-shadow: 0 1px 1px 0 rgba(209, 213, 217, 0.3);
+                                    cursor: pointer;
+
+                                    & i{
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                & .comment:hover{
+                                    background: rgba(209, 213, 217, 0.5);
+                                    transition: all .4s ease-in-out;
+                                }
+
+                                & .recommendation:hover{
+                                    background: rgba(209, 213, 217, 0.5);
+                                    transition: all .4s ease-in-out;
+                                }
+                            }
+                        }
                     }
 
                     & .prBox:nth-child(1){
                         border-top: none !important;
+                    }
+
+                    & .prBox:nth-child(8){
+                        border-bottom: 1px solid #d1d5d9 !important;
+                    }
+
+                    & .remark{
+                        margin-top: 20px;
+                        position: relative;
+                        color: #999;
+                        cursor: pointer;
+
+                        & .up{
+                            display: none;
+                            position: absolute;
+                            top: 40%;
+                            transform: translateY(-50%);
+                        }
+
+                        & .down{
+                            position: absolute;
+                            top: 40%;
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    & .remark:hover{
+                        color: #333;
+                    }
+
+                    & .remarkStandard{
+                        width: 100%;
+                        height: 268px;
+                        padding: 24px;
+                        margin: 7px 0 0;
+                        background-color: #f3f4f5;
+                        border-radius: 3px;
+                        color: #666;
+                        display: none;
+
+                        & p{
+                            color: #333;
+                            font-weight: bold;
+                            font-family: "NanumBarunGothic";
+                            font-size: 13px;
+                        }
+
+                        & dt{
+                            font-weight: bold;
+                            color: #888;
+                            margin-top: 10px;
+                            font-family: "NanumBarunGothic";
+                            font-size: 13px;
+                        }
+
+                        & dd{
+                            color: #888;
+                            font-family: "NanumBarunGothic";
+                            font-size: 13px;
+                        }
                     }
                     
                 }
@@ -608,7 +840,19 @@ body{
     }
 
     .color_red{
-        color: #e64938 !important;
+        color: #fa722e !important;
+    }
+
+    .starcolor{
+        color: #fa722e !important;
+    }
+
+    .starnone{
+        color: #ddd !important;
+    }
+
+    .standardcolor{
+        color: #333 !important;
     }
 
     & #subWrap{
