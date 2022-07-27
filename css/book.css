@@ -554,9 +554,111 @@ body {
 #wrap #mainWrap #presenbook {
   width: 735px;
   margin: 0 auto;
-  height: 286px;
-  border: 1px solid salmon;
-  padding: 0 29px 70px 29px;
+  height: auto;
+  padding: 0 0px 30px 29px;
+}
+#wrap #mainWrap #presenbook .presentitle {
+  width: 100%;
+  height: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #mainWrap #presenbook .presentitle h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  font-family: "SUIT-Medium";
+}
+#wrap #mainWrap #presenbook .presentitle .presenul {
+  width: 480px;
+  height: 16px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+#wrap #mainWrap #presenbook .presentitle .presenul li {
+  font-size: 12px;
+  color: #888;
+  padding-left: 10px;
+  padding-right: 2px;
+  font-family: "SUIT-Medium";
+}
+#wrap #mainWrap #presenbook .presentitle .presenul li:nth-of-type(odd) {
+  font-weight: bold;
+  cursor: pointer;
+}
+#wrap #mainWrap #presenbook .presentitle .presenul li:nth-of-type(even) {
+  color: #d1d5d9;
+  font-size: 13px;
+}
+#wrap #mainWrap #presenbook .presentitle .presenul li:nth-of-type(odd):hover {
+  color: #333;
+}
+#wrap #mainWrap #presenbook .presentitle .presenul .presen_black {
+  color: #333;
+}
+#wrap #mainWrap #presenbook #presen_Book {
+  margin-top: 30px;
+  width: 100%;
+  height: 243.09px;
+  padding: 10px 0 20px 0;
+  display: flex;
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box {
+  width: 147px;
+  height: 193.05px;
+  margin-top: 20px;
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img {
+  width: 90px;
+  height: 131.45px;
+  margin: 0 auto;
+  position: relative;
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img .prborrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #15967d;
+  background-color: #3ea590;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  top: -7px;
+  left: -7px;
+  text-align: center;
+  line-height: 40px;
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img .prborrow a {
+  color: #fff !important;
+  font-weight: bold;
+  font-family: "SUIT-Medium";
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img a img {
+  width: 100%;
+  height: 100%;
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box h4 {
+  font-size: 12px;
+  width: 90px;
+  height: auto;
+  font-weight: bold;
+  color: #333;
+  margin: 6px auto 0;
+  font-family: "SUIT-Medium";
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box .star_pr {
+  width: 90px;
+  height: 13px;
+  margin: 0 auto;
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box .star_pr .pr_s {
+  font-size: 9px !important;
+  letter-spacing: -0.3em !important;
+  color: #fa722e;
+}
+#wrap #mainWrap #presenbook #presen_Book .presenbook_Box .star_pr span {
+  font-size: 10px !important;
+  letter-spacing: -0.1em;
 }
 #wrap #mainWrap #author_intro {
   width: 100%;
@@ -643,7 +745,6 @@ body {
   width: 120px;
   height: auto;
   padding: 30px 10px;
-  border: 1px solid lightgreen;
 }
 #wrap #mainWrap #sub_review .writeBox .starbox h4 {
   text-align: center;
@@ -661,7 +762,6 @@ body {
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bx {
   width: 100%;
   height: 17px;
-  border: 1px solid red;
   margin-top: -5px !important;
   display: flex;
   justify-content: center;
@@ -670,16 +770,140 @@ body {
   font-size: 13px;
   color: #fa722e !important;
 }
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar {
+  width: 100%;
+  height: 128px;
+  padding: 8px 0 10px 0;
+  margin-bottom: 3px;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb {
+  width: 100%;
+  height: 14px;
+  margin-top: 8px;
+  color: #808991;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #808991;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb span:nth-of-type(1) {
+  font-size: 11px;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll {
+  width: 72px;
+  height: 8px;
+  align-self: center;
+  background-color: #e8edf3;
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_5 {
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(to bottom, #9da9b5, #718392);
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_4 {
+  width: 15%;
+  height: 100%;
+  background: linear-gradient(to bottom, #9da9b5, #718392);
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_3 {
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(to bottom, #9da9b5, #718392);
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_2 {
+  width: 3%;
+  height: 100%;
+  background: linear-gradient(to bottom, #9da9b5, #718392);
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_1 {
+  width: 3%;
+  height: 100%;
+  background: linear-gradient(to bottom, #9da9b5, #718392);
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .evaluate_pr {
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid #d1d5d9;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 7px 0 0;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .evaluate_pr .ev_p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #808991;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .evaluate_pr span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #808991;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
 #wrap #mainWrap #sub_review .writeBox .write {
   width: 615px;
   height: auto;
 }
-#wrap #mainWrap #sub_review .writeBox .write p {
+#wrap #mainWrap #sub_review .writeBox .write .ev_write {
+  width: 100%;
+  height: 37.14px;
+  position: relative;
+  margin-bottom: 10px;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write p {
   text-align: center;
   font-size: 19px;
   color: #888;
   padding-top: 10px;
   font-weight: bold;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write .star_message {
+  width: 120px;
+  height: 100%;
+  border: 1px solid #1f8ce6;
+  background-color: #1f8ce6;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  padding: 9px 15px;
+  text-align: center;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write .star_message::after {
+  border-top: 8px solid #1f8ce6;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write .write_1 {
+  display: none;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write .write_2 {
+  display: none;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write .write_3 {
+  display: none;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write .write_4 {
+  display: none;
+}
+#wrap #mainWrap #sub_review .writeBox .write .ev_write .write_5 {
+  display: none;
 }
 #wrap #mainWrap #sub_review .writeBox .write .writeStar {
   width: 100%;
@@ -763,6 +987,7 @@ body {
   line-height: 32px;
   color: white;
   font-size: 14px;
+  cursor: default;
 }
 #wrap #mainWrap #sub_review .writeBox .write #noticeBox {
   width: 100%;
