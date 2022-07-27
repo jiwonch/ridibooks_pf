@@ -658,6 +658,18 @@ body {
   font-size: 35px;
   color: #333;
 }
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bx {
+  width: 100%;
+  height: 17px;
+  border: 1px solid red;
+  margin-top: -5px !important;
+  display: flex;
+  justify-content: center;
+}
+#wrap #mainWrap #sub_review .writeBox .starbox .star_bx span {
+  font-size: 13px;
+  color: #fa722e !important;
+}
 #wrap #mainWrap #sub_review .writeBox .write {
   width: 615px;
   height: auto;
@@ -856,8 +868,9 @@ body {
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rstar {
   width: 100%;
   height: 15px;
-  font-size: 13px;
+  font-size: 11px !important;
   margin-bottom: 5px;
+  letter-spacing: -0.1em;
 }
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rid {
   width: 100%;

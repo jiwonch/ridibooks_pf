@@ -1,5 +1,5 @@
 $(function(){
-    $.get("../book_detail.txt", function(data){
+    $.get("./book_detail.txt", function(data){
         $("#book_intro").html(data);
 
         $(".bookdetailMore").click(function(){
@@ -11,13 +11,13 @@ $(function(){
         $(".bookdetailFolder").click(function(){
             $(".bookdetailMore").show();
             $(".bookdetailFolder").hide();
-            $(".bookdetailNone").hide();
+            $(".bookdetailNone").slideUp();
         });
     })
 });
 
 $(function(){
-    $.get("../publishing_review.txt", function(data){
+    $.get("./publishing_review.txt", function(data){
         $("#publishing").html(data);
 
         $(".publishingreviewMore").click(function(){
@@ -29,25 +29,25 @@ $(function(){
         $(".publishingreviewFolder").click(function(){
             $(".publishingreviewMore").show();
             $(".publishingreviewFolder").hide();
-            $(".publishingreviewNone").hide();
+            $(".publishingreviewNone").slideUp();
         });
     })
 });
 
 $(function(){
-    $.get("../profile.txt", function(data){
+    $.get("./profile.txt", function(data){
         $("#profile").html(data);
     });
 });
 
 $(function(){
-    $.get("../author_intro.txt", function(data){
+    $.get("./author_intro.txt", function(data){
         $("#author_intro").html(data);
     })
 });
 
 $(function(){
-    $.get("../sub_index.txt", function(data){
+    $.get("./sub_index.txt", function(data){
         $("#sub_index").html(data);
 
         $(".subindexMore").click(function(){
@@ -59,7 +59,7 @@ $(function(){
         $(".subindexFolder").click(function(){
             $(".subindexMore").show();
             $(".subindexFolder").hide();
-            $(".subindexNone").hide();
+            $(".subindexNone").slideUp();
         });
     })
 });
