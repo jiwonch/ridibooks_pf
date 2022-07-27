@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -6,6 +7,7 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -13,6 +15,7 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "NanumBarunGothic";
   font-style: normal;
@@ -20,24 +23,28 @@
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
   src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "OTWelcomeRA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SUIT-Medium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "TmonMonsori";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -75,6 +82,7 @@ body {
   z-index: 1500;
   display: none;
 }
+
 .imgZoomIn .zoomIn {
   width: 100%;
   height: 100%;
@@ -82,6 +90,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
 }
+
 .imgZoomIn .zoomIn .zoominCloseBtn {
   width: 50px;
   height: 50px;
@@ -97,6 +106,7 @@ body {
   z-index: 80;
   cursor: zoom-out;
 }
+
 .imgZoomIn .zoomIn img {
   width: 519px;
   height: 770px;
@@ -112,33 +122,39 @@ body {
   margin: 0 auto;
   display: flex;
 }
+
 #wrap #mainWrap {
   width: 793px;
   height: auto;
-  border: 1px solid green;
 }
+
 #wrap #mainWrap #main_head {
   width: 100%;
   height: 587.36px;
   padding: 40px 29px;
 }
+
 #wrap #mainWrap #main_head .thum_img {
   width: 220px;
   height: 344px;
   float: left;
 }
+
 #wrap #mainWrap #main_head .thum_img .img_box {
   width: 200px;
   height: 292px;
 }
+
 #wrap #mainWrap #main_head .thum_img .img_box img {
   width: 100%;
   height: 100%;
   cursor: zoom-in;
 }
+
 #wrap #mainWrap #main_head .thum_img .boxlook {
   width: 200px;
 }
+
 #wrap #mainWrap #main_head .thum_img .boxlook .img_look {
   border: 1px solid #1f8ce6;
   border-radius: 5px;
@@ -152,14 +168,17 @@ body {
   color: #1f8ce6;
   cursor: pointer;
 }
+
 #wrap #mainWrap #main_head .thum_img .boxlook .img_look:hover {
   background-color: rgba(31, 140, 230, 0.1);
 }
+
 #wrap #mainWrap #main_head .thum_title {
   width: 500px;
   height: 357.36px;
   float: right;
 }
+
 #wrap #mainWrap #main_head .thum_title p {
   width: 100%;
   height: 14px;
@@ -167,15 +186,18 @@ body {
   color: #333;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #main_head .thum_title p a:hover {
   color: #1f8ce6 !important;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Title {
   width: 100%;
   height: 35px;
   color: #333;
   margin-top: 8px !important;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Title h2 {
   color: #333;
   font-size: 30px;
@@ -183,33 +205,39 @@ body {
   font-family: "SUIT-Medium";
   margin-top: 8px !important;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_hStar {
   width: 100%;
   height: 16.36px;
   margin-top: 17px;
   font-family: "SUIT-Medium";
 }
+
 #wrap #mainWrap #main_head .thum_title .book_hStar .star_ic {
   height: 15px;
   font-size: 15px;
   color: #fa722e;
   letter-spacing: -0.1em;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_hStar .star_figure {
   font-size: 15px;
   padding-left: 3px;
   color: #fa722e;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_hStar .star_ps {
   font-size: 12px;
   display: inline-block;
   margin-left: -3px;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Info {
   width: 100%;
   height: 39px;
   margin: 20px 0;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Info .book_author {
   width: 100%;
   height: 22px;
@@ -218,14 +246,17 @@ body {
   color: #888 !important;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Info .book_author a {
   font-weight: bold;
   color: #666 !important;
   letter-spacing: 0.1em;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Info .book_author a:hover {
   color: #1f8ce6 !important;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Info .book_publishing {
   width: 100%;
   height: 17px;
@@ -233,30 +264,36 @@ body {
   color: #888 !important;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Info .book_publishing a {
   font-weight: bold;
   color: #666 !important;
   letter-spacing: 0.1em;
 }
+
 #wrap #mainWrap #main_head .thum_title .book_Info .book_publishing a:hover {
   color: #1f8ce6 !important;
 }
+
 #wrap #mainWrap #main_head .thum_title #hr_book {
   border-top: 2px solid #d1d5d9;
   margin-bottom: 14px;
 }
+
 #wrap #mainWrap #main_head .thum_title table {
   width: 100%;
   height: 100px;
   border-top: 1px solid #d1d5d9;
   border-bottom: 1px solid #d1d5d9;
 }
+
 #wrap #mainWrap #main_head .thum_title table th {
   width: 171.88px;
   text-align: center;
   border-right: 1px solid #d1d5d9;
   background-color: #f7fafc;
 }
+
 #wrap #mainWrap #main_head .thum_title table tr td:nth-of-type(1) {
   width: 156px;
   text-align: left;
@@ -264,6 +301,7 @@ body {
   padding-top: 5px;
   color: #777;
 }
+
 #wrap #mainWrap #main_head .thum_title table tr td:nth-of-type(2) {
   width: 156px;
   text-align: right;
@@ -273,14 +311,17 @@ body {
   font-weight: 700;
   font-size: 12px;
 }
+
 #wrap #mainWrap #main_head .thum_title table .book_blue {
   color: #1f8ce6 !important;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon {
   width: 100%;
   height: 48px;
   margin-top: 15px;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon {
   width: 271px;
   height: 100%;
@@ -288,6 +329,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .book_ic {
   width: 48px;
   height: 100%;
@@ -295,42 +337,50 @@ body {
   border: 1px solid #d1d5d9;
   cursor: pointer;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .heart {
   font-size: 20px;
   color: #888;
   position: relative;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .heart span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .bookcart {
   font-size: 20px;
   color: #888;
   position: relative;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .bookcart span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .present {
   font-size: 25px;
   color: #888;
   position: relative;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .present span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .book_ic:hover {
   background-color: rgba(209, 213, 217, 0.3);
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .have {
   width: 112px;
   height: 100%;
@@ -346,9 +396,11 @@ body {
   cursor: pointer;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #main_head .thum_title #book_Icon .bookf_icon .have:hover {
   background-color: #0077d9;
 }
+
 #wrap #mainWrap #main_head .both {
   clear: both;
   display: block;
@@ -361,6 +413,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #wrap #mainWrap #main_head .thum_detail {
   width: 733px;
   height: 110px;
@@ -368,26 +421,32 @@ body {
   padding: 20px 26px 13px;
   border: 4px solid #f2f4f5;
 }
+
 #wrap #mainWrap #main_head .thum_detail .thum_tb {
   width: 90%;
   height: 100%;
 }
+
 #wrap #mainWrap #main_head .thum_detail .thum_tb tr {
   font-size: 12px;
   color: #777;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #main_head .thum_detail .thum_tb tr th {
   color: #555 !important;
 }
+
 #wrap #mainWrap #main_head .thum_detail .thum_tb tr td span {
   font-size: 12px;
 }
+
 #wrap #mainWrap #book_intro {
   width: 100%;
   height: auto;
   padding: 0 29px 70px 29px;
 }
+
 #wrap #mainWrap #book_intro h3 {
   font-size: 20px;
   font-weight: bold;
@@ -397,31 +456,37 @@ body {
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 20px;
 }
+
 #wrap #mainWrap #book_intro p {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
 }
+
 #wrap #mainWrap #book_intro .bookdetailNone {
   display: none;
 }
+
 #wrap #mainWrap #book_intro .bookdetailMore {
   float: right;
   color: #1f8ce6;
   cursor: pointer;
 }
+
 #wrap #mainWrap #book_intro .bookdetailFolder {
   display: none;
   float: right;
   color: #1f8ce6;
   cursor: pointer;
 }
+
 #wrap #mainWrap #publishing {
   width: 100%;
   height: auto;
   padding: 0 29px 70px 29px;
 }
+
 #wrap #mainWrap #publishing h3 {
   font-size: 20px;
   font-weight: bold;
@@ -431,31 +496,37 @@ body {
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 20px;
 }
+
 #wrap #mainWrap #publishing p {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
 }
+
 #wrap #mainWrap #publishing .publishingreviewNone {
   display: none;
 }
+
 #wrap #mainWrap #publishing .publishingreviewMore {
   float: right;
   color: #1f8ce6;
   cursor: pointer;
 }
+
 #wrap #mainWrap #publishing .publishingreviewFolder {
   display: none;
   float: right;
   color: #1f8ce6;
   cursor: pointer;
 }
+
 #wrap #mainWrap #profile {
   width: 100%;
   height: auto;
   padding: 0 29px 20px 29px;
 }
+
 #wrap #mainWrap #profile h3 {
   font-size: 20px;
   font-weight: bold;
@@ -465,6 +536,7 @@ body {
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 20px;
 }
+
 #wrap #mainWrap #profile h4 {
   font-size: 20px;
   font-weight: bold;
@@ -472,6 +544,7 @@ body {
   color: #333;
   padding-top: 10px;
 }
+
 #wrap #mainWrap #profile .author_btn {
   width: 168px;
   height: 30.25px;
@@ -486,50 +559,59 @@ body {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
 #wrap #mainWrap #profile .author_btn i {
   position: absolute;
   left: 15%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 #wrap #mainWrap #profile .author_btn span {
   font-size: 13px;
   font-weight: bold;
   line-height: 15px;
   color: #1f8ce6;
 }
+
 #wrap #mainWrap #profile .author_btn:hover {
   background-color: #ebf6ff;
 }
+
 #wrap #mainWrap #profile .tit {
   font-size: 13px;
   color: #888;
   margin-right: 7px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #profile .cot {
   font-size: 13px;
   color: #333;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #profile span {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
 }
+
 #wrap #mainWrap #profile .update {
   width: 100%;
   justify-self: 22px;
   display: flex;
   justify-content: flex-end;
 }
+
 #wrap #mainWrap #profile .update span {
   font-size: 12px;
   color: #999;
   font-weight: bold;
   margin-right: 8px;
 }
+
 #wrap #mainWrap #profile .update .update_btn {
   width: 132px;
   height: 21px;
@@ -542,33 +624,40 @@ body {
   color: #999;
   cursor: pointer;
 }
+
 #wrap #mainWrap #profile .update .update_btn i {
   font-size: 11px;
 }
+
 #wrap #mainWrap #profile .update .update_btn:hover {
   background-color: rgba(209, 213, 217, 0.3);
 }
+
 #wrap #mainWrap #profile .hr_gray {
   width: 100% !important;
 }
+
 #wrap #mainWrap #presenbook {
   width: 735px;
   margin: 0 auto;
   height: auto;
   padding: 0 0px 30px 29px;
 }
+
 #wrap #mainWrap #presenbook .presentitle {
   width: 100%;
   height: 17px;
   display: flex;
   justify-content: space-between;
 }
+
 #wrap #mainWrap #presenbook .presentitle h4 {
   font-size: 16px;
   font-weight: bold;
   color: #333;
   font-family: "SUIT-Medium";
 }
+
 #wrap #mainWrap #presenbook .presentitle .presenul {
   width: 480px;
   height: 16px;
@@ -576,6 +665,7 @@ body {
   margin-top: 10px;
   justify-content: flex-end;
 }
+
 #wrap #mainWrap #presenbook .presentitle .presenul li {
   font-size: 12px;
   color: #888;
@@ -583,20 +673,25 @@ body {
   padding-right: 2px;
   font-family: "SUIT-Medium";
 }
+
 #wrap #mainWrap #presenbook .presentitle .presenul li:nth-of-type(odd) {
   font-weight: bold;
   cursor: pointer;
 }
+
 #wrap #mainWrap #presenbook .presentitle .presenul li:nth-of-type(even) {
   color: #d1d5d9;
   font-size: 13px;
 }
+
 #wrap #mainWrap #presenbook .presentitle .presenul li:nth-of-type(odd):hover {
   color: #333;
 }
+
 #wrap #mainWrap #presenbook .presentitle .presenul .presen_black {
   color: #333;
 }
+
 #wrap #mainWrap #presenbook #presen_Book {
   margin-top: 30px;
   width: 100%;
@@ -604,17 +699,20 @@ body {
   padding: 10px 0 20px 0;
   display: flex;
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box {
   width: 147px;
   height: 193.05px;
   margin-top: 20px;
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img {
   width: 90px;
   height: 131.45px;
   margin: 0 auto;
   position: relative;
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img .prborrow {
   position: absolute;
   width: 40px;
@@ -628,15 +726,18 @@ body {
   text-align: center;
   line-height: 40px;
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img .prborrow a {
   color: #fff !important;
   font-weight: bold;
   font-family: "SUIT-Medium";
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box .presen_Img a img {
   width: 100%;
   height: 100%;
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box h4 {
   font-size: 12px;
   width: 90px;
@@ -646,25 +747,30 @@ body {
   margin: 6px auto 0;
   font-family: "SUIT-Medium";
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box .star_pr {
   width: 90px;
   height: 13px;
   margin: 0 auto;
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box .star_pr .pr_s {
   font-size: 9px !important;
   letter-spacing: -0.3em !important;
   color: #fa722e;
 }
+
 #wrap #mainWrap #presenbook #presen_Book .presenbook_Box .star_pr span {
   font-size: 10px !important;
   letter-spacing: -0.1em;
 }
+
 #wrap #mainWrap #author_intro {
   width: 100%;
   height: auto;
   padding: 0 29px 40px 29px;
 }
+
 #wrap #mainWrap #author_intro h3 {
   font-size: 20px;
   font-weight: bold;
@@ -674,17 +780,20 @@ body {
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 20px;
 }
+
 #wrap #mainWrap #author_intro p {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
 }
+
 #wrap #mainWrap #sub_index {
   width: 100%;
   height: auto;
   padding: 0 29px 40px 29px;
 }
+
 #wrap #mainWrap #sub_index h3 {
   font-size: 20px;
   font-weight: bold;
@@ -694,37 +803,44 @@ body {
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 20px;
 }
+
 #wrap #mainWrap #sub_index div {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
 }
+
 #wrap #mainWrap #sub_index p {
   color: #333;
   font-size: 13px;
   font-family: "NanumBarunGothic";
   line-height: 1.7em;
 }
+
 #wrap #mainWrap #sub_index .subindexNone {
   display: none;
 }
+
 #wrap #mainWrap #sub_index .subindexMore {
   float: right;
   color: #1f8ce6;
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_index .subindexFolder {
   display: none;
   float: right;
   color: #1f8ce6;
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review {
   width: 100%;
   height: auto;
   padding: 0 29px 70px 29px;
 }
+
 #wrap #mainWrap #sub_review h3 {
   font-size: 20px;
   font-weight: bold;
@@ -735,23 +851,27 @@ body {
   border-bottom: 2px solid #7d8e9e;
   margin-bottom: 25px;
 }
+
 #wrap #mainWrap #sub_review .writeBox {
   width: 100%;
   height: auto;
   display: flex;
   padding-top: 14px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox {
   width: 120px;
   height: auto;
   padding: 30px 10px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox h4 {
   text-align: center;
   color: #666;
   font-weight: bold;
   font-size: 13px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox span {
   display: block;
   text-align: center;
@@ -759,6 +879,7 @@ body {
   font-size: 35px;
   color: #333;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bx {
   width: 100%;
   height: 17px;
@@ -766,16 +887,19 @@ body {
   display: flex;
   justify-content: center;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bx span {
   font-size: 13px;
   color: #fa722e !important;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar {
   width: 100%;
   height: 128px;
   padding: 8px 0 10px 0;
   margin-bottom: 3px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb {
   width: 100%;
   height: 14px;
@@ -787,14 +911,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb span {
   font-size: 12px;
   font-weight: bold;
   color: #808991;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb span:nth-of-type(1) {
   font-size: 11px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll {
   width: 72px;
   height: 8px;
@@ -802,31 +929,37 @@ body {
   background-color: #e8edf3;
   box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_5 {
   width: 80%;
   height: 100%;
   background: linear-gradient(to bottom, #9da9b5, #718392);
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_4 {
   width: 15%;
   height: 100%;
   background: linear-gradient(to bottom, #9da9b5, #718392);
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_3 {
   width: 10%;
   height: 100%;
   background: linear-gradient(to bottom, #9da9b5, #718392);
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_2 {
   width: 3%;
   height: 100%;
   background: linear-gradient(to bottom, #9da9b5, #718392);
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .star_bar .star_scb .star_scroll .scroll_1 {
   width: 3%;
   height: 100%;
   background: linear-gradient(to bottom, #9da9b5, #718392);
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .evaluate_pr {
   width: 100%;
   height: 20px;
@@ -835,28 +968,33 @@ body {
   justify-content: flex-end;
   padding: 8px 7px 0 0;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .evaluate_pr .ev_p {
   font-size: 12px;
   font-weight: bold;
   color: #808991;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #sub_review .writeBox .starbox .evaluate_pr span {
   font-size: 12px;
   font-weight: 500;
   color: #808991;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write {
   width: 615px;
   height: auto;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write {
   width: 100%;
   height: 37.14px;
   position: relative;
   margin-bottom: 10px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write p {
   text-align: center;
   font-size: 19px;
@@ -864,6 +1002,7 @@ body {
   padding-top: 10px;
   font-weight: bold;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write .star_message {
   width: 120px;
   height: 100%;
@@ -879,6 +1018,7 @@ body {
   transform: translateX(-50%);
   position: absolute;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write .star_message::after {
   border-top: 8px solid #1f8ce6;
   border-left: 6px solid transparent;
@@ -890,30 +1030,38 @@ body {
   transform: translateX(-50%);
   position: absolute;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write .write_1 {
   display: none;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write .write_2 {
   display: none;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write .write_3 {
   display: none;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write .write_4 {
   display: none;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .ev_write .write_5 {
   display: none;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .writeStar {
   width: 100%;
   text-align: center;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write .writeStar .star {
   font-size: 60px;
   color: #ddd;
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #text_review {
   margin-left: 7px;
   border-radius: 5px;
@@ -925,6 +1073,7 @@ body {
   font-size: 16px;
   font-family: "SUIT-Medium";
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox {
   width: 100%;
   height: 50px;
@@ -933,6 +1082,7 @@ body {
   padding-left: 10px;
   justify-content: space-between;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .review_notice {
   width: 147px;
   height: 30px;
@@ -946,6 +1096,7 @@ body {
   position: relative;
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .review_notice i {
   color: #777;
   font-size: 15px;
@@ -954,29 +1105,35 @@ body {
   left: 14%;
   transform: translate(-50%, -50%);
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .review_notice:hover {
   background-color: rgba(187, 187, 187, 0.2);
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject {
   width: 250px;
   height: 30px;
   display: flex;
   justify-content: space-between;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .checkbox {
   height: 100%;
   display: flex;
   align-items: flex-start;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .checkbox #check {
   width: 20px;
   height: 20px;
   margin-top: -4px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .checkbox span {
   font-size: 15px;
   margin-left: 4px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #subjectBox .subject .reviewSubject_Btn {
   width: 95px;
   height: 30px;
@@ -989,6 +1146,7 @@ body {
   font-size: 14px;
   cursor: default;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #noticeBox {
   width: 100%;
   height: 316px;
@@ -996,6 +1154,7 @@ body {
   border-radius: 5px;
   padding: 16px 25px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #noticeBox p {
   font-size: 13px;
   font-family: "NanumBarunGothic";
@@ -1004,19 +1163,23 @@ body {
   font-weight: bold;
   padding-top: 7px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #noticeBox ul {
   padding: 10px 0px;
 }
+
 #wrap #mainWrap #sub_review .writeBox .write #noticeBox ul li {
   color: #666;
   font-size: 13px;
   font-family: "NanumBarunGothic";
 }
+
 #wrap #mainWrap #sub_review #purchase_review {
   width: 100%;
   height: auto;
   margin-top: 40px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav {
   width: 100%;
   height: 37px;
@@ -1024,16 +1187,19 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 {
   display: flex;
   width: 50%;
   height: 37px;
   align-items: flex-end;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 .hover_line {
   border-bottom: 2px solid #666;
   color: #444 !important;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 li {
   font-size: 16px;
   height: 100%;
@@ -1043,10 +1209,12 @@ body {
   margin-right: 20px;
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN1 li:hover {
   border-bottom: 2px solid #666;
   color: #444 !important;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 {
   display: flex;
   width: 50%;
@@ -1054,6 +1222,7 @@ body {
   height: 37px;
   align-items: flex-end;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 li {
   font-size: 14px;
   padding-right: 10px;
@@ -1064,20 +1233,25 @@ body {
   line-height: 45px;
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 li:nth-child(2n) {
   color: #ddd !important;
   width: 1px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 li:hover {
   color: #666 !important;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseNav .pN2 .hover_black {
   color: #444 !important;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview {
   width: 100%;
   height: auto;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox {
   width: 100%;
   height: 93px;
@@ -1085,11 +1259,13 @@ body {
   border-top: 1px solid #d1d5d9;
   display: flex;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar {
   width: 115px;
   height: 100%;
   padding: 1px 0 15px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rstar {
   width: 100%;
   height: 15px;
@@ -1097,17 +1273,20 @@ body {
   margin-bottom: 5px;
   letter-spacing: -0.1em;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rid {
   width: 100%;
   height: 21px;
   display: flex;
   margin-bottom: 5px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rid span {
   font-size: 12px;
   font-weight: 700;
   font-family: "NanumBarunGothic";
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rid .puchper {
   width: 35px;
   height: 18px;
@@ -1119,16 +1298,19 @@ body {
   font-size: 10px;
   text-align: center;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rdate {
   width: 100%;
   height: 21px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rdate .date {
   font-size: 11px;
   color: #999;
   font-weight: bold;
   font-family: "NanumBarunGothic";
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rdate .date::after {
   content: "";
   display: inline-block;
@@ -1140,27 +1322,32 @@ body {
   border-radius: 3px;
   background-color: #e6e6e6;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewStar .rdate .declare {
   font-family: "NanumBarunGothic";
   font-weight: bold;
   font-size: 12px;
   counter-reset: #555;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText {
   width: 620px;
   height: 100%;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText p {
   display: block;
   font-size: 14px;
   margin-bottom: 20px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText .reviewIcon {
   width: 100%;
   height: 28px;
   display: flex;
   justify-content: flex-end;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText .reviewIcon .comment {
   padding: 6px 14px;
   border: 1px solid #d1d5d9;
@@ -1173,6 +1360,7 @@ body {
   box-shadow: 0 1px 1px 0 rgba(209, 213, 217, 0.3);
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText .reviewIcon .recommendation {
   padding: 6px 14px;
   border: 1px solid #d1d5d9;
@@ -1186,43 +1374,53 @@ body {
   box-shadow: 0 1px 1px 0 rgba(209, 213, 217, 0.3);
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText .reviewIcon .recommendation i {
   font-size: 12px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText .reviewIcon .comment:hover {
   background: rgba(209, 213, 217, 0.5);
   transition: all 0.4s ease-in-out;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox .reviewText .reviewIcon .recommendation:hover {
   background: rgba(209, 213, 217, 0.5);
   transition: all 0.4s ease-in-out;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox:nth-child(1) {
   border-top: none !important;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .prBox:nth-child(8) {
   border-bottom: 1px solid #d1d5d9 !important;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remark {
   margin-top: 20px;
   position: relative;
   color: #999;
   cursor: pointer;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remark .up {
   display: none;
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remark .down {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remark:hover {
   color: #333;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remarkStandard {
   width: 100%;
   height: 268px;
@@ -1233,12 +1431,14 @@ body {
   color: #666;
   display: none;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remarkStandard p {
   color: #333;
   font-weight: bold;
   font-family: "NanumBarunGothic";
   font-size: 13px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remarkStandard dt {
   font-weight: bold;
   color: #888;
@@ -1246,65 +1446,244 @@ body {
   font-family: "NanumBarunGothic";
   font-size: 13px;
 }
+
 #wrap #mainWrap #sub_review #purchase_review .purchaseReview .remarkStandard dd {
   color: #888;
   font-family: "NanumBarunGothic";
   font-size: 13px;
 }
+
+#wrap #mainWrap #anotherBook {
+  width: 100%;
+  height: 600px;
+  padding: 0 29px 70px 29px;
+}
+
+#wrap #mainWrap #anotherBook h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "SUIT-Medium";
+  color: #59667a;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7d8e9e;
+  margin-bottom: 20px;
+}
+
+#wrap #mainWrap #anotherBook #anBook {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#wrap #mainWrap #anotherBook #anBook .an_book {
+  width: 145px;
+  height: 200px;
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+#wrap #mainWrap #anotherBook #anBook .an_book .anImg {
+  width: 90px;
+  height: 135px;
+  margin: 0 auto;
+}
+
+#wrap #mainWrap #anotherBook #anBook .an_book .anImg a img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #mainWrap #anotherBook #anBook .an_book .anText {
+  width: 90px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#wrap #mainWrap #anotherBook #anBook .an_book .anText h4 {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px !important;
+  margin-bottom: 2px !important;
+  font-weight: bold;
+  line-height: 12px;
+  font-family: "SUIT-Medium";
+}
+
+#wrap #mainWrap #anotherBook #anBook .an_book .anText p {
+  text-align: left;
+}
+
+#wrap #mainWrap #anotherBook #anBook .an_book .anText p a {
+  font-size: 12px;
+  color: #777 !important;
+  line-height: 12px;
+  font-family: "SUIT-Medium";
+}
+
+#wrap #mainWrap #aroundBook {
+  width: 100%;
+  height: 600px;
+  padding: 0 29px 70px 29px;
+}
+
+#wrap #mainWrap #aroundBook h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "SUIT-Medium";
+  color: #59667a;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7d8e9e;
+  margin-bottom: 20px;
+}
+
+#wrap #mainWrap #aroundBook #arBook {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book {
+  width: 145px;
+  height: 200px;
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book .arImg {
+  width: 90px;
+  height: 135px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book .arImg a img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book .arImg .ardiscount {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #59667a;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  padding-top: 1px;
+  font-size: 13px;
+  top: -10px;
+  left: -10px;
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book .arText {
+  width: 90px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book .arText h4 {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px !important;
+  margin-bottom: 2px !important;
+  font-weight: bold;
+  line-height: 12px;
+  font-family: "SUIT-Medium";
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book .arText p {
+  text-align: left;
+}
+
+#wrap #mainWrap #aroundBook #arBook .ar_book .arText p a {
+  font-size: 12px;
+  color: #777 !important;
+  line-height: 12px;
+  font-family: "SUIT-Medium";
+}
+
 #wrap .color_red {
   color: #fa722e !important;
 }
+
 #wrap .starcolor {
   color: #fa722e !important;
 }
+
 #wrap .starnone {
   color: #ddd !important;
 }
+
 #wrap .standardcolor {
   color: #333 !important;
 }
+
 #wrap #subWrap {
   width: 207px;
   height: 581.5px;
 }
+
 #wrap #subWrap .sub_book {
   width: 100%;
   height: 207px;
   border-bottom: 1px solid #e6e8eb;
   margin-bottom: 40px;
 }
+
 #wrap #subWrap .sub_book a img {
   width: 100%;
   height: 100%;
 }
+
 #wrap #subWrap .sub_bestseller {
   width: 100%;
   height: 343.5px;
   padding: 0 18px;
 }
+
 #wrap #subWrap .sub_bestseller h5 {
   font-weight: bold;
 }
+
 #wrap #subWrap .sub_bestseller table {
   width: 100%;
 }
+
 #wrap #subWrap .sub_bestseller table tr {
   border-top: 1px solid #e6e8eb;
   border-bottom: 1px solid #e6e8eb;
 }
+
 #wrap #subWrap .sub_bestseller table tr th {
   width: 25px;
   color: #e64938;
   font-size: 12px;
   padding: 4px 0 4px 0;
 }
+
 #wrap #subWrap .sub_bestseller table tr td {
   font-size: 12px;
   padding-left: 10px;
 }
+
 #wrap #subWrap .sub_bestseller table tr td a:hover {
   color: #1f8ce6 !important;
 }
+
 #wrap #subWrap .sub_bestseller .sub_show_btn {
   width: 100%;
   height: 20px;
@@ -1318,11 +1697,13 @@ body {
   cursor: pointer;
   color: #666;
 }
+
 #wrap #subWrap .sub_bestseller .sub_show_btn i {
   font-size: 13px;
   position: absolute;
   color: #666;
 }
+
 #wrap #subWrap .sub_bestseller .sub_show_btn:hover {
   background-color: #e6e8eb;
 }

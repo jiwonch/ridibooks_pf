@@ -151,11 +151,11 @@ $(document).ready(function () {
         confirm("로그인 이후 이용 가능합니다. 로그인을 하시겠습니까?")
     });
 
-    $(".reviewSubject_Btn").click(function(){
+    $(".reviewSubject_Btn").click(function () {
         alert("※별점을 먼저 남겨주세요!")
     });
 
-    $(".recommendation").click(function(){
+    $(".recommendation").click(function () {
         alert("※로그인 후 다시 시도해주세요!")
     });
 });
@@ -213,14 +213,14 @@ $(document).ready(function () {
 });
 
 // 구매 기준 슬라이드 토글
-$(document).ready(function(){
-    $(".remark").click(function(){
-        if(!$('.remarkStandard').is(':visible')){
+$(document).ready(function () {
+    $(".remark").click(function () {
+        if (!$('.remarkStandard').is(':visible')) {
             $(".down").hide();
             $(".up").show();
             $(".remarkStandard").slideDown();
             $(".remark").addClass('standardcolor');
-        } else{
+        } else {
             $(".up").hide();
             $(".down").show();
             $(".remarkStandard").slideUp();
@@ -230,22 +230,22 @@ $(document).ready(function(){
 });
 
 // presntation 대표 저서 인기순 최신순 평점순 클릭 이벤트
-$(document).ready(function(){
+$(document).ready(function () {
     $(".presenli_1").addClass('presen_black');
 
-    $(".presenli_1").click(function(){
+    $(".presenli_1").click(function () {
         $(this).addClass('presen_black')
         $(".presenli_2").removeClass('presen_black');
         $(".presenli_3").removeClass('presen_black');
     });
 
-    $(".presenli_2").click(function(){
+    $(".presenli_2").click(function () {
         $(this).addClass('presen_black')
         $(".presenli_1").removeClass('presen_black');
         $(".presenli_3").removeClass('presen_black');
     });
 
-    $(".presenli_3").click(function(){
+    $(".presenli_3").click(function () {
         $(this).addClass('presen_black')
         $(".presenli_1").removeClass('presen_black');
         $(".presenli_2").removeClass('presen_black');
@@ -256,7 +256,7 @@ $(document).ready(function(){
 $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query: "황보름", size:2 },
+    data: { query: "황보름", size: 2 },
     headers: { Authorization: "KakaoAK 9b457f655c7841e82fec1c92bda0e61a" }
 })
     .done(function (msg) {
@@ -264,5 +264,37 @@ $.ajax({
         for (var i = 0; i < 3; i++) {
             $(".presen_Img a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
             $(".presenbook_Box h4 a").eq(i).append("<h4>" + msg.documents[i].title + "</h4>");
+        }
+    });
+
+// 이 책과 함께 구매한책 ajax
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: { query: "소설", size: 10 },
+    headers: { Authorization: "KakaoAK 9b457f655c7841e82fec1c92bda0e61a" }
+})
+    .done(function (msg) {
+
+        for (var i = 0; i < 11; i++) {
+            $(".anImg a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
+            $(".anText h4 a").eq(i).append(msg.documents[i].title.substring(0, 17));
+            $(".anText p a").eq(i).append(msg.documents[i].authors[0]);
+        }
+    });
+
+// 이 책과 함께 둘러본 책 ajax
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: { query: "오지", size: 10 },
+    headers: { Authorization: "KakaoAK 9b457f655c7841e82fec1c92bda0e61a" }
+})
+    .done(function (msg) {
+
+        for (var i = 0; i < 11; i++) {
+            $(".arImg a").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
+            $(".arText h4 a").eq(i).append(msg.documents[i].title.substring(0, 17));
+            $(".arText p a").eq(i).append(msg.documents[i].authors[0]);
         }
     });

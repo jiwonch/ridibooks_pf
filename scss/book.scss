@@ -69,29 +69,29 @@ table {
     border-collapse: collapse;
 }
 
-#logo a img:nth-child(2){
+#logo a img:nth-child(2) {
     display: none;
 }
 
-body{
+body {
     position: relative;
 }
 
-.imgZoomIn{
+.imgZoomIn {
     position: fixed;
     width: 100%;
     height: 100vh;
     z-index: 1500;
     display: none;
 
-    & .zoomIn{
+    & .zoomIn {
         width: 100%;
         height: 100%;
         position: relative;
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 1000;
 
-        & .zoominCloseBtn{
+        & .zoominCloseBtn {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -107,53 +107,52 @@ body{
             cursor: zoom-out;
         }
 
-        & img{
+        & img {
             width: 519px;
             height: 770px;
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
     }
 }
 
-#wrap{
+#wrap {
     width: 1000px;
     height: auto;
     margin: 0 auto;
     display: flex;
 
-    & #mainWrap{
+    & #mainWrap {
         width: 793px;
         height: auto;
-        border: 1px solid green;
 
-        & #main_head{
+        & #main_head {
             width: 100%;
             height: 587.36px;
             padding: 40px 29px;
 
-            & .thum_img{
+            & .thum_img {
                 width: 220px;
                 height: 344px;
                 float: left;
 
-                & .img_box{
+                & .img_box {
                     width: 200px;
                     height: 292px;
 
-                    & img{
+                    & img {
                         width: 100%;
                         height: 100%;
                         cursor: zoom-in;
                     }
                 }
 
-                & .boxlook{
+                & .boxlook {
                     width: 200px;
 
-                    & .img_look{
+                    & .img_look {
                         border: 1px solid #1f8ce6;
                         border-radius: 5px;
                         width: 130px;
@@ -167,18 +166,18 @@ body{
                         cursor: pointer;
                     }
 
-                    & .img_look:hover{
+                    & .img_look:hover {
                         background-color: rgba(31, 140, 230, 0.1);
                     }
                 }
             }
 
-            & .thum_title{
+            & .thum_title {
                 width: 500px;
                 height: 357.36px;
                 float: right;
 
-                & p{
+                & p {
                     width: 100%;
                     height: 14px;
                     font-size: 13px;
@@ -186,17 +185,17 @@ body{
                     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
                 }
 
-                & p a:hover{
+                & p a:hover {
                     color: #1f8ce6 !important;
                 }
 
-                & .book_Title{
+                & .book_Title {
                     width: 100%;
                     height: 35px;
                     color: #333;
                     margin-top: 8px !important;
 
-                    & h2{
+                    & h2 {
                         color: #333;
                         font-size: 30px;
                         font-weight: bold;
@@ -205,94 +204,94 @@ body{
                     }
                 }
 
-                & .book_hStar{
+                & .book_hStar {
                     width: 100%;
                     height: 16.36px;
                     margin-top: 17px;
                     font-family: 'SUIT-Medium';
 
-                    & .star_ic{
+                    & .star_ic {
                         height: 15px;
                         font-size: 15px;
                         color: #fa722e;
                         letter-spacing: -0.1em;
                     }
 
-                    & .star_figure{
+                    & .star_figure {
                         font-size: 15px;
                         padding-left: 3px;
                         color: #fa722e;
                     }
 
-                    & .star_ps{
+                    & .star_ps {
                         font-size: 12px;
                         display: inline-block;
                         margin-left: -3px;
                     }
                 }
 
-                & .book_Info{
+                & .book_Info {
                     width: 100%;
                     height: 39px;
                     margin: 20px 0;
 
-                    & .book_author{
+                    & .book_author {
                         width: 100%;
                         height: 22px;
                         padding-bottom: 5px;
                         font-size: 14px;
                         color: #888 !important;
                         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-                        
-                        & a{
+
+                        & a {
                             font-weight: bold;
                             color: #666 !important;
                             letter-spacing: 0.1em;
                         }
 
-                        & a:hover{
+                        & a:hover {
                             color: #1f8ce6 !important;
                         }
                     }
 
-                    & .book_publishing{
+                    & .book_publishing {
                         width: 100%;
                         height: 17px;
                         font-size: 13px;
                         color: #888 !important;
                         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-                        
-                        & a{
+
+                        & a {
                             font-weight: bold;
                             color: #666 !important;
                             letter-spacing: 0.1em;
                         }
 
-                        & a:hover{
+                        & a:hover {
                             color: #1f8ce6 !important;
                         }
                     }
                 }
 
-                & #hr_book{
+                & #hr_book {
                     border-top: 2px solid #d1d5d9;
                     margin-bottom: 14px;
                 }
 
-                & table{
+                & table {
                     width: 100%;
                     height: 100px;
                     border-top: 1px solid #d1d5d9;
                     border-bottom: 1px solid #d1d5d9;
 
-                    & th{
+                    & th {
                         width: 171.88px;
                         text-align: center;
                         border-right: 1px solid #d1d5d9;
                         background-color: #f7fafc;
                     }
 
-                    & tr td:nth-of-type(1){
+                    & tr td:nth-of-type(1) {
                         width: 156px;
                         text-align: left;
                         padding-left: 10px;
@@ -300,7 +299,7 @@ body{
                         color: #777;
                     }
 
-                    & tr td:nth-of-type(2){
+                    & tr td:nth-of-type(2) {
                         width: 156px;
                         text-align: right;
                         padding-right: 10px;
@@ -310,24 +309,24 @@ body{
                         font-size: 12px;
                     }
 
-                    & .book_blue{
+                    & .book_blue {
                         color: #1f8ce6 !important;
                     }
                 }
 
-                & #book_Icon{
+                & #book_Icon {
                     width: 100%;
                     height: 48px;
                     margin-top: 15px;
 
-                    & .bookf_icon{
+                    & .bookf_icon {
                         width: 271px;
                         height: 100%;
                         float: right;
                         display: flex;
                         justify-content: space-between;
 
-                        & .book_ic{
+                        & .book_ic {
                             width: 48px;
                             height: 100%;
                             border-radius: 5px;
@@ -335,12 +334,12 @@ body{
                             cursor: pointer;
                         }
 
-                        & .heart{
+                        & .heart {
                             font-size: 20px;
                             color: #888;
                             position: relative;
 
-                            & span{
+                            & span {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
@@ -349,12 +348,12 @@ body{
 
                         }
 
-                        & .bookcart{
+                        & .bookcart {
                             font-size: 20px;
                             color: #888;
                             position: relative;
 
-                            & span{
+                            & span {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
@@ -363,12 +362,12 @@ body{
 
                         }
 
-                        & .present{
+                        & .present {
                             font-size: 25px;
                             color: #888;
                             position: relative;
 
-                            & span{
+                            & span {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
@@ -377,11 +376,11 @@ body{
 
                         }
 
-                        & .book_ic:hover{
+                        & .book_ic:hover {
                             background-color: rgba(209, 213, 217, 0.3);
                         }
 
-                        & .have{
+                        & .have {
                             width: 112px;
                             height: 100%;
                             border-radius: 5px;
@@ -397,14 +396,14 @@ body{
                             font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
                         }
 
-                        & .have:hover{
+                        & .have:hover {
                             background-color: #0077d9;
                         }
                     }
                 }
             }
 
-            & .both{
+            & .both {
                 clear: both;
                 display: block;
                 width: 0;
@@ -417,27 +416,27 @@ body{
                 padding: 0;
             }
 
-            & .thum_detail{
+            & .thum_detail {
                 width: 733px;
                 height: 110px;
                 margin-top: 40px;
                 padding: 20px 26px 13px;
                 border: 4px solid #f2f4f5;
 
-                & .thum_tb{
+                & .thum_tb {
                     width: 90%;
                     height: 100%;
 
-                    & tr{
+                    & tr {
                         font-size: 12px;
                         color: #777;
                         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-                    
-                        & th{
+
+                        & th {
                             color: #555 !important;
                         }
 
-                        & td span{
+                        & td span {
                             font-size: 12px;
                         }
                     }
@@ -445,12 +444,12 @@ body{
             }
         }
 
-        & #book_intro{
+        & #book_intro {
             width: 100%;
             height: auto;
             padding: 0 29px 70px 29px;
 
-            & h3{
+            & h3 {
                 font-size: 20px;
                 font-weight: bold;
                 font-family: 'SUIT-Medium';
@@ -460,24 +459,24 @@ body{
                 margin-bottom: 20px;
             }
 
-            & p{
+            & p {
                 color: #333;
                 font-size: 13px;
                 font-family: "NanumBarunGothic";
                 line-height: 1.7em;
             }
 
-            & .bookdetailNone{
+            & .bookdetailNone {
                 display: none;
             }
 
-            & .bookdetailMore{
+            & .bookdetailMore {
                 float: right;
                 color: #1f8ce6;
                 cursor: pointer;
             }
 
-            & .bookdetailFolder{
+            & .bookdetailFolder {
                 display: none;
                 float: right;
                 color: #1f8ce6;
@@ -485,12 +484,12 @@ body{
             }
         }
 
-        & #publishing{
+        & #publishing {
             width: 100%;
             height: auto;
             padding: 0 29px 70px 29px;
 
-            & h3{
+            & h3 {
                 font-size: 20px;
                 font-weight: bold;
                 font-family: 'SUIT-Medium';
@@ -500,24 +499,24 @@ body{
                 margin-bottom: 20px;
             }
 
-            & p{
+            & p {
                 color: #333;
                 font-size: 13px;
                 font-family: "NanumBarunGothic";
                 line-height: 1.7em;
             }
 
-            & .publishingreviewNone{
+            & .publishingreviewNone {
                 display: none;
             }
 
-            & .publishingreviewMore{
+            & .publishingreviewMore {
                 float: right;
                 color: #1f8ce6;
                 cursor: pointer;
             }
 
-            & .publishingreviewFolder{
+            & .publishingreviewFolder {
                 display: none;
                 float: right;
                 color: #1f8ce6;
@@ -525,12 +524,12 @@ body{
             }
         }
 
-        & #profile{
+        & #profile {
             width: 100%;
             height: auto;
             padding: 0 29px 20px 29px;
 
-            & h3{
+            & h3 {
                 font-size: 20px;
                 font-weight: bold;
                 font-family: 'SUIT-Medium';
@@ -540,7 +539,7 @@ body{
                 margin-bottom: 20px;
             }
 
-            & h4{
+            & h4 {
                 font-size: 20px;
                 font-weight: bold;
                 font-family: 'SUIT-Medium';
@@ -548,7 +547,7 @@ body{
                 padding-top: 10px;
             }
 
-            & .author_btn{
+            & .author_btn {
                 width: 168px;
                 height: 30.25px;
                 padding: 8px 27px 7px 8px;
@@ -562,14 +561,14 @@ body{
                 cursor: pointer;
                 margin-bottom: 20px;
 
-                & i{
+                & i {
                     position: absolute;
                     left: 15%;
                     top: 50%;
                     transform: translate(-50%, -50%);
                 }
 
-                & span{
+                & span {
                     font-size: 13px;
                     font-weight: bold;
                     line-height: 15px;
@@ -577,44 +576,44 @@ body{
                 }
             }
 
-            & .author_btn:hover{
+            & .author_btn:hover {
                 background-color: #ebf6ff;
             }
 
-            & .tit{
+            & .tit {
                 font-size: 13px;
                 color: #888;
                 margin-right: 7px;
                 font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
             }
 
-            & .cot{
+            & .cot {
                 font-size: 13px;
                 color: #333;
                 font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
             }
 
-            & span{
+            & span {
                 color: #333;
                 font-size: 13px;
                 font-family: "NanumBarunGothic";
                 line-height: 1.7em;
             }
 
-            & .update{
+            & .update {
                 width: 100%;
                 justify-self: 22px;
                 display: flex;
                 justify-content: flex-end;
 
-                & span{
+                & span {
                     font-size: 12px;
                     color: #999;
                     font-weight: bold;
                     margin-right: 8px;
                 }
 
-                & .update_btn{
+                & .update_btn {
                     width: 132px;
                     height: 21px;
                     font-size: 12px;
@@ -626,48 +625,48 @@ body{
                     color: #999;
                     cursor: pointer;
 
-                    & i{
+                    & i {
                         font-size: 11px;
                     }
                 }
 
-                & .update_btn:hover{
+                & .update_btn:hover {
                     background-color: rgba(209, 213, 217, 0.3);
                 }
             }
 
-            & .hr_gray{
+            & .hr_gray {
                 width: 100% !important;
             }
         }
 
-        & #presenbook{
+        & #presenbook {
             width: 735px;
             margin: 0 auto;
             height: auto;
             padding: 0 0px 30px 29px;
 
-            & .presentitle{
+            & .presentitle {
                 width: 100%;
                 height: 17px;
                 display: flex;
                 justify-content: space-between;
 
-                & h4{
+                & h4 {
                     font-size: 16px;
                     font-weight: bold;
                     color: #333;
                     font-family: 'SUIT-Medium';
                 }
-    
-                & .presenul{
+
+                & .presenul {
                     width: 480px;
                     height: 16px;
                     display: flex;
                     margin-top: 10px;
                     justify-content: flex-end;
 
-                    & li{
+                    & li {
                         font-size: 12px;
                         color: #888;
                         padding-left: 10px;
@@ -675,45 +674,45 @@ body{
                         font-family: 'SUIT-Medium';
                     }
 
-                    & li:nth-of-type(odd){
+                    & li:nth-of-type(odd) {
                         font-weight: bold;
                         cursor: pointer;
                     }
 
-                    & li:nth-of-type(even){
+                    & li:nth-of-type(even) {
                         color: #d1d5d9;
                         font-size: 13px;
                     }
 
-                    & li:nth-of-type(odd):hover{
+                    & li:nth-of-type(odd):hover {
                         color: #333;
                     }
 
-                    .presen_black{
+                    .presen_black {
                         color: #333;
                     }
                 }
             }
 
-            & #presen_Book{
+            & #presen_Book {
                 margin-top: 30px;
                 width: 100%;
                 height: 243.09px;
                 padding: 10px 0 20px 0;
                 display: flex;
-                
-                & .presenbook_Box{
+
+                & .presenbook_Box {
                     width: 147px;
                     height: 193.05px;
                     margin-top: 20px;
 
-                    & .presen_Img{
+                    & .presen_Img {
                         width: 90px;
                         height: 131.45px;
                         margin: 0 auto;
                         position: relative;
 
-                        & .prborrow{
+                        & .prborrow {
                             position: absolute;
                             width: 40px;
                             height: 40px;
@@ -725,21 +724,21 @@ body{
                             left: -7px;
                             text-align: center;
                             line-height: 40px;
-                            
-                            & a{
+
+                            & a {
                                 color: #fff !important;
                                 font-weight: bold;
                                 font-family: 'SUIT-Medium';
                             }
                         }
 
-                        & a img{
+                        & a img {
                             width: 100%;
                             height: 100%;
                         }
                     }
-                    
-                    & h4{
+
+                    & h4 {
                         font-size: 12px;
                         width: 90px;
                         height: auto;
@@ -749,18 +748,18 @@ body{
                         font-family: 'SUIT-Medium';
                     }
 
-                    & .star_pr{
+                    & .star_pr {
                         width: 90px;
                         height: 13px;
                         margin: 0 auto;
 
-                        & .pr_s{
+                        & .pr_s {
                             font-size: 9px !important;
                             letter-spacing: -0.3em !important;
                             color: #fa722e;
                         }
 
-                        & span{
+                        & span {
                             font-size: 10px !important;
                             letter-spacing: -0.1em;
                         }
@@ -769,12 +768,12 @@ body{
             }
         }
 
-        & #author_intro{
+        & #author_intro {
             width: 100%;
             height: auto;
             padding: 0 29px 40px 29px;
 
-            & h3{
+            & h3 {
                 font-size: 20px;
                 font-weight: bold;
                 font-family: 'SUIT-Medium';
@@ -784,7 +783,7 @@ body{
                 margin-bottom: 20px;
             }
 
-            & p{
+            & p {
                 color: #333;
                 font-size: 13px;
                 font-family: "NanumBarunGothic";
@@ -792,12 +791,12 @@ body{
             }
         }
 
-        & #sub_index{
+        & #sub_index {
             width: 100%;
             height: auto;
             padding: 0 29px 40px 29px;
 
-            & h3{
+            & h3 {
                 font-size: 20px;
                 font-weight: bold;
                 font-family: 'SUIT-Medium';
@@ -807,31 +806,31 @@ body{
                 margin-bottom: 20px;
             }
 
-            & div{
+            & div {
                 color: #333;
                 font-size: 13px;
                 font-family: "NanumBarunGothic";
                 line-height: 1.7em;
             }
 
-            & p{
+            & p {
                 color: #333;
                 font-size: 13px;
                 font-family: "NanumBarunGothic";
                 line-height: 1.7em;
             }
 
-            & .subindexNone{
+            & .subindexNone {
                 display: none;
             }
 
-            & .subindexMore{
+            & .subindexMore {
                 float: right;
                 color: #1f8ce6;
                 cursor: pointer;
             }
 
-            & .subindexFolder{
+            & .subindexFolder {
                 display: none;
                 float: right;
                 color: #1f8ce6;
@@ -839,12 +838,12 @@ body{
             }
         }
 
-        & #sub_review{
+        & #sub_review {
             width: 100%;
             height: auto;
             padding: 0 29px 70px 29px;
 
-            & h3{
+            & h3 {
                 font-size: 20px;
                 font-weight: bold;
                 font-family: 'SUIT-Medium';
@@ -855,25 +854,25 @@ body{
                 margin-bottom: 25px;
             }
 
-            & .writeBox{
+            & .writeBox {
                 width: 100%;
                 height: auto;
                 display: flex;
                 padding-top: 14px;
 
-                & .starbox{
+                & .starbox {
                     width: 120px;
                     height: auto;
                     padding: 30px 10px;
 
-                    & h4{
+                    & h4 {
                         text-align: center;
                         color: #666;
                         font-weight: bold;
                         font-size: 13px;
                     }
 
-                    & span{
+                    & span {
                         display: block;
                         text-align: center;
                         font-weight: bold;
@@ -881,25 +880,26 @@ body{
                         color: #333;
                     }
 
-                    & .star_bx{
+                    & .star_bx {
                         width: 100%;
                         height: 17px;
                         margin-top: -5px !important;
                         display: flex;
                         justify-content: center;
-                        & span{
+
+                        & span {
                             font-size: 13px;
                             color: #fa722e !important;
                         }
                     }
 
-                    & .star_bar{
+                    & .star_bar {
                         width: 100%;
                         height: 128px;
                         padding: 8px 0 10px 0;
                         margin-bottom: 3px;
 
-                        & .star_scb{
+                        & .star_scb {
                             width: 100%;
                             height: 14px;
                             margin-top: 8px;
@@ -910,49 +910,49 @@ body{
                             display: flex;
                             justify-content: space-between;
 
-                            & span{
+                            & span {
                                 font-size: 12px;
                                 font-weight: bold;
                                 color: #808991;
                             }
 
-                            & span:nth-of-type(1){
+                            & span:nth-of-type(1) {
                                 font-size: 11px;
                             }
 
-                            & .star_scroll{
+                            & .star_scroll {
                                 width: 72px;
                                 height: 8px;
                                 align-self: center;
                                 background-color: #e8edf3;
                                 box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 
-                                & .scroll_5{
+                                & .scroll_5 {
                                     width: 80%;
                                     height: 100%;
                                     background: linear-gradient(to bottom, #9da9b5, #718392);
                                 }
 
-                                & .scroll_4{
-                                    width:15%;
+                                & .scroll_4 {
+                                    width: 15%;
                                     height: 100%;
                                     background: linear-gradient(to bottom, #9da9b5, #718392);
                                 }
 
-                                & .scroll_3{
+                                & .scroll_3 {
                                     width: 10%;
                                     height: 100%;
                                     background: linear-gradient(to bottom, #9da9b5, #718392);
                                 }
 
-                                & .scroll_2{
+                                & .scroll_2 {
                                     width: 3%;
                                     height: 100%;
                                     background: linear-gradient(to bottom, #9da9b5, #718392);
                                 }
 
-                                & .scroll_1{
-                                    width:3%;
+                                & .scroll_1 {
+                                    width: 3%;
                                     height: 100%;
                                     background: linear-gradient(to bottom, #9da9b5, #718392);
                                 }
@@ -960,7 +960,7 @@ body{
                         }
                     }
 
-                    & .evaluate_pr{
+                    & .evaluate_pr {
                         width: 100%;
                         height: 20px;
                         border-top: 1px solid #d1d5d9;
@@ -968,14 +968,14 @@ body{
                         justify-content: flex-end;
                         padding: 8px 7px 0 0;
 
-                        & .ev_p{
+                        & .ev_p {
                             font-size: 12px;
                             font-weight: bold;
                             color: #808991;
                             font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
                         }
 
-                        & span{
+                        & span {
                             font-size: 12px;
                             font-weight: 500;
                             color: #808991;
@@ -984,17 +984,17 @@ body{
                     }
                 }
 
-                & .write{
+                & .write {
                     width: 615px;
                     height: auto;
 
-                    & .ev_write{
+                    & .ev_write {
                         width: 100%;
                         height: 37.14px;
                         position: relative;
                         margin-bottom: 10px;
 
-                        & p{
+                        & p {
                             text-align: center;
                             font-size: 19px;
                             color: #888;
@@ -1002,7 +1002,7 @@ body{
                             font-weight: bold;
                         }
 
-                        & .star_message{
+                        & .star_message {
                             width: 120px;
                             height: 100%;
                             border: 1px solid #1f8ce6;
@@ -1018,7 +1018,7 @@ body{
                             position: absolute;
                         }
 
-                        & .star_message::after{
+                        & .star_message::after {
                             border-top: 8px solid #1f8ce6;
                             border-left: 6px solid transparent;
                             border-right: 6px solid transparent;
@@ -1030,32 +1030,32 @@ body{
                             position: absolute;
                         }
 
-                        & .write_1{
+                        & .write_1 {
                             display: none;
                         }
 
-                        & .write_2{
+                        & .write_2 {
                             display: none;
                         }
 
-                        & .write_3{
+                        & .write_3 {
                             display: none;
                         }
 
-                        & .write_4{
+                        & .write_4 {
                             display: none;
                         }
 
-                        & .write_5{
+                        & .write_5 {
                             display: none;
                         }
                     }
 
-                    & .writeStar{
+                    & .writeStar {
                         width: 100%;
                         text-align: center;
 
-                        & .star{
+                        & .star {
                             font-size: 60px;
                             color: #ddd;
                             cursor: pointer;
@@ -1063,7 +1063,7 @@ body{
 
                     }
 
-                    & #text_review{
+                    & #text_review {
                         margin-left: 7px;
                         border-radius: 5px;
                         border: 2px solid rgb(199, 198, 198);
@@ -1075,7 +1075,7 @@ body{
                         font-family: 'SUIT-Medium';
                     }
 
-                    & #subjectBox{
+                    & #subjectBox {
                         width: 100%;
                         height: 50px;
                         display: flex;
@@ -1083,7 +1083,7 @@ body{
                         padding-left: 10px;
                         justify-content: space-between;
 
-                        & .review_notice{
+                        & .review_notice {
                             width: 147px;
                             height: 30px;
                             border: 1px solid #bbb;
@@ -1096,7 +1096,7 @@ body{
                             position: relative;
                             cursor: pointer;
 
-                            & i{
+                            & i {
                                 color: #777;
                                 font-size: 15px;
                                 position: absolute;
@@ -1106,41 +1106,41 @@ body{
                             }
                         }
 
-                        & .review_notice:hover{
+                        & .review_notice:hover {
                             background-color: rgba(187, 187, 187, 0.2);
                         }
 
-                        
-                        & .subject{
+
+                        & .subject {
                             width: 250px;
                             height: 30px;
                             display: flex;
                             justify-content: space-between;
 
-                            & .checkbox{
+                            & .checkbox {
                                 height: 100%;
                                 display: flex;
                                 align-items: flex-start;
 
-                                & #check{
+                                & #check {
                                     width: 20px;
                                     height: 20px;
                                     margin-top: -4px;
                                 }
 
-                                & span{
+                                & span {
                                     font-size: 15px;
                                     margin-left: 4px;
                                 }
-                                
+
                             }
 
-                            & .reviewSubject_Btn{
+                            & .reviewSubject_Btn {
                                 width: 95px;
                                 height: 30px;
                                 border: 1px solid rgba(31, 140, 230, 0.8);
                                 border-radius: 5px;
-                                background-color: rgba(31, 140, 230,0.6);
+                                background-color: rgba(31, 140, 230, 0.6);
                                 text-align: center;
                                 line-height: 32px;
                                 color: white;
@@ -1150,14 +1150,14 @@ body{
                         }
                     }
 
-                    & #noticeBox{
+                    & #noticeBox {
                         width: 100%;
                         height: 316px;
                         background-color: #f2f4f5;
                         border-radius: 5px;
                         padding: 16px 25px;
 
-                        & p{
+                        & p {
                             font-size: 13px;
                             font-family: "NanumBarunGothic";
                             text-align: left;
@@ -1166,10 +1166,10 @@ body{
                             padding-top: 7px;
                         }
 
-                        & ul{
+                        & ul {
                             padding: 10px 0px;
 
-                            & li{
+                            & li {
                                 color: #666;
                                 font-size: 13px;
                                 font-family: "NanumBarunGothic";
@@ -1180,30 +1180,30 @@ body{
 
             }
 
-            & #purchase_review{
+            & #purchase_review {
                 width: 100%;
                 height: auto;
                 margin-top: 40px;
 
-                & .purchaseNav{
+                & .purchaseNav {
                     width: 100%;
                     height: 37px;
                     border-bottom: 2px solid #d1d5d9;
                     display: flex;
                     justify-content: space-between;
 
-                    & .pN1{
+                    & .pN1 {
                         display: flex;
                         width: 50%;
                         height: 37px;
                         align-items: flex-end;
 
-                        .hover_line{
+                        .hover_line {
                             border-bottom: 2px solid #666;
                             color: #444 !important;
                         }
 
-                        & li{
+                        & li {
                             font-size: 16px;
                             height: 100%;
                             border-bottom: 2px solid transparent;
@@ -1213,20 +1213,20 @@ body{
                             cursor: pointer;
                         }
 
-                        & li:hover{
+                        & li:hover {
                             border-bottom: 2px solid #666;
                             color: #444 !important;
                         }
                     }
 
-                    & .pN2{
+                    & .pN2 {
                         display: flex;
                         width: 50%;
                         justify-content: end;
                         height: 37px;
                         align-items: flex-end;
 
-                        & li{
+                        & li {
                             font-size: 14px;
                             padding-right: 10px;
                             width: auto;
@@ -1236,39 +1236,39 @@ body{
                             line-height: 45px;
                             cursor: pointer;
                         }
-                        
-                        & li:nth-child(2n){
+
+                        & li:nth-child(2n) {
                             color: #ddd !important;
                             width: 1px;
                         }
 
-                        & li:hover{
+                        & li:hover {
                             color: #666 !important;
                         }
 
-                        .hover_black{
+                        .hover_black {
                             color: #444 !important;
                         }
                     }
                 }
 
-                & .purchaseReview{
+                & .purchaseReview {
                     width: 100%;
                     height: auto;
 
-                    & .prBox{
+                    & .prBox {
                         width: 100%;
                         height: 93px;
                         padding-top: 14px;
                         border-top: 1px solid #d1d5d9;
                         display: flex;
 
-                        & .reviewStar{
+                        & .reviewStar {
                             width: 115px;
                             height: 100%;
                             padding: 1px 0 15px;
 
-                            & .rstar{
+                            & .rstar {
                                 width: 100%;
                                 height: 15px;
                                 font-size: 11px !important;
@@ -1276,19 +1276,19 @@ body{
                                 letter-spacing: -0.1em;
                             }
 
-                            & .rid{
+                            & .rid {
                                 width: 100%;
                                 height: 21px;
                                 display: flex;
                                 margin-bottom: 5px;
 
-                                & span{
+                                & span {
                                     font-size: 12px;
                                     font-weight: 700;
                                     font-family: "NanumBarunGothic";
                                 }
 
-                                & .puchper{
+                                & .puchper {
                                     width: 35px;
                                     height: 18px;
                                     color: white;
@@ -1302,18 +1302,18 @@ body{
                                 }
                             }
 
-                            & .rdate{
+                            & .rdate {
                                 width: 100%;
                                 height: 21px;
 
-                                & .date{
+                                & .date {
                                     font-size: 11px;
                                     color: #999;
                                     font-weight: bold;
                                     font-family: "NanumBarunGothic";
                                 }
 
-                                & .date::after{
+                                & .date::after {
                                     content: "";
                                     display: inline-block;
                                     width: 3px;
@@ -1325,7 +1325,7 @@ body{
                                     background-color: #e6e6e6;
                                 }
 
-                                & .declare{
+                                & .declare {
                                     font-family: "NanumBarunGothic";
                                     font-weight: bold;
                                     font-size: 12px;
@@ -1334,23 +1334,23 @@ body{
                             }
                         }
 
-                        & .reviewText{
+                        & .reviewText {
                             width: 620px;
                             height: 100%;
 
-                            & p{
+                            & p {
                                 display: block;
                                 font-size: 14px;
                                 margin-bottom: 20px;
                             }
 
-                            & .reviewIcon{
+                            & .reviewIcon {
                                 width: 100%;
                                 height: 28px;
                                 display: flex;
                                 justify-content: flex-end;
 
-                                & .comment{
+                                & .comment {
                                     padding: 6px 14px;
                                     border: 1px solid #d1d5d9;
                                     margin-right: 3px;
@@ -1363,7 +1363,7 @@ body{
                                     cursor: pointer;
                                 }
 
-                                & .recommendation{
+                                & .recommendation {
                                     padding: 6px 14px;
                                     border: 1px solid #d1d5d9;
                                     margin-right: 3px;
@@ -1376,17 +1376,17 @@ body{
                                     box-shadow: 0 1px 1px 0 rgba(209, 213, 217, 0.3);
                                     cursor: pointer;
 
-                                    & i{
+                                    & i {
                                         font-size: 12px;
                                     }
                                 }
 
-                                & .comment:hover{
+                                & .comment:hover {
                                     background: rgba(209, 213, 217, 0.5);
                                     transition: all .4s ease-in-out;
                                 }
 
-                                & .recommendation:hover{
+                                & .recommendation:hover {
                                     background: rgba(209, 213, 217, 0.5);
                                     transition: all .4s ease-in-out;
                                 }
@@ -1394,39 +1394,39 @@ body{
                         }
                     }
 
-                    & .prBox:nth-child(1){
+                    & .prBox:nth-child(1) {
                         border-top: none !important;
                     }
 
-                    & .prBox:nth-child(8){
+                    & .prBox:nth-child(8) {
                         border-bottom: 1px solid #d1d5d9 !important;
                     }
 
-                    & .remark{
+                    & .remark {
                         margin-top: 20px;
                         position: relative;
                         color: #999;
                         cursor: pointer;
 
-                        & .up{
+                        & .up {
                             display: none;
                             position: absolute;
                             top: 40%;
                             transform: translateY(-50%);
                         }
 
-                        & .down{
+                        & .down {
                             position: absolute;
                             top: 40%;
                             transform: translateY(-50%);
                         }
                     }
 
-                    & .remark:hover{
+                    & .remark:hover {
                         color: #333;
                     }
 
-                    & .remarkStandard{
+                    & .remarkStandard {
                         width: 100%;
                         height: 268px;
                         padding: 24px;
@@ -1436,14 +1436,14 @@ body{
                         color: #666;
                         display: none;
 
-                        & p{
+                        & p {
                             color: #333;
                             font-weight: bold;
                             font-family: "NanumBarunGothic";
                             font-size: 13px;
                         }
 
-                        & dt{
+                        & dt {
                             font-weight: bold;
                             color: #888;
                             margin-top: 10px;
@@ -1451,85 +1451,252 @@ body{
                             font-size: 13px;
                         }
 
-                        & dd{
+                        & dd {
                             color: #888;
                             font-family: "NanumBarunGothic";
                             font-size: 13px;
                         }
                     }
-                    
+
+                }
+            }
+        }
+
+        & #anotherBook {
+            width: 100%;
+            height: 600px;
+            padding: 0 29px 70px 29px;
+
+            & h3 {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 20px;
+            }
+
+            & #anBook {
+                width: 100%;
+                height: 450px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                & .an_book {
+                    width: 145px;
+                    height: 200px;
+                    margin-top: 20px;
+                    text-align: center;
+                    color: #666;
+                    font-size: 12px;
+
+                    & .anImg {
+                        width: 90px;
+                        height: 135px;
+                        margin: 0 auto;
+
+                        & a img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    & .anText {
+                        width: 90px;
+                        height: auto;
+                        margin: 0 auto;
+
+                        & h4 {
+                            font-size: 12px;
+                            text-align: left;
+                            margin-top: 5px !important;
+                            margin-bottom: 2px !important;
+                            font-weight: bold;
+                            line-height: 12px;
+                            font-family: 'SUIT-Medium';
+                        }
+
+                        & p {
+                            text-align: left;
+                        }
+
+                        & p a {
+                            font-size: 12px;
+                            // font-weight: bold;
+                            color: #777 !important;
+                            line-height: 12px;
+                            font-family: 'SUIT-Medium';
+                        }
+                    }
+
+                }
+            }
+        }
+
+        & #aroundBook {
+            width: 100%;
+            height: 600px;
+            padding: 0 29px 70px 29px;
+
+            & h3 {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'SUIT-Medium';
+                color: #59667a;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #7d8e9e;
+                margin-bottom: 20px;
+            }
+
+            & #arBook {
+                width: 100%;
+                height: 450px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                & .ar_book {
+                    width: 145px;
+                    height: 200px;
+                    margin-top: 20px;
+                    text-align: center;
+                    color: #666;
+                    font-size: 12px;
+
+                    & .arImg {
+                        width: 90px;
+                        height: 135px;
+                        margin: 0 auto;
+                        position: relative;
+
+                        & a img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        & .ardiscount {
+                            position: absolute;
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid rgba(0, 0, 0, 0.15);
+                            background-color: #59667a;
+                            border-radius: 50%;
+                            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+                            color: #fff;
+                            text-align: center;
+                            line-height: 40px;
+                            font-weight: bold;
+                            padding-top: 1px;
+                            font-size: 13px;
+                            top: -10px;
+                            left: -10px;
+                        }
+                    }
+
+                    & .arText {
+                        width: 90px;
+                        height: auto;
+                        margin: 0 auto;
+
+                        & h4 {
+                            font-size: 12px;
+                            text-align: left;
+                            margin-top: 5px !important;
+                            margin-bottom: 2px !important;
+                            font-weight: bold;
+                            line-height: 12px;
+                            font-family: 'SUIT-Medium';
+                        }
+
+                        & p {
+                            text-align: left;
+                        }
+
+                        & p a {
+                            font-size: 12px;
+                            // font-weight: bold;
+                            color: #777 !important;
+                            line-height: 12px;
+                            font-family: 'SUIT-Medium';
+                        }
+                    }
+
                 }
             }
         }
     }
 
-    .color_red{
+    .color_red {
         color: #fa722e !important;
     }
 
-    .starcolor{
+    .starcolor {
         color: #fa722e !important;
     }
 
-    .starnone{
+    .starnone {
         color: #ddd !important;
     }
 
-    .standardcolor{
+    .standardcolor {
         color: #333 !important;
     }
 
-    & #subWrap{
+    & #subWrap {
         width: 207px;
         height: 581.5px;
 
-        & .sub_book{
+        & .sub_book {
             width: 100%;
             height: 207px;
             border-bottom: 1px solid #e6e8eb;
             margin-bottom: 40px;
 
-            & a img{
+            & a img {
                 width: 100%;
                 height: 100%;
             }
         }
 
-        & .sub_bestseller{
+        & .sub_bestseller {
             width: 100%;
             height: 343.5px;
             padding: 0 18px;
 
-            & h5{
+            & h5 {
                 font-weight: bold;
             }
 
-            & table{
+            & table {
                 width: 100%;
             }
 
-            & table tr{
+            & table tr {
                 border-top: 1px solid #e6e8eb;
                 border-bottom: 1px solid #e6e8eb;
 
-                & th{
+                & th {
                     width: 25px;
                     color: #e64938;
                     font-size: 12px;
                     padding: 4px 0 4px 0;
                 }
 
-                & td{
+                & td {
                     font-size: 12px;
                     padding-left: 10px;
                 }
 
-                & td a:hover{
+                & td a:hover {
                     color: #1f8ce6 !important;
                 }
             }
 
-            & .sub_show_btn{
+            & .sub_show_btn {
                 width: 100%;
                 height: 20px;
                 background-color: #eee;
@@ -1542,14 +1709,14 @@ body{
                 cursor: pointer;
                 color: #666;
 
-                & i{
+                & i {
                     font-size: 13px;
                     position: absolute;
                     color: #666;
                 }
             }
 
-            & .sub_show_btn:hover{
+            & .sub_show_btn:hover {
                 background-color: #e6e8eb;
             }
         }
