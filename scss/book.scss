@@ -602,7 +602,7 @@ body {
 
             & .update {
                 width: 100%;
-                justify-self: 22px;
+                height: 22px;
                 display: flex;
                 justify-content: flex-end;
 
@@ -1329,7 +1329,7 @@ body {
                                     font-family: "NanumBarunGothic";
                                     font-weight: bold;
                                     font-size: 12px;
-                                    counter-reset: #555;
+                                    color: #555;
                                 }
                             }
                         }
