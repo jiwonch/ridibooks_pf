@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var index = 0;
 
-    function prev() {
+    function next() {
         if (index == 0) {
             $('#todayB').stop().animate({ marginLeft: -1110 });
             $('.tdprev').fadeIn(300);
@@ -12,7 +12,7 @@ $(document).ready(function () {
         }
     }
 
-    function next() {
+    function prev() {
         if (index == 1) {
             $('#todayB').stop().animate({ marginLeft: -369 });
             $('.tdnext').fadeIn(300);
@@ -24,10 +24,10 @@ $(document).ready(function () {
     }
 
     $('.tdnext').click(function () {
-        prev();
+        next();
     });
 
     $('.tdprev').click(function () {
-        next();
+        prev();
     });
 });

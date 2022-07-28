@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var index = 0;
 
-    function prev() {
+    function next() {
         if (index == 0) {
             $('#nBook').stop().animate({ marginLeft: -1110 });
             $('.newprev').fadeIn(300);
@@ -16,7 +16,7 @@ $(document).ready(function () {
         }
     }
 
-    function next() {
+    function prev() {
         if (index == 2) {
             $('#nBook').stop().animate({ marginLeft: -1850 });
             $('.newnext').fadeIn(300);
@@ -31,10 +31,10 @@ $(document).ready(function () {
     }
 
     $('.newnext').click(function () {
-        prev();
+        next();
     });
 
     $('.newprev').click(function () {
-        next();
+        prev();
     });
 });
